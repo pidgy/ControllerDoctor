@@ -1,0 +1,11 @@
+﻿"C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\ilc\in\BrandonPotter.XBox.dll"
+"C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\ilc\in\ControllerDoctorUWP.exe"
+"C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\ilc\in\SharpDX.dll"
+"C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\ilc\in\SharpDX.XInput.dll"
+"C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\ilc\in\XboxControllerSDK.dll"
+/Lib:"C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\ilc\in"
+/Lib:"C:\Users\trash\.nuget\packages\runtime.win10-x86.microsoft.net.native.compiler\2.2.3\tools\x86\ilc\lib\Private"
+/WinMD:"C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\ilc\in\WinMetadata\Windows.winmd"
+/VSTelemetrySessionSettings:"{"IsOptedIn":true,"HostName":"Dev14","AppInsightsInstrumentationKey":"f144292e-e3b2-4011-ac90-20e5c03fbce5","AsimovInstrumentationKey":"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70","AppId":1001,"UserId":"76e0c0fd-f0af-4b2f-85ea-78ba6f26331e","Id":"fc4a4aa2-19f5-4752-ae95-4537915df26d","ProcessStartTime":637081517227826534}"
+/RdXmlPath:"C:\Users\trash\.nuget\packages\microsoft.net.native.compiler\2.2.3\tools\LibraryXML"
+/RunOnlyPreDR

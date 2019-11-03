@@ -1,0 +1,194 @@
+﻿<Page x:Class="ControllerDoctorUWP.OtherControllerPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ControllerDoctorUWP"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      >
+
+    <Grid Background="#2F2F4F">
+        <TextBlock x:ConnectionId='2' Grid.Column="1" HorizontalAlignment="Center"  VerticalAlignment="Center" Foreground="Red" FontFamily="Arial"  FontSize="20" Text="Disconnected" Name="Connected_TextBlock"></TextBlock>
+        <Image HorizontalAlignment="Center" VerticalAlignment="Center"  Source="controller-other.png"/>
+
+        <TextBlock x:ConnectionId='3' Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Foreground="White" FontFamily="Arial"  FontSize="20" Text="Status" Name="Status_TextBlock"></TextBlock>
+
+        <TextBlock Grid.Row="1" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Start" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Viewbox  Grid.Row="1" Grid.Column="1">
+            <Canvas x:ConnectionId='32' Name="Start_Button" Width="900" Height="40"/>
+        </Viewbox>
+
+        <TextBlock Grid.Row="2" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Left Joystick" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Viewbox  Grid.Row="2" Grid.Column="1">
+            <Canvas x:ConnectionId='31' Name="Left_Stick" Width="900" Height="40"/>
+        </Viewbox>
+
+        <TextBlock Grid.Row="3" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Right Joystick" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Viewbox  Grid.Row="3" Grid.Column="1">
+            <Canvas x:ConnectionId='30' Name="Right_Stick" Width="900" Height="40"/>
+        </Viewbox>
+
+        <TextBlock Grid.Row="4" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Left Trigger" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Viewbox  Grid.Row="4" Grid.Column="1">
+            <Canvas x:ConnectionId='29' Name="Left_Trigger" Width="900" Height="40"/>
+        </Viewbox>
+
+        <TextBlock Grid.Row="5" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Left Bumper" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Viewbox  Grid.Row="5" Grid.Column="1">
+            <Canvas x:ConnectionId='28' Name="Left_Bumper" Width="900" Height="40"/>
+        </Viewbox>
+
+        <TextBlock Grid.Row="6" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Right Trigger" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Viewbox  Grid.Row="6" Grid.Column="1">
+            <Canvas x:ConnectionId='27' Name="Right_Trigger" Width="900" Height="40"/>
+        </Viewbox>
+
+        <TextBlock Grid.Row="7" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Right Bumper" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Viewbox  Grid.Row="7" Grid.Column="1">
+            <Canvas x:ConnectionId='26' Name="Right_Bumper" Width="900" Height="40"/>
+        </Viewbox>
+
+        <TextBlock  Grid.Row="8" FontFamily="Arial"  FontSize="15" Foreground="CadetBlue"  Text="X" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Viewbox  Grid.Row="8" Grid.Column="1">
+            <Canvas x:ConnectionId='25' Name="X_Button" Width="900" Height="40"/>
+        </Viewbox>
+
+        <TextBlock Grid.Row="9" FontFamily="Arial"  FontSize="15" Foreground="LawnGreen" Text="A" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Viewbox  Grid.Row="9" Grid.Column="1">
+            <Canvas x:ConnectionId='24' Name="A_Button" Width="900" Height="40"/>
+        </Viewbox>
+
+        <TextBlock Grid.Row="10" FontFamily="Arial"  FontSize="15" Foreground="Yellow" Text="Y" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Viewbox  Grid.Row="10" Grid.Column="1">
+            <Canvas x:ConnectionId='23' Name="Y_Button" Width="900" Height="40"/>
+        </Viewbox>
+
+        <TextBlock Grid.Row="11" FontFamily="Arial"  FontSize="15" Foreground="Red" Text="B" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Viewbox  Grid.Row="11" Grid.Column="1">
+            <Canvas x:ConnectionId='22' Name="B_Button" Width="900" Height="40"/>
+        </Viewbox>
+
+        <TextBlock Grid.Row="12" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Direction Pad" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Viewbox  Grid.Row="12" Grid.Column="1">
+            <Canvas x:ConnectionId='21' Name="Direction_Pad" Width="900" Height="40"/>
+        </Viewbox>
+
+        <TextBlock Grid.Row="13" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Menu" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Viewbox  Grid.Row="13" Grid.Column="1">
+            <Canvas x:ConnectionId='20' Name="Menu_Button" Width="900" Height="40"/>
+        </Viewbox>
+
+        <Border BorderBrush="White" BorderThickness="1"/>
+        <Border Grid.Column="1"  BorderBrush="White" BorderThickness="1"/>
+        <Border Grid.Column="2"  BorderBrush="White" BorderThickness="1"/>
+
+        <Border Grid.Row="1" BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="1" Grid.Column="1"  BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="1" Grid.Column="2"  BorderBrush="#808080" BorderThickness="1"/>
+
+        <Border Grid.Row="2" BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="2" Grid.Column="1"  BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="2" Grid.Column="2"  BorderBrush="#808080" BorderThickness="1"/>
+
+        <Border Grid.Row="3" BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="3" Grid.Column="1"  BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="3" Grid.Column="2"  BorderBrush="#808080" BorderThickness="1"/>
+
+        <Border Grid.Row="4" BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="4" Grid.Column="1"  BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="4" Grid.Column="2"  BorderBrush="#808080" BorderThickness="1"/>
+
+        <Border Grid.Row="5" BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="5" Grid.Column="1"  BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="5" Grid.Column="2"  BorderBrush="#808080" BorderThickness="1"/>
+
+        <Border Grid.Row="6" BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="6" Grid.Column="1"  BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="6" Grid.Column="2"  BorderBrush="#808080" BorderThickness="1"/>
+
+        <Border Grid.Row="7" BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="7" Grid.Column="1"  BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="7" Grid.Column="2"  BorderBrush="#808080" BorderThickness="1"/>
+
+        <Border Grid.Row="8" BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="8" Grid.Column="1"  BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="8" Grid.Column="2"  BorderBrush="#808080" BorderThickness="1"/>
+
+        <Border Grid.Row="9" BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="9" Grid.Column="1"  BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="9" Grid.Column="2"  BorderBrush="#808080" BorderThickness="1"/>
+
+        <Border Grid.Row="10" BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="10" Grid.Column="1"  BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="10" Grid.Column="2"  BorderBrush="#808080" BorderThickness="1"/>
+
+        <Border Grid.Row="11" BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="11" Grid.Column="1"  BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="11" Grid.Column="2"  BorderBrush="#808080" BorderThickness="1"/>
+
+        <Border Grid.Row="12" BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="12" Grid.Column="1"  BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="12" Grid.Column="2"  BorderBrush="#808080" BorderThickness="1"/>
+
+        <Border Grid.Row="13" BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="13" Grid.Column="1"  BorderBrush="#808080" BorderThickness="1"/>
+        <Border Grid.Row="13" Grid.Column="2"  BorderBrush="#808080" BorderThickness="1"/>
+
+        <Border Grid.Row="14" BorderBrush="White" BorderThickness="1"/>
+        <Border Grid.Row="14" Grid.Column="1"  BorderBrush="White" BorderThickness="1"/>
+        <Border Grid.Row="14" Grid.Column="2"  BorderBrush="White" BorderThickness="1"/>
+
+        <TextBlock x:ConnectionId='4' Grid.Row="1" Name="Start_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='5' Grid.Row="2" Name="Left_Joystick_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='6' Grid.Row="3" Name="Right_Joystick_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='7' Grid.Row="4" Name="Left_Trigger_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='8' Grid.Row="5" Name="Left_Bumper_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='9' Grid.Row="6" Name="Right_Trigger_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='10' Grid.Row="7" Name="Right_Bumper_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='11' Grid.Row="8" Name="X_Button_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='12' Grid.Row="9" Name="A_Button_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='13' Grid.Row="10" Name="Y_Button_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='14' Grid.Row="11" Name="B_Button_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='15' Grid.Row="12" Name="Direction_Pad_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='16' Grid.Row="13" Name="Menu_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+
+        <Button x:ConnectionId='17' Name="Clear_Button" Grid.Row="14" Content="Clear" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" Background="#2e2e2e" FontSize="20" BorderThickness="1" BorderBrush="White"                           >
+
+        </Button>
+        <Button x:ConnectionId='18' Name="Delay_Button" Grid.Row="14" Content="Add Input Delay Markers" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" Background="#2e2e2e" FontSize="20" BorderBrush="White" BorderThickness="1"                           >
+
+        </Button>
+        <Button x:ConnectionId='19' Name="Pause_Button" Grid.Row="14" Content="Pause"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" Background="#2e2e2e" FontSize="20" BorderThickness="1" BorderBrush="White"                           >
+
+        </Button>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".5*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width=".5*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".5*"  />
+            <RowDefinition Height=".3*"  />
+
+            <RowDefinition Height=".3*" />
+            <RowDefinition Height=".3*" />
+
+            <RowDefinition Height=".3*" />
+            <RowDefinition Height=".3*" />
+            <RowDefinition Height=".3*" />
+            <RowDefinition Height=".3*" />
+            <RowDefinition Height=".3*" />
+            <RowDefinition Height=".3*" />
+            <RowDefinition Height=".3*" />
+            <RowDefinition Height=".3*" />
+            <RowDefinition Height=".3*" />
+            <RowDefinition Height=".3*" />
+            <RowDefinition Height=".4*" />
+        </Grid.RowDefinitions>
+    </Grid>
+</Page>
+
+

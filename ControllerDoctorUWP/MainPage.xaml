@@ -1,0 +1,64 @@
+﻿<Page
+    x:Class="ControllerDoctorUWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ControllerDoctorUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#2F2F4F">
+
+    <Grid Background="#2F2F4F">
+        <NavigationView IsPaneToggleButtonVisible="False" IsTabStop="False" Name="NavView" IsBackEnabled="False" IsBackButtonVisible="Collapsed">
+            <NavigationView.MenuItems>
+
+                <NavigationViewItemHeader FontSize="20" Content="Controller Doctor"/>
+                <NavigationViewItemSeparator/>
+
+                <NavigationViewItem  IsTabStop="False" IsSelected="True" FontSize="15" Icon="Home" Content="Home" Name="Home_Navigation"/>
+                <NavigationViewItem  IsTabStop="False" FontSize="15" Icon="ViewAll" Content="About" Name="About_Navigation"/>
+                
+                <NavigationViewItemSeparator/>
+
+                <NavigationViewItemHeader Content="Controllers"/>
+                <NavigationViewItem IsTabStop="False" Name="Xbox_Controller_Health">
+                <Image Source="controller-xbox.png"></Image>
+                </NavigationViewItem>
+                <NavigationViewItem IsTabStop="False" Name="Playstation_Controller_Health">
+                    <Image Source="controller-ps.png"></Image>
+                </NavigationViewItem>
+                <NavigationViewItem IsTabStop="False" Name="Keyboard_and_Mouse_Controller_Health">
+                    <Image Source="controller-kb.png"></Image>
+                </NavigationViewItem>
+                <NavigationViewItem IsTabStop="False" Name="Other_Controller_Health">
+                    <Image Source="controller-other.png"></Image>
+                </NavigationViewItem>
+               
+                <NavigationViewItemSeparator/>
+                
+                <NavigationViewItemHeader Content="Deadzone"/>
+                
+                <NavigationViewItem IsTabStop="False" Name="All_Controller_Deadzone">
+                    <Image Source="focus.png"></Image>
+                </NavigationViewItem>
+
+                <NavigationViewItemSeparator/>
+                <NavigationViewItemHeader Content="History"/>
+                <NavigationViewItem IsTabStop="False" FontSize="15" Icon="Clock" Content="Xbox" Name="Xbox_Controller_History"/>
+                <NavigationViewItem IsTabStop="False" FontSize="15" Icon="Clock" Content="Playstation" Name="Playstation_Controller_History"/>
+                <NavigationViewItem IsTabStop="False" FontSize="15" Icon="Clock" Content="Keyboard/Mouse" Name="Keyboard_and_Mouse_Controller_History"/>
+                <NavigationViewItem IsTabStop="False" FontSize="15" Icon="Clock" Content="Other" Name="Other_Controller_History"/>
+
+                <NavigationViewItemSeparator/>
+
+       
+
+                <NavigationViewItem Content="Version: 1.0" IsEnabled="False"/>
+                <NavigationViewItemSeparator/>
+
+            </NavigationView.MenuItems>
+            
+            <Frame x:Name="ContentFrame"></Frame>
+        </NavigationView>
+    </Grid>
+</Page>

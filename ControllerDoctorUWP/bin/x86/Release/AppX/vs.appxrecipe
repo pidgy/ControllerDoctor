@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-RBSTM7P</Machine>
+    <WindowsUser>trash</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>a02d91a8-6fa7-4942-899b-b8241f5b4f85</PackageIdentityName>
+    <PackageIdentityPublisher>CN=trash</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType>
+    </RemoteDeploymentType>
+    <PackageRegistrationPath>
+    </PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\AppX</LayoutDir>
+    <RegisteredManifestChecksum>0D0B18E745E6B0DBC293F2CB49381E759A0EC4E8996355EC287927A3150772A9</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>a02d91a8-6fa7-4942-899b-b8241f5b4f85_1.0.0.0_x86__td3ps0mnt2d9c</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>a02d91a8-6fa7-4942-899b-b8241f5b4f85_td3ps0mnt2d9c!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>a02d91a8-6fa7-4942-899b-b8241f5b4f85</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=trash</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\Core\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-11-02T16:38:29.150</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\ControllerDoctorUWP.exe">
+      <PackagePath>entrypoint\ControllerDoctorUWP.exe</PackagePath>
+      <Modified>2019-11-02T16:38:28.620</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.8\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+      <PackagePath>System.Runtime.dll</PackagePath>
+      <Modified>2019-03-13T02:22:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\.nuget\packages\sharpdx\4.2.0\lib\uap10.0\SharpDX.dll">
+      <PackagePath>SharpDX.dll</PackagePath>
+      <Modified>2018-08-24T09:58:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\.nuget\packages\sharpdx.xinput\4.2.0\lib\uap10.0\SharpDX.XInput.dll">
+      <PackagePath>SharpDX.XInput.dll</PackagePath>
+      <Modified>2018-08-24T09:59:22.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\.nuget\packages\xboxcontroller\1.0.5\lib\net40\BrandonPotter.XBox.dll">
+      <PackagePath>BrandonPotter.XBox.dll</PackagePath>
+      <Modified>2015-09-25T09:21:48.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\.nuget\packages\xboxcontrollersdk\1.0.0\lib\uap10.0\XboxControllerSDK.dll">
+      <PackagePath>XboxControllerSDK.dll</PackagePath>
+      <Modified>2016-02-27T01:21:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.128</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.149</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.176</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.216</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.354</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:19.860</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:19.867</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:19.875</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:19.884</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:19.899</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.506</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.537</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.579</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.896</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:19.908</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:19.918</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:19.930</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:19.983</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.450</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.485</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.463</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.469</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.369</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.377</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.384</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.402</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.409</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.415</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.443</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.421</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.428</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.904</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.912</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.920</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.929</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.943</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:19.994</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.007</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.022</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.113</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\controller-kb.png">
+      <PackagePath>controller-kb.png</PackagePath>
+      <Modified>2019-10-20T14:24:08.541</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\controller-other.png">
+      <PackagePath>controller-other.png</PackagePath>
+      <Modified>2019-10-20T14:24:04.101</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\controller-ps.png">
+      <PackagePath>controller-ps.png</PackagePath>
+      <Modified>2019-10-20T14:23:59.969</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\controller-xbox.png">
+      <PackagePath>controller-xbox.png</PackagePath>
+      <Modified>2019-10-20T14:23:04.646</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\joystick.png">
+      <PackagePath>joystick.png</PackagePath>
+      <Modified>2019-10-31T13:40:36.156</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\logo-w.png">
+      <PackagePath>logo-w.png</PackagePath>
+      <Modified>2019-10-25T21:44:37.890</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\LockScreenLogo.scale-200.png">
+      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
+      <Modified>2018-11-20T20:04:02.033</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.648</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square150x150Logo.scale-200.png">
+      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:19.945</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square44x44Logo.scale-200.png">
+      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.391</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.456</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\Wide310x150Logo.scale-200.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2019-10-20T18:58:20.045</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bg.png">
+      <PackagePath>bg.png</PackagePath>
+      <Modified>2019-10-25T22:47:46.465</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2019-10-19T21:44:30.213</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\ControllerDoctorUWP.xr.xml">
+      <PackagePath>ControllerDoctorUWP.xr.xml</PackagePath>
+      <Modified>2019-10-31T21:24:57.254</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
+      <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+      <Modified>2019-03-18T21:33:42.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2019-11-02T16:38:28.757</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\Core\ControllerDoctorUWP.exe">
+      <PackagePath>ControllerDoctorUWP.exe</PackagePath>
+      <Modified>2019-11-02T16:38:29.147</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\trash\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27404.2</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27404.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\trash\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\trash\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27404.2</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27404.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\trash\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\trash\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+      <Name>Microsoft.NET.CoreRuntime.2.2</Name>
+      <Version>2.2.27404.2</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27404.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\trash\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\trash\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.27505.2</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27505.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\trash\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\trash\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.27505.2</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27505.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\trash\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\trash\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+      <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
+      <Version>2.2.27505.2</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27505.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\trash\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM64\Microsoft.VCLibs.ARM64.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.27323.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.27323.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.14.00.appx</AppxLocation>
+      <MoreInfo>
+      </MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>
