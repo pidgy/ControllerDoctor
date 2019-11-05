@@ -31,14 +31,22 @@
       <RootProperty Name="Source" />
       <RootProperty Name="Margin" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="NavigateUri" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Foreground" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Name" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Text" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Name" />
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="ControllerDoctorUWP.AboutPage" />
@@ -81,6 +89,7 @@
       <RootProperty Name="FocusVisualSecondaryBrush" />
       <RootProperty Name="FocusVisualPrimaryBrush" />
       <RootProperty Name="BorderBrush" />
+      <RootProperty Name="VerticalAlignment" />
       <RootEvent Name="ValueChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
@@ -136,6 +145,12 @@
     </RootType>
     <RootType FullName="ControllerDoctorUWP.OtherControllerPage" />
     <RootType FullName="ControllerDoctorUWP.PlaystationControllerPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ToggleButton">
+      <RootProperty Name="Content" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootEvent Name="Checked" />
+    </RootType>
     <RootType FullName="ControllerDoctorUWP.SettingsPage" />
     <RootType FullName="ControllerDoctorUWP.XboxControllerPage" />
   </Roots.RootTypes>

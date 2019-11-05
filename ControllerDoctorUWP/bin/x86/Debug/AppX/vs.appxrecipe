@@ -8,8 +8,8 @@
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
-    <PackageIdentityName>a02d91a8-6fa7-4942-899b-b8241f5b4f85</PackageIdentityName>
-    <PackageIdentityPublisher>CN=trash</PackageIdentityPublisher>
+    <PackageIdentityName>2cd339de-6561-4628-bad2-f21763ce40b4</PackageIdentityName>
+    <PackageIdentityPublisher>CN=D92AF099-E09A-4694-8D11-2789A736572A</PackageIdentityPublisher>
     <IntermediateOutputPath>C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
@@ -19,44 +19,28 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>36C8AF8F937CB7E64981B112BB6E9994127459B9FF3817EF61C63BABBB0E2F85</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>a02d91a8-6fa7-4942-899b-b8241f5b4f85_1.0.0.0_x86__td3ps0mnt2d9c</RegisteredPackageMoniker>
-    <RegisteredUserModeAppID>a02d91a8-6fa7-4942-899b-b8241f5b4f85_td3ps0mnt2d9c!App</RegisteredUserModeAppID>
-    <RegisteredPackageID>a02d91a8-6fa7-4942-899b-b8241f5b4f85</RegisteredPackageID>
-    <RegisteredPackagePublisher>CN=trash</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredManifestChecksum>9F219B8B8E7B3D0F617503C1B7045A621F21C180CA8445B127EB6F902384842C</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>30781TrashboatInc.ControllerDoctor_1.0.6.0_x86__6m1ssdm9pvhx8</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>30781TrashboatInc.ControllerDoctor_6m1ssdm9pvhx8!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>30781TrashboatInc.ControllerDoctor</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=D92AF099-E09A-4694-8D11-2789A736572A</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.6.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-03T15:14:05.168</Modified>
+      <Modified>2019-11-04T23:05:17.167</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\ControllerDoctorUWP.exe">
       <PackagePath>entrypoint\ControllerDoctorUWP.exe</PackagePath>
-      <Modified>2019-11-03T15:14:04.733</Modified>
+      <Modified>2019-11-04T23:05:16.817</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\trash\.nuget\packages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.8\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
-      <Modified>2019-03-13T02:22:24.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\trash\.nuget\packages\sharpdx\4.2.0\lib\uap10.0\SharpDX.dll">
-      <PackagePath>SharpDX.dll</PackagePath>
-      <Modified>2018-08-24T09:58:54.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\trash\.nuget\packages\sharpdx.xinput\4.2.0\lib\uap10.0\SharpDX.XInput.dll">
-      <PackagePath>SharpDX.XInput.dll</PackagePath>
-      <Modified>2018-08-24T09:59:22.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\trash\.nuget\packages\xboxcontroller\1.0.5\lib\net40\BrandonPotter.XBox.dll">
-      <PackagePath>BrandonPotter.XBox.dll</PackagePath>
-      <Modified>2015-09-25T09:21:48.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\trash\.nuget\packages\xboxcontrollersdk\1.0.0\lib\uap10.0\XboxControllerSDK.dll">
-      <PackagePath>XboxControllerSDK.dll</PackagePath>
-      <Modified>2016-02-27T01:21:12.000</Modified>
+      <Modified>2019-07-22T18:01:14.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.18362.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
@@ -329,47 +313,47 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\ControllerDoctorUWP.xr.xml">
       <PackagePath>ControllerDoctorUWP.xr.xml</PackagePath>
-      <Modified>2019-11-02T21:43:27.794</Modified>
+      <Modified>2019-11-04T22:55:35.405</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-11-03T15:10:40.032</Modified>
+      <Modified>2019-11-04T23:04:31.170</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\AboutPage.xbf">
       <PackagePath>AboutPage.xbf</PackagePath>
-      <Modified>2019-11-03T15:10:40.032</Modified>
+      <Modified>2019-11-04T23:05:16.632</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\ControllerDeadzonePage.xbf">
       <PackagePath>ControllerDeadzonePage.xbf</PackagePath>
-      <Modified>2019-11-03T15:10:40.032</Modified>
+      <Modified>2019-11-04T23:04:31.171</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\HistoryPage.xbf">
       <PackagePath>HistoryPage.xbf</PackagePath>
-      <Modified>2019-11-03T15:10:40.032</Modified>
+      <Modified>2019-11-04T23:04:31.171</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\HomePage.xbf">
       <PackagePath>HomePage.xbf</PackagePath>
-      <Modified>2019-11-03T15:10:40.033</Modified>
+      <Modified>2019-11-04T23:04:31.171</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-11-03T15:10:40.033</Modified>
+      <Modified>2019-11-04T23:04:31.171</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\OtherControllerPage.xbf">
       <PackagePath>OtherControllerPage.xbf</PackagePath>
-      <Modified>2019-11-03T15:10:40.015</Modified>
+      <Modified>2019-11-04T23:04:31.151</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\PlaystationControllerPage.xbf">
       <PackagePath>PlaystationControllerPage.xbf</PackagePath>
-      <Modified>2019-11-03T15:10:40.023</Modified>
+      <Modified>2019-11-04T23:04:31.160</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\SettingsPage.xbf">
       <PackagePath>SettingsPage.xbf</PackagePath>
-      <Modified>2019-11-03T15:10:40.033</Modified>
+      <Modified>2019-11-04T23:04:31.171</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\XboxControllerPage.xbf">
       <PackagePath>XboxControllerPage.xbf</PackagePath>
-      <Modified>2019-11-03T15:10:40.032</Modified>
+      <Modified>2019-11-04T23:04:31.170</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -377,65 +361,65 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-11-03T15:07:13.509</Modified>
+      <Modified>2019-11-04T21:51:44.660</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\Core\ControllerDoctorUWP.exe">
       <PackagePath>ControllerDoctorUWP.exe</PackagePath>
-      <Modified>2019-11-03T15:14:05.165</Modified>
+      <Modified>2019-11-04T23:05:17.164</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Users\trash\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
-      <Version>2.2.27404.2</Version>
+      <Version>2.2.27902.3</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27404.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\trash\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\trash\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
-      <Version>2.2.27404.2</Version>
+      <Version>2.2.27902.3</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27404.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\trash\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\trash\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx">
       <Name>Microsoft.NET.CoreRuntime.2.2</Name>
-      <Version>2.2.27404.2</Version>
+      <Version>2.2.27902.3</Version>
       <Architecture>arm</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27404.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\trash\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreRuntime.2.2, MinVersion = 2.2.27902.3, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreRuntime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\trash\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
-      <Version>2.2.27505.2</Version>
+      <Version>2.2.27909.0</Version>
       <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27505.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\trash\.nuget\packages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\trash\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
-      <Version>2.2.27505.2</Version>
+      <Version>2.2.27909.0</Version>
       <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27505.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\trash\.nuget\packages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Users\trash\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx">
       <Name>Microsoft.NET.CoreFramework.Debug.2.2</Name>
-      <Version>2.2.27505.2</Version>
+      <Version>2.2.27909.0</Version>
       <Architecture>arm</Architecture>
-      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27505.2, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Users\trash\.nuget\packages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.8\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
+      <FrameworkIdentity>Name = Microsoft.NET.CoreFramework.Debug.2.2, MinVersion = 2.2.27909.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.2.9\build\..\tools\Appx\Microsoft.NET.CoreFramework.Debug.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
     </ResolvedSDKReference>

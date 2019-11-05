@@ -20,6 +20,8 @@ namespace ControllerDoctorUWP
         {
             this.InitializeComponent();
 
+            GlobalSettings.ApplyDefaults();
+
             Press.DirectionBrushes = new List<Brush>();
             Press.DirectionBrushes.Insert((int)Math.Sqrt((int)Press.DIRECTION.PRESSED), new SolidColorBrush(Colors.LawnGreen));
             Press.DirectionBrushes.Insert((int)Math.Sqrt((int)Press.DIRECTION.UP), new SolidColorBrush(Colors.Red));
@@ -115,7 +117,7 @@ namespace ControllerDoctorUWP
                     error = item.Name.Replace('_', ' ');
                 }
 
-                AlertAndWaitAsync("Hmm... Can't seem to find that page.", error);
+                AlertAndWaitAsync("There is currently no support for this device.", error);
             }
 
             _lastItem = item;

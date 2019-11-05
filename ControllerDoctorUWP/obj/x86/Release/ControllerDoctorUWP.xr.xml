@@ -31,14 +31,22 @@
       <RootProperty Name="Source" />
       <RootProperty Name="Margin" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="NavigateUri" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Foreground" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="Name" />
       <RootProperty Name="FontFamily" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Text" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Name" />
       <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="ControllerDoctorUWP.AboutPage" />
@@ -80,6 +88,7 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="FocusVisualSecondaryBrush" />
       <RootProperty Name="FocusVisualPrimaryBrush" />
+      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="BorderBrush" />
       <RootEvent Name="ValueChanged" />
     </RootType>
@@ -123,6 +132,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Name" />
+      <RootProperty Name="IsTabStop" />
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
@@ -131,11 +141,16 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="BorderBrush" />
-      <RootProperty Name="IsTabStop" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="ControllerDoctorUWP.OtherControllerPage" />
     <RootType FullName="ControllerDoctorUWP.PlaystationControllerPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ToggleButton">
+      <RootProperty Name="Content" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootEvent Name="Checked" />
+    </RootType>
     <RootType FullName="ControllerDoctorUWP.SettingsPage" />
     <RootType FullName="ControllerDoctorUWP.XboxControllerPage" />
   </Roots.RootTypes>

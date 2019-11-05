@@ -9,8 +9,12 @@
 
     <Grid Background="#2F2F4F">
         <Image MaxWidth="100" MaxHeight="100" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Source="bg.png" Margin="0,0,14,63"/>
-        <TextBlock FontFamily="Arial"  FontSize="50" Foreground="White" Text="About." HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+        
+        <HyperlinkButton FontSize="20" NavigateUri="https://www.github.com/trashbo4t" HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="Controller Doctor was created by trashbo4t" Foreground="LightBlue">
+            </HyperlinkButton>
+
         <TextBlock FontFamily="Arial"  FontSize="20" Foreground="White" Text="About." HorizontalAlignment="Center" VerticalAlignment="Center" Name="About_Text"/>
 
+        <TextBlock FontFamily="Arial"  FontSize="50" Foreground="White" Text="About." HorizontalAlignment="Right" VerticalAlignment="Bottom" />
     </Grid>
 </Page>

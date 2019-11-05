@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,36 +10,39 @@ namespace ControllerDoctorUWP
 {
     public class GenericController : IController
     {
-        public Gamepad Controller;
+        public RawGameController Controller;
         public event EventHandler Connected;
         public event EventHandler Disconnected;
 
         public GenericController()
         {
+            Debug.WriteLine("CONTROLLERS: " + RawGameController.RawGameControllers.Count);
+
             this.Controller = null;
 
-            Gamepad.GamepadRemoved += (s, e) =>
+            RawGameController.RawGameControllerRemoved += (s, e) =>
             {
                 OnDisconnected(e);
             };
 
-            Gamepad.GamepadAdded += (s, e) =>
+            RawGameController.RawGameControllerAdded += (s, e) =>
             {
                 OnConnected(e);
             };
         }
 
-        protected virtual void OnConnected(Gamepad e)
+        protected virtual void OnConnected(RawGameController e)
         {
             Connected.Invoke(this, EventArgs.Empty);
             this.Controller = e;
         }
 
-        protected virtual void OnDisconnected(Gamepad e)
+        protected virtual void OnDisconnected(RawGameController e)
         {
             Disconnected.Invoke(this, EventArgs.Empty);
             this.Controller = null;
         }
+
         public bool IsConnected()
         {
             return this.Controller != null;
@@ -46,9 +50,9 @@ namespace ControllerDoctorUWP
 
         public void Refresh()
         {
-            if (Gamepad.Gamepads.Count > 0)
+            if (RawGameController.RawGameControllers.Count > 0)
             {
-                OnConnected(Gamepad.Gamepads[0]);
+                OnConnected(RawGameController.RawGameControllers[0]);
             }
         }
 
@@ -59,7 +63,13 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.GetCurrentReading().Buttons == GamepadButtons.View;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
+
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return ButtonArray[8];
         }
 
         public double LeftStickXPosition()
@@ -109,7 +119,13 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.GetCurrentReading().Buttons == GamepadButtons.RightThumbstick;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
+
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return ButtonArray[11];
         }
 
         public bool ButtonLeftPressed()
@@ -119,7 +135,13 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.GetCurrentReading().Buttons == GamepadButtons.DPadLeft;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
+
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return SwitchArray[0] == GameControllerSwitchPosition.Left;
         }
 
         public bool ButtonDownPressed()
@@ -129,7 +151,13 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.GetCurrentReading().Buttons == GamepadButtons.DPadDown;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
+
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return SwitchArray[0] == GameControllerSwitchPosition.Down;
         }
 
         public bool ButtonUpPressed()
@@ -139,7 +167,13 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.GetCurrentReading().Buttons == GamepadButtons.DPadUp;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
+
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return SwitchArray[0] == GameControllerSwitchPosition.Up;
         }
 
         public bool ButtonRightPressed()
@@ -149,7 +183,13 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.GetCurrentReading().Buttons == GamepadButtons.DPadRight;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
+
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return SwitchArray[0] == GameControllerSwitchPosition.Right;
         }
 
         public bool TriggerLeftPressed()
@@ -159,7 +199,13 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.GetCurrentReading().LeftTrigger > 0;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
+
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return ButtonArray[6];
         }
 
         public bool TriggerRightPressed()
@@ -169,7 +215,13 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.GetCurrentReading().RightTrigger > 0;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
+
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return ButtonArray[7];
         }
 
         public bool ButtonAPressed()
@@ -179,7 +231,13 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.GetCurrentReading().Buttons == GamepadButtons.A;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
+
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return ButtonArray[1];
         }
 
         public bool ButtonBPressed()
@@ -189,7 +247,13 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.GetCurrentReading().Buttons == GamepadButtons.B;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
+
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return ButtonArray[2];
         }
 
         public bool ButtonXPressed()
@@ -199,7 +263,13 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.GetCurrentReading().Buttons == GamepadButtons.X;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
+
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return ButtonArray[0];
         }
 
         public bool ButtonShoulderLeftPressed()
@@ -209,7 +279,13 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.GetCurrentReading().Buttons == GamepadButtons.LeftShoulder;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
+
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return ButtonArray[4];
         }
 
         public bool ButtonShoulderRightPressed()
@@ -219,7 +295,13 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.GetCurrentReading().Buttons == GamepadButtons.RightShoulder;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
+
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return ButtonArray[5];
         }
 
         public bool ButtonStartPressed()
@@ -229,7 +311,13 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.GetCurrentReading().Buttons == GamepadButtons.Menu;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
+
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return ButtonArray[9];
         }
 
         public bool ButtonYPressed()
@@ -239,7 +327,13 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.GetCurrentReading().Buttons == GamepadButtons.Y;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
+
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return ButtonArray[3];
         }
 
         public bool ThumbpadLeftPressed()
@@ -249,7 +343,13 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.GetCurrentReading().Buttons == GamepadButtons.LeftThumbstick;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
+
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return ButtonArray[10];
         }
 
         public double ThumbLeftY()
@@ -259,13 +359,13 @@ namespace ControllerDoctorUWP
                 return 50;
             }
 
-            double Reading = Controller.GetCurrentReading().LeftThumbstickY;
-            Reading += 1;
-            Reading *= 100;
-            Reading /= 200;
-            Reading *= 100;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
 
-            return Reading;
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return 100 * (1 - AxisArray[1]);
         }
 
         public double ThumbLeftX()
@@ -275,13 +375,13 @@ namespace ControllerDoctorUWP
                 return 50;
             }
 
-            double Reading = Controller.GetCurrentReading().LeftThumbstickX;
-            Reading += 1;
-            Reading *= 100;
-            Reading /= 200;
-            Reading *= 100;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
 
-            return Reading;
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return 100 * AxisArray[0];
         }
 
         public double ThumbRightY()
@@ -291,13 +391,13 @@ namespace ControllerDoctorUWP
                 return 50;
             }
 
-            double Reading = Controller.GetCurrentReading().RightThumbstickY;
-            Reading += 1;
-            Reading *= 100;
-            Reading /= 200;
-            Reading *= 100;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
 
-            return Reading;
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            return 100 * (1 - AxisArray[5]);
         }
 
         public double ThumbRightX()
@@ -307,14 +407,15 @@ namespace ControllerDoctorUWP
                 return 50;
             }
 
-            double Reading = Controller.GetCurrentReading().RightThumbstickX;
-            Reading += 1;
-            Reading *= 100;
-            Reading /= 200;
-            Reading *= 100;
+            Boolean[] ButtonArray = new Boolean[20];
+            GameControllerSwitchPosition[] SwitchArray = new GameControllerSwitchPosition[20];
+            Double[] AxisArray = new Double[20];
 
-            return Reading;
+            Controller.GetCurrentReading(ButtonArray, SwitchArray, AxisArray);
+
+            Debug.WriteLine("RX: " + (100 * AxisArray[2]));
+
+            return 100 * AxisArray[2];
         }
     }
-
 }

@@ -243,7 +243,7 @@ namespace ControllerDoctorUWP
                     return;
                 }
 
-                Thread.Sleep(Settings.DelayMilliseconds);
+                Thread.Sleep(GlobalSettings.DelayMilliseconds);
             }
         }
 
@@ -257,7 +257,7 @@ namespace ControllerDoctorUWP
 
         public void Draw(string canvasName, Press.Pressed pressed)
         {
-            double ymin = 5;
+            double ymin = 7;
             double ymax = Buttons[canvasName].Canvas.Height - ymin;
             double hit_y = (ymax - ymin);
 
@@ -337,7 +337,7 @@ namespace ControllerDoctorUWP
                 if (Buttons[canvasName].Polyline.Points.Count > last && Buttons[canvasName].Polyline.Points.Count < pos)
                 {
                     ButtonData button = Buttons[canvasName];
-                    button.Delay = Math.Abs(button.LastPressed.X - xpos) * Settings.DelayMilliseconds;
+                    button.Delay = Math.Abs(button.LastPressed.X - xpos) * GlobalSettings.DelayMilliseconds;
                     Buttons[canvasName] = button;
                 }
 

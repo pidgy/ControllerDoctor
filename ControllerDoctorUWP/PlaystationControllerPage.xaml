@@ -15,7 +15,7 @@
 
         <TextBlock Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Foreground="White" FontFamily="Arial"  FontSize="20" Text="Status" Name="Status_TextBlock"></TextBlock>
 
-        <TextBlock Grid.Row="1" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Start" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="1" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Options" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="1" Grid.Column="1">
             <Canvas Name="Start_Button" Width="900" Height="40"/>
         </Viewbox>
@@ -75,7 +75,7 @@
             <Canvas Name="Direction_Pad" Width="900" Height="40"/>
         </Viewbox>
 
-        <TextBlock Grid.Row="13" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Menu" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Grid.Row="13" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Share" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="13" Grid.Column="1">
             <Canvas Name="Menu_Button" Width="900" Height="40"/>
         </Viewbox>

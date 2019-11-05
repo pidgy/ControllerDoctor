@@ -1,0 +1,2 @@
+MainPackage=C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\Upload\ControllerDoctorUWP_1.5.11.0_x86.appx
+SymbolPackage=C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\Upload\ControllerDoctorUWP_1.5.11.0\ControllerDoctorUWP_1.5.11.0_x86.appxsym

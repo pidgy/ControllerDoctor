@@ -7,7 +7,7 @@ using Windows.UI;
 
 namespace ControllerDoctorUWP
 {
-    class ButtonData
+    public class ButtonData
     {
         public Press.Pressed Pressed;
         public TextBlock Label;
@@ -38,7 +38,7 @@ namespace ControllerDoctorUWP
             this.InputDelayPaths = new List<Path>();
             this.InputDelayMarkerXPositions = new List<double>();
 
-            this.Polyline.StrokeThickness = Settings.StrokeThickness;
+            this.Polyline.StrokeThickness = GlobalSettings.StrokeThickness;
 
             this.canvas.CacheMode = new BitmapCache();
         }
@@ -86,7 +86,7 @@ namespace ControllerDoctorUWP
                     YAxisGeomGroup.Children.Add(LineGeom);
 
                     Path YAxisPath = new Path();
-                    YAxisPath.StrokeThickness = Settings.StrokeThickness;
+                    YAxisPath.StrokeThickness = GlobalSettings.StrokeThickness;
                     YAxisPath.Stroke = new SolidColorBrush(Colors.White);
                     YAxisPath.Data = YAxisGeomGroup;
 

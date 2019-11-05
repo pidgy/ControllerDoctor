@@ -39,19 +39,7 @@
           "dependencies": {
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
-              "version": "[6.2.8, )"
-            },
-            "SharpDX.XInput": {
-              "target": "Package",
-              "version": "[4.2.0, )"
-            },
-            "XBoxController": {
-              "target": "Package",
-              "version": "[1.0.5, )"
-            },
-            "XboxControllerSDK": {
-              "target": "Package",
-              "version": "[1.0.0, )"
+              "version": "[6.2.9, )"
             }
           },
           "imports": [

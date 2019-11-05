@@ -36,7 +36,8 @@ namespace ControllerDoctorUWP
         Painter LeftPainter;
         Painter RightPainter;
 
-        GenericController controller;
+        IController controller;
+        
         Task LeftTask;
         Task RightTask;
         CancellationTokenSource CancellationToken;
@@ -50,19 +51,45 @@ namespace ControllerDoctorUWP
 
             this.Loaded += (s1, e1) =>
             {
-                controller = new GenericController();
-
-                controller.Connected += (s2, e2) =>
+                switch (GlobalSettings.DeadzoneController)
                 {
-                    SetConnectedAsync();
-                };
+                    case GlobalSettings.XBOX:
+                        XboxController xboxController = new XboxController();
 
-                controller.Disconnected += (s2, e2) =>
-                {
-                    SetDisconnectedAsync();
-                };
+                        xboxController.Connected += (s2, e2) =>
+                        {
+                            SetConnectedAsync();
+                        };
 
-                controller.Refresh();
+                        xboxController.Disconnected += (s2, e2) =>
+                        {
+                            SetDisconnectedAsync();
+                        };
+
+                        xboxController.Refresh();
+
+                        controller = xboxController;
+
+                        break;
+                    case GlobalSettings.GENERIC:
+                        GenericController genericController = new GenericController();
+
+                        genericController.Connected += (s2, e2) =>
+                        {
+                            SetConnectedAsync();
+                        };
+
+                        genericController.Disconnected += (s2, e2) =>
+                        {
+                            SetDisconnectedAsync();
+                        };
+
+                        genericController.Refresh();
+
+                        controller = genericController;
+
+                        break;
+                }
             };
         }
 
@@ -110,7 +137,7 @@ namespace ControllerDoctorUWP
                     return;
                 }
 
-                Thread.Sleep(Settings.DelayMilliseconds);
+                Thread.Sleep(GlobalSettings.DelayMilliseconds);
             }
         }
 
@@ -163,7 +190,7 @@ namespace ControllerDoctorUWP
             {
                 Height = height,
                 Width = width,
-                StrokeThickness = 1,
+                StrokeThickness = GlobalSettings.StrokeThickness,
                 Stroke = borderBrush,
                 Fill = fillBrush
             };

@@ -199,7 +199,7 @@ namespace ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[14];
+            _typeNameTable = new string[11];
             _typeNameTable[0] = "ControllerDoctorUWP.AboutPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -208,14 +208,11 @@ namespace ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo
             _typeNameTable[5] = "ControllerDoctorUWP.HomePage";
             _typeNameTable[6] = "ControllerDoctorUWP.MainPage";
             _typeNameTable[7] = "ControllerDoctorUWP.OtherControllerPage";
-            _typeNameTable[8] = "ControllerDoctorUWP.OtherControllerPage.MethodName";
-            _typeNameTable[9] = "System.ValueType";
-            _typeNameTable[10] = "Object";
-            _typeNameTable[11] = "ControllerDoctorUWP.PlaystationControllerPage";
-            _typeNameTable[12] = "ControllerDoctorUWP.SettingsPage";
-            _typeNameTable[13] = "ControllerDoctorUWP.XboxControllerPage";
+            _typeNameTable[8] = "ControllerDoctorUWP.PlaystationControllerPage";
+            _typeNameTable[9] = "ControllerDoctorUWP.SettingsPage";
+            _typeNameTable[10] = "ControllerDoctorUWP.XboxControllerPage";
 
-            _typeTable = new global::System.Type[14];
+            _typeTable = new global::System.Type[11];
             _typeTable[0] = typeof(global::ControllerDoctorUWP.AboutPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -224,12 +221,9 @@ namespace ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo
             _typeTable[5] = typeof(global::ControllerDoctorUWP.HomePage);
             _typeTable[6] = typeof(global::ControllerDoctorUWP.MainPage);
             _typeTable[7] = typeof(global::ControllerDoctorUWP.OtherControllerPage);
-            _typeTable[8] = typeof(global::ControllerDoctorUWP.OtherControllerPage.MethodName);
-            _typeTable[9] = typeof(global::System.ValueType);
-            _typeTable[10] = typeof(global::System.Object);
-            _typeTable[11] = typeof(global::ControllerDoctorUWP.PlaystationControllerPage);
-            _typeTable[12] = typeof(global::ControllerDoctorUWP.SettingsPage);
-            _typeTable[13] = typeof(global::ControllerDoctorUWP.XboxControllerPage);
+            _typeTable[8] = typeof(global::ControllerDoctorUWP.PlaystationControllerPage);
+            _typeTable[9] = typeof(global::ControllerDoctorUWP.SettingsPage);
+            _typeTable[10] = typeof(global::ControllerDoctorUWP.XboxControllerPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -270,9 +264,9 @@ namespace ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo
         private object Activate_5_HomePage() { return new global::ControllerDoctorUWP.HomePage(); }
         private object Activate_6_MainPage() { return new global::ControllerDoctorUWP.MainPage(); }
         private object Activate_7_OtherControllerPage() { return new global::ControllerDoctorUWP.OtherControllerPage(); }
-        private object Activate_11_PlaystationControllerPage() { return new global::ControllerDoctorUWP.PlaystationControllerPage(); }
-        private object Activate_12_SettingsPage() { return new global::ControllerDoctorUWP.SettingsPage(); }
-        private object Activate_13_XboxControllerPage() { return new global::ControllerDoctorUWP.XboxControllerPage(); }
+        private object Activate_8_PlaystationControllerPage() { return new global::ControllerDoctorUWP.PlaystationControllerPage(); }
+        private object Activate_9_SettingsPage() { return new global::ControllerDoctorUWP.SettingsPage(); }
+        private object Activate_10_XboxControllerPage() { return new global::ControllerDoctorUWP.XboxControllerPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -330,44 +324,27 @@ namespace ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo
             case 7:   //  ControllerDoctorUWP.OtherControllerPage
                 userType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_7_OtherControllerPage;
-                userType.AddMemberName("This");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 8:   //  ControllerDoctorUWP.OtherControllerPage.MethodName
-                userType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 9:   //  System.ValueType
-                userType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                xamlType = userType;
-                break;
-
-            case 10:   //  Object
-                xamlType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 11:   //  ControllerDoctorUWP.PlaystationControllerPage
+            case 8:   //  ControllerDoctorUWP.PlaystationControllerPage
                 userType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_PlaystationControllerPage;
+                userType.Activator = Activate_8_PlaystationControllerPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  ControllerDoctorUWP.SettingsPage
+            case 9:   //  ControllerDoctorUWP.SettingsPage
                 userType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_SettingsPage;
+                userType.Activator = Activate_9_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 13:   //  ControllerDoctorUWP.XboxControllerPage
+            case 10:   //  ControllerDoctorUWP.XboxControllerPage
                 userType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_13_XboxControllerPage;
+                userType.Activator = Activate_10_XboxControllerPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -376,26 +353,11 @@ namespace ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo
         }
 
 
-        private object get_0_OtherControllerPage_This(object instance)
-        {
-            var that = (global::ControllerDoctorUWP.OtherControllerPage)instance;
-            return that.This;
-        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlMember xamlMember = null;
-            global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType userType;
-
-            switch (longMemberName)
-            {
-            case "ControllerDoctorUWP.OtherControllerPage.This":
-                userType = (global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("ControllerDoctorUWP.OtherControllerPage");
-                xamlMember = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlMember(this, "This", "ControllerDoctorUWP.OtherControllerPage.MethodName");
-                xamlMember.Getter = get_0_OtherControllerPage_This;
-                xamlMember.SetIsReadOnly();
-                break;
-            }
+            // No Local Properties
             return xamlMember;
         }
     }

@@ -3,45 +3,43 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using BrandonPotter.XBox;
+using Windows.Gaming.Input;
 
 namespace ControllerDoctorUWP
 {
     public class XboxController : IController
     {
-        public XBoxController Controller;
+        public Gamepad Controller;
         public event EventHandler Connected;
         public event EventHandler Disconnected;
-        XBoxControllerWatcher watcher;
-        
+
         public XboxController()
         {
             this.Controller = null;
 
-            watcher = new XBoxControllerWatcher();
-
-            watcher.ControllerConnected += (c) =>
+            Gamepad.GamepadRemoved += (s, e) =>
             {
-                OnConnected(c);
+                OnDisconnected(e);
             };
 
-            watcher.ControllerDisconnected += (c) =>
+            Gamepad.GamepadAdded += (s, e) =>
             {
-                OnDisconnected(c);
+                OnConnected(e);
             };
         }
 
-        protected virtual void OnConnected(XBoxController x)
+        protected virtual void OnConnected(Gamepad e)
         {
             Connected.Invoke(this, EventArgs.Empty);
-            this.Controller = x;
+            this.Controller = e;
         }
 
-        protected virtual void OnDisconnected(XBoxController x)
+        protected virtual void OnDisconnected(Gamepad e)
         {
             Disconnected.Invoke(this, EventArgs.Empty);
             this.Controller = null;
         }
+
         public bool IsConnected()
         {
             return this.Controller != null;
@@ -49,10 +47,9 @@ namespace ControllerDoctorUWP
 
         public void Refresh()
         {
-            foreach (XBoxController c in XBoxController.GetConnectedControllers())
+            if (Gamepad.Gamepads.Count > 0)
             {
-                OnConnected(c);
-                return;
+                OnConnected(Gamepad.Gamepads[0]);
             }
         }
 
@@ -63,7 +60,7 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.ButtonBackPressed;
+            return Controller.GetCurrentReading().Buttons == GamepadButtons.View;
         }
 
         public double LeftStickXPosition()
@@ -113,7 +110,7 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.ThumbpadRightPressed;
+            return Controller.GetCurrentReading().Buttons == GamepadButtons.RightThumbstick;
         }
 
         public bool ButtonLeftPressed()
@@ -123,7 +120,7 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.ButtonLeftPressed;
+            return Controller.GetCurrentReading().Buttons == GamepadButtons.DPadLeft;
         }
 
         public bool ButtonDownPressed()
@@ -133,7 +130,7 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.ButtonDownPressed;
+            return Controller.GetCurrentReading().Buttons == GamepadButtons.DPadDown;
         }
 
         public bool ButtonUpPressed()
@@ -143,7 +140,7 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.ButtonUpPressed;
+            return Controller.GetCurrentReading().Buttons == GamepadButtons.DPadUp;
         }
 
         public bool ButtonRightPressed()
@@ -153,7 +150,7 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.ButtonRightPressed;
+            return Controller.GetCurrentReading().Buttons == GamepadButtons.DPadRight;
         }
 
         public bool TriggerLeftPressed()
@@ -163,7 +160,7 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.TriggerLeftPressed;
+            return Controller.GetCurrentReading().LeftTrigger > 0;
         }
 
         public bool TriggerRightPressed()
@@ -173,7 +170,7 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.TriggerRightPressed;
+            return Controller.GetCurrentReading().RightTrigger > 0;
         }
 
         public bool ButtonAPressed()
@@ -183,7 +180,7 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.ButtonAPressed;
+            return Controller.GetCurrentReading().Buttons == GamepadButtons.A;
         }
 
         public bool ButtonBPressed()
@@ -193,7 +190,7 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.ButtonBPressed;
+            return Controller.GetCurrentReading().Buttons == GamepadButtons.B;
         }
 
         public bool ButtonXPressed()
@@ -203,7 +200,7 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.ButtonXPressed;
+            return Controller.GetCurrentReading().Buttons == GamepadButtons.X;
         }
 
         public bool ButtonShoulderLeftPressed()
@@ -213,7 +210,7 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.ButtonShoulderLeftPressed;
+            return Controller.GetCurrentReading().Buttons == GamepadButtons.LeftShoulder;
         }
 
         public bool ButtonShoulderRightPressed()
@@ -223,7 +220,7 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.ButtonShoulderRightPressed;
+            return Controller.GetCurrentReading().Buttons == GamepadButtons.RightShoulder;
         }
 
         public bool ButtonStartPressed()
@@ -233,7 +230,7 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.ButtonStartPressed;
+            return Controller.GetCurrentReading().Buttons == GamepadButtons.Menu;
         }
 
         public bool ButtonYPressed()
@@ -243,7 +240,7 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.ButtonYPressed;
+            return Controller.GetCurrentReading().Buttons == GamepadButtons.Y;
         }
 
         public bool ThumbpadLeftPressed()
@@ -253,7 +250,7 @@ namespace ControllerDoctorUWP
                 return false;
             }
 
-            return Controller.ThumbpadLeftPressed;
+            return Controller.GetCurrentReading().Buttons == GamepadButtons.LeftThumbstick;
         }
 
         public double ThumbLeftY()
@@ -263,7 +260,13 @@ namespace ControllerDoctorUWP
                 return 50;
             }
 
-            return Controller.ThumbLeftY;
+            double Reading = Controller.GetCurrentReading().LeftThumbstickY;
+            Reading += 1;
+            Reading *= 100;
+            Reading /= 200;
+            Reading *= 100;
+
+            return Reading;
         }
 
         public double ThumbLeftX()
@@ -273,7 +276,13 @@ namespace ControllerDoctorUWP
                 return 50;
             }
 
-            return Controller.ThumbLeftX;
+            double Reading = Controller.GetCurrentReading().LeftThumbstickX;
+            Reading += 1;
+            Reading *= 100;
+            Reading /= 200;
+            Reading *= 100;
+
+            return Reading;
         }
 
         public double ThumbRightY()
@@ -283,7 +292,13 @@ namespace ControllerDoctorUWP
                 return 50;
             }
 
-            return Controller.ThumbRightY;
+            double Reading = Controller.GetCurrentReading().RightThumbstickY;
+            Reading += 1;
+            Reading *= 100;
+            Reading /= 200;
+            Reading *= 100;
+
+            return Reading;
         }
 
         public double ThumbRightX()
@@ -293,7 +308,13 @@ namespace ControllerDoctorUWP
                 return 50;
             }
 
-            return Controller.ThumbRightX;
+            double Reading = Controller.GetCurrentReading().RightThumbstickX;
+            Reading += 1;
+            Reading *= 100;
+            Reading /= 200;
+            Reading *= 100;
+
+            return Reading;
         }
     }
 

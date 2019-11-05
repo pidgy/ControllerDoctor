@@ -26,10 +26,10 @@ namespace ControllerDoctorUWP
         {
             this.InitializeComponent();
 
-            string text = "Controller icons made by https://www.flaticon.com/authors/smashicons."
+            string text = "Controller icons made by smashicons."
             + "\n\n" +
-            "Keyboard icon made by https://www.flaticon.com/authors/freepik." + "\n\n" + 
-            "Other Controller icon made by https://www.flaticon.com/authors/freepik." + "\n\n";
+            "Keyboard icon made by freepik." + "\n\n" + 
+            "Generic Controller icon made by freepik." + "\n\n";
 
             About_Text.Text = text;
         }
