@@ -12,6 +12,7 @@
 /emitStackTraceMetadata
 /in "C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\ilc\intermediate\ILTransformed\ControllerDoctorUWP.ilexe"
 /in "C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\ilc\intermediate\ILTransformed\ControllerDoctorUWP.McgInterop.ildll"
+/in "C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\ilc\intermediate\ILTransformed\NolanHodge.GamingController.ildll"
 /in "C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\ilc\intermediate\ILTransformed\System.Numerics.Vectors.ildll"
 /in "C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\ilc\intermediate\ILTransformed\System.Private.ControllerDoctorUWP.Generated.ildll"
 /in "C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\ilc\intermediate\ILTransformed\System.Private.DeveloperExperience.AppX.ildll"

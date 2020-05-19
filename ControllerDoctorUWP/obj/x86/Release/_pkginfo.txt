@@ -1,1 +1,1 @@
-C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\AppPackages\ControllerDoctorUWP_1.5.11.0_Test\ControllerDoctorUWP_1.5.11.0_x86_x64_arm_arm64.appxbundle
+C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\AppPackages\ControllerDoctorUWP_1.5.31.0_Test\ControllerDoctorUWP_1.5.31.0_x86_x64_arm_arm64.appxbundle

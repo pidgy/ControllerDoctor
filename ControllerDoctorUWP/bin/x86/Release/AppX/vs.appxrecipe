@@ -19,18 +19,18 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\AppX</LayoutDir>
-    <RegisteredManifestChecksum>DC2715B1BA2B62119728BC1090C5DB5512348098CC8F19D6E97B206685458B4D</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>30781TrashboatInc.ControllerDoctor_1.5.10.0_x86__6m1ssdm9pvhx8</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>DB3228471DC43E0597B81284D2C56D5CABE0301547889355A5100C18B6CD4FE2</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>30781TrashboatInc.ControllerDoctor_1.5.31.0_x86__6m1ssdm9pvhx8</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>30781TrashboatInc.ControllerDoctor_6m1ssdm9pvhx8!App</RegisteredUserModeAppID>
     <RegisteredPackageID>30781TrashboatInc.ControllerDoctor</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=D92AF099-E09A-4694-8D11-2789A736572A</RegisteredPackagePublisher>
-    <RegisteredVersion>1.5.10.0</RegisteredVersion>
+    <RegisteredVersion>1.5.31.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-05T23:40:49.836</Modified>
+      <Modified>2020-05-19T15:12:21.384</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -263,6 +263,10 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-10-20T18:58:20.113</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\ilc\battery.png">
+      <PackagePath>battery.png</PackagePath>
+      <Modified>2019-11-08T22:43:51.227</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\ilc\bg.png">
       <PackagePath>bg.png</PackagePath>
       <Modified>2019-10-25T22:47:46.465</Modified>
@@ -277,11 +281,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\ilc\controller-other.png">
       <PackagePath>controller-other.png</PackagePath>
-      <Modified>2019-10-20T14:24:04.101</Modified>
+      <Modified>2019-11-07T23:52:47.880</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\ilc\controller-ps.png">
       <PackagePath>controller-ps.png</PackagePath>
-      <Modified>2019-10-20T14:23:59.969</Modified>
+      <Modified>2019-11-07T23:25:01.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\ilc\controller-xbox.png">
       <PackagePath>controller-xbox.png</PackagePath>
@@ -289,15 +293,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\ilc\ControllerDoctorUWP.dll">
       <PackagePath>ControllerDoctorUWP.dll</PackagePath>
-      <Modified>2019-11-05T23:40:49.683</Modified>
+      <Modified>2020-05-19T15:12:21.207</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\ilc\ControllerDoctorUWP.exe">
       <PackagePath>ControllerDoctorUWP.exe</PackagePath>
-      <Modified>2019-11-05T23:40:49.821</Modified>
+      <Modified>2020-05-19T15:12:21.364</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\ilc\ControllerDoctorUWP.pdb">
       <PackagePath>ControllerDoctorUWP.pdb</PackagePath>
-      <Modified>2019-11-05T23:40:49.818</Modified>
+      <Modified>2020-05-19T15:12:21.359</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\ilc\focus.png">
       <PackagePath>focus.png</PackagePath>
@@ -313,7 +317,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-11-05T23:40:35.736</Modified>
+      <Modified>2020-05-19T15:10:47.084</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\ilc\trigger.png">
+      <PackagePath>trigger.png</PackagePath>
+      <Modified>2019-11-08T22:08:10.097</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Release\ilc\wave.png">
+      <PackagePath>wave.png</PackagePath>
+      <Modified>2019-11-06T14:19:59.472</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
@@ -388,6 +400,30 @@
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-arm.microsoft.net.native.compiler\2.2.7-rel-27913-00\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.2.2.appx</AppxLocation>
       <MoreInfo>
       </MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\trash\.nuget\packages\microsoft.advertising.xaml\10.1811.22001\SDK\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\">
+      <Name>Microsoft.Advertising.Xaml</Name>
+      <Version>10.1811.1.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name=Microsoft.Advertising.Xaml, MinVersion=10.1811.1.0, Publisher=%27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\trash\.nuget\packages\microsoft.advertising.xaml\10.1811.22001\SDK\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\.\AppX\ARM\Microsoft.Advertising.Xaml.ARM.10.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkID=619694</MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\trash\.nuget\packages\microsoft.advertising.xaml\10.1811.22001\SDK\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\">
+      <Name>Microsoft.Advertising.Xaml</Name>
+      <Version>10.1811.1.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name=Microsoft.Advertising.Xaml, MinVersion=10.1811.1.0, Publisher=%27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\trash\.nuget\packages\microsoft.advertising.xaml\10.1811.22001\SDK\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\.\AppX\x64\Microsoft.Advertising.Xaml.x64.10.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkID=619694</MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\trash\.nuget\packages\microsoft.advertising.xaml\10.1811.22001\SDK\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\">
+      <Name>Microsoft.Advertising.Xaml</Name>
+      <Version>10.1811.1.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name=Microsoft.Advertising.Xaml, MinVersion=10.1811.1.0, Publisher=%27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\trash\.nuget\packages\microsoft.advertising.xaml\10.1811.22001\SDK\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\.\AppX\x86\Microsoft.Advertising.Xaml.x86.10.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkID=619694</MoreInfo>
     </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00</Name>

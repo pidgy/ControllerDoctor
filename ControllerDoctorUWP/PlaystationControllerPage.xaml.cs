@@ -35,10 +35,17 @@ namespace ControllerDoctorUWP
         {
             this.InitializeComponent();
 
+            GlobalSettings.ApplyThemeTo(this);
+
             CancellationToken = new CancellationTokenSource();
 
             this.Loaded += (s1, e1) =>
             {
+                Triangle_TextBlock.Foreground = new SolidColorBrush(Colors.ForestGreen);
+                Circle_TextBlock.Foreground = new SolidColorBrush(Colors.IndianRed);
+                Ex_TextBlock.Foreground = new SolidColorBrush(Colors.DodgerBlue);
+                Square_TextBlock.Foreground = new SolidColorBrush(Colors.MediumPurple);
+
                 Initialize();
 
                 controller = new PlaystationController();
@@ -67,6 +74,11 @@ namespace ControllerDoctorUWP
                 KillAllThreads();
                 Run();
             });
+
+            if (controller.Vendor() != (ushort)VENDOR_ID.PLAYSTATION)
+            {
+                await AlertAndWaitAsync("The detected controller does not appear to be a Playstation controller.", "Warning");
+            }
         }
 
         public async void SetDisonnectedAsync()
@@ -212,10 +224,8 @@ namespace ControllerDoctorUWP
             {
                 Buttons[canvasName].Polyline.Points = new PointCollection();
 
-                Task task = new Task(Diagnos, Buttons[canvasName], CancellationToken.Token, TaskCreationOptions.LongRunning);
-                task.Start();
-
-                Tasks.Add(task);
+                Thread thread = new Thread(Diagnos);
+                thread.Start(Buttons[canvasName]);
             }
         }
 

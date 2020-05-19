@@ -1,7 +1,9 @@
 ﻿"C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\ilc\in\ControllerDoctorUWP.exe"
+"C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\ilc\in\NolanHodge.GamingController.dll"
 /Lib:"C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\ilc\in"
 /Lib:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.net.native.compiler\2.2.7-rel-27913-00\tools\x86\ilc\lib\Private"
+/WinMD:"C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\ilc\in\WinMetadata\Microsoft.Advertising.winmd"
 /WinMD:"C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x86\Release\ilc\in\WinMetadata\Windows.winmd"
-/VSTelemetrySessionSettings:"{"IsOptedIn":true,"HostName":"Dev14","AppInsightsInstrumentationKey":"f144292e-e3b2-4011-ac90-20e5c03fbce5","AsimovInstrumentationKey":"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70","AppId":1001,"UserId":"76e0c0fd-f0af-4b2f-85ea-78ba6f26331e","Id":"5039fd67-dcdc-4385-8fab-1da2a7c4028b","ProcessStartTime":637085892064881763}"
+/VSTelemetrySessionSettings:"{"IsOptedIn":true,"HostName":"Dev14","AppInsightsInstrumentationKey":"f144292e-e3b2-4011-ac90-20e5c03fbce5","AsimovInstrumentationKey":"AIF-312cbd79-9dbb-4c48-a7da-3cc2a931cb70","AppId":1001,"UserId":"76e0c0fd-f0af-4b2f-85ea-78ba6f26331e","Id":"1cad3213-3632-41c3-8141-2f1c06ab3e5c","ProcessStartTime":637254965711775105}"
 /RdXmlPath:"C:\Program Files (x86)\Microsoft SDKs\UWPNuGetPackages\microsoft.net.native.compiler\2.2.7-rel-27913-00\tools\LibraryXML"
 /RunOnlyPreDR

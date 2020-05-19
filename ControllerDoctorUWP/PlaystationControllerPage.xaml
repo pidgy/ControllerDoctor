@@ -50,22 +50,22 @@
             <Canvas Name="Right_Bumper" Width="900" Height="40"/>
         </Viewbox>
 
-        <TextBlock  Grid.Row="8" FontFamily="Arial"  FontSize="18" Foreground="MediumPurple"  Text="◻" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="Square_TextBlock"  Grid.Row="8" FontFamily="Arial"  FontSize="18" Foreground="MediumPurple"  Text="◻" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="8" Grid.Column="1">
             <Canvas Name="Square_Button" Width="900" Height="40"/>
         </Viewbox>
 
-        <TextBlock Grid.Row="9" FontFamily="Arial"  FontSize="15" Foreground="DodgerBlue" Text="X" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="Ex_TextBlock" Grid.Row="9" FontFamily="Arial"  FontSize="15" Foreground="DodgerBlue" Text="X" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="9" Grid.Column="1">
             <Canvas Name="Ex_Button" Width="900" Height="40"/>
         </Viewbox>
 
-        <TextBlock Grid.Row="10" FontFamily="Arial"  FontSize="18" Foreground="ForestGreen" Text="△" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="Triangle_TextBlock" Grid.Row="10" FontFamily="Arial"  FontSize="18" Foreground="ForestGreen" Text="△" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="10" Grid.Column="1">
             <Canvas Name="Triangle_Button" Width="900" Height="40"/>
         </Viewbox>
 
-        <TextBlock Grid.Row="11" FontFamily="Arial"  FontSize="14" Foreground="IndianRed" Text="◯" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="Circle_TextBlock" Grid.Row="11" FontFamily="Arial"  FontSize="14" Foreground="IndianRed" Text="◯" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="11" Grid.Column="1">
             <Canvas Name="Circle_Button" Width="900" Height="40"/>
         </Viewbox>

@@ -33,12 +33,19 @@ namespace ControllerDoctorUWP
 
         public OtherControllerPage()
         {
-            InitializeComponent();
+            this.InitializeComponent();
+            
+            GlobalSettings.ApplyThemeTo(this);
 
             CancellationToken = new CancellationTokenSource();
 
             this.Loaded += (s1, e1) =>
             {
+                X_Button_TextBlock.Foreground = new SolidColorBrush(Colors.Blue);
+                Y_Button_TextBlock.Foreground = new SolidColorBrush(Colors.Yellow);
+                B_Button_TextBlock.Foreground = new SolidColorBrush(Colors.Red);
+                A_Button_TextBlock.Foreground = new SolidColorBrush(Colors.LawnGreen);
+                
                 Initialize();
 
                 controller = new GenericController();

@@ -21,12 +21,13 @@ namespace ControllerDoctorUWP
             this.InitializeComponent();
 
             GlobalSettings.ApplyDefaults();
-
+            GlobalSettings.ApplyThemeTo(this);
+            
             Press.DirectionBrushes = new List<Brush>();
             Press.DirectionBrushes.Insert((int)Math.Sqrt((int)Press.DIRECTION.PRESSED), new SolidColorBrush(Colors.LawnGreen));
             Press.DirectionBrushes.Insert((int)Math.Sqrt((int)Press.DIRECTION.UP), new SolidColorBrush(Colors.Red));
             Press.DirectionBrushes.Insert((int)Math.Sqrt((int)Press.DIRECTION.DOWN), new SolidColorBrush(Colors.Yellow));
-            Press.DirectionBrushes.Insert((int)Math.Sqrt((int)Press.DIRECTION.LEFT), new SolidColorBrush(Colors.CadetBlue));
+            Press.DirectionBrushes.Insert((int)Math.Sqrt((int)Press.DIRECTION.LEFT), new SolidColorBrush(Colors.DodgerBlue));
             Press.DirectionBrushes.Insert((int)Math.Sqrt((int)Press.DIRECTION.RIGHT), new SolidColorBrush(Colors.White));
             Press.DirectionBrushes.Insert((int)Math.Sqrt((int)Press.DIRECTION.NONE), new SolidColorBrush(Colors.LawnGreen));
 
@@ -54,6 +55,10 @@ namespace ControllerDoctorUWP
             {
                 var settings = (NavigationViewItem)NavView.SettingsItem;
                 settings.IsTabStop = false;
+                NavView.PaneClosing += (ss, ee) =>
+                {
+                    NavView.IsPaneOpen = true;
+                };
             };
 
             ContentFrame.Navigate(typeof(HomePage));
@@ -98,6 +103,18 @@ namespace ControllerDoctorUWP
             else if (item.Name == "All_Controller_Deadzone")
             {
                 canNavigate = ContentFrame.Navigate(typeof(ControllerDeadzonePage));
+            }
+            else if (item.Name == "All_Controller_Vibration")
+            {
+                canNavigate = ContentFrame.Navigate(typeof(ControllerVibrationPage));
+            }
+            else if (item.Name == "All_Controller_Triggers")
+            {
+                canNavigate = ContentFrame.Navigate(typeof(ControllerTriggerPage));
+            }
+            else if (item.Name == "All_Controller_Battery")
+            {
+                canNavigate = ContentFrame.Navigate(typeof(ControllerBatteryPage));
             }
             else if (item.Name.Contains("History"))
             {

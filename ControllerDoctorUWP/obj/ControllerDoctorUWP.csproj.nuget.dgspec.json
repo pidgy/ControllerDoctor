@@ -37,9 +37,17 @@
       "frameworks": {
         "uap10.0.17134": {
           "dependencies": {
+            "Microsoft.Advertising.XAML": {
+              "target": "Package",
+              "version": "[10.1811.22001, )"
+            },
             "Microsoft.NETCore.UniversalWindowsPlatform": {
               "target": "Package",
               "version": "[6.2.9, )"
+            },
+            "NolanHodge.GamingController": {
+              "target": "Package",
+              "version": "[1.0.10, )"
             }
           },
           "imports": [

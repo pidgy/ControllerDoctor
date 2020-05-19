@@ -10,12 +10,6 @@ using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace ControllerDoctorUWP
 {
@@ -28,25 +22,38 @@ namespace ControllerDoctorUWP
         {
             this.InitializeComponent();
 
+            GlobalSettings.ApplyThemeTo(this);
+
             this.Loaded += (s, e) =>
             {
                 Defaults();
             };
         }
 
-        void Defaults()
+        async void Defaults()
         {
-            Delay_Slider.Value = GlobalSettings.DelayMilliseconds;
-            Brush_Slider.Value = GlobalSettings.StrokeThickness;
-            switch (GlobalSettings.DeadzoneController)
+            await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
             {
-                case GlobalSettings.XBOX:
-                    Deadzone_Toggle.Content = "Xbox";
-                    break;
-                case GlobalSettings.GENERIC:
-                    Deadzone_Toggle.Content = "Generic";
-                    break;
-            }
+                Delay_Slider.Value = GlobalSettings.DelayMilliseconds;
+                Brush_Slider.Value = GlobalSettings.StrokeThickness;
+
+                Xbox_Radio_Button.IsChecked = GlobalSettings.ControllerType == CONTROLLER_TYPE.XBOX;
+                Other_Radio_Button.IsChecked = GlobalSettings.ControllerType == CONTROLLER_TYPE.PLAYSTATION;
+                Playstation_Radio_Button.IsChecked = GlobalSettings.ControllerType == CONTROLLER_TYPE.GENERIC;
+                Auto_Radio_Button.IsChecked = GlobalSettings.ControllerType == CONTROLLER_TYPE.AUTO;
+
+                switch (GlobalSettings.Theme)
+                {
+                    case GlobalSettings.LIGHT:
+                        Light_Radio_Button.IsChecked = true;
+                        Dark_Radio_Button.IsChecked = false;
+                        break;
+                    case GlobalSettings.DARK:
+                        Dark_Radio_Button.IsChecked = true;
+                        Light_Radio_Button.IsChecked = false;
+                        break;
+                }
+            });
         }
 
         private void Brush_Slider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
@@ -72,18 +79,47 @@ namespace ControllerDoctorUWP
             Defaults();
         }
 
-        private void Deadzone_Toggle_Checked(object sender, RoutedEventArgs e)
+        private void Xbox_Radio_Button_Checked(object sender, RoutedEventArgs e)
         {
-            if (GlobalSettings.DeadzoneController == GlobalSettings.GENERIC)
-            {
-                Deadzone_Toggle.Content = "Xbox";
-                GlobalSettings.DeadzoneController = GlobalSettings.XBOX;
-            }
-            else
-            {
-                Deadzone_Toggle.Content = "Generic";
-                GlobalSettings.DeadzoneController = GlobalSettings.GENERIC;
-            }
+            GlobalSettings.ControllerType = CONTROLLER_TYPE.XBOX;
+            Other_Radio_Button.IsChecked = false;
+            Playstation_Radio_Button.IsChecked = false;
+            Auto_Radio_Button.IsChecked = false;
+        }
+
+        private void Other_Radio_Button_Checked(object sender, RoutedEventArgs e)
+        {
+            GlobalSettings.ControllerType = CONTROLLER_TYPE.GENERIC;
+            Xbox_Radio_Button.IsChecked = false;
+            Playstation_Radio_Button.IsChecked = false;
+            Auto_Radio_Button.IsChecked = false;
+        }
+
+        private void Playstation_Radio_Button_Checked(object sender, RoutedEventArgs e)
+        {
+            GlobalSettings.ControllerType = CONTROLLER_TYPE.PLAYSTATION;
+            Xbox_Radio_Button.IsChecked = false;
+            Other_Radio_Button.IsChecked = false;
+            Auto_Radio_Button.IsChecked = false;
+        }
+
+        private void Auto_Radio_Button_Checked(object sender, RoutedEventArgs e)
+        {
+            GlobalSettings.ControllerType = CONTROLLER_TYPE.AUTO;
+        }
+
+        private void Light_Radio_Button_Checked(object sender, RoutedEventArgs e)
+        {
+            Dark_Radio_Button.IsChecked = false;
+            GlobalSettings.Theme = GlobalSettings.LIGHT;
+            GlobalSettings.ApplyThemeTo(this);
+        }
+
+        private void Dark_Radio_Button_Checked(object sender, RoutedEventArgs e)
+        {
+            Light_Radio_Button.IsChecked = false;
+            GlobalSettings.Theme = GlobalSettings.DARK;
+            GlobalSettings.ApplyThemeTo(this);
         }
     }
 }

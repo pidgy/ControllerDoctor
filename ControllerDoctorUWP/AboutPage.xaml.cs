@@ -26,6 +26,8 @@ namespace ControllerDoctorUWP
         {
             this.InitializeComponent();
 
+            GlobalSettings.ApplyThemeTo(this);
+
             string text = "Controller icons made by smashicons."
             + "\n\n" +
             "Keyboard icon made by freepik." + "\n\n" + 

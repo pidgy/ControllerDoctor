@@ -1,6 +1,7 @@
 ControllerDoctorUWP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 ControllerDoctorUWP.McgInterop, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+NolanHodge.GamingController, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 System.AppContext, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
 System.Collections, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a

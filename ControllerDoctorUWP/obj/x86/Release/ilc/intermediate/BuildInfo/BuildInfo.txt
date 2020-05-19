@@ -13,6 +13,7 @@ Microsoft.VisualBasic.dll                             : 4.6.27909.01
 Microsoft.Win32.Primitives.dll                        : 4.6.27909.01
 mscorlib.dll                                          : 4.6.27909.01
 netstandard.dll                                       : 4.6.27909.1
+NolanHodge.GamingController.dll                       : 1.0.0.0
 System.AppContext.dll                                 : 4.6.27909.01
 System.Buffers.dll                                    : 4.6.27909.01
 System.Collections.Concurrent.dll                     : 4.6.27909.01

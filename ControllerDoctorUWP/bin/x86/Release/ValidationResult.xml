@@ -1,141 +1,141 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
-<REPORT xml:lang="en-CA" OVERALL_RESULT="PASS" VERSION="10.0.18362.1" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="UapApp" PUBLISHER_DISPLAY_NAME="CN=D92AF099-E09A-4694-8D11-2789A736572A" APP_NAME="" APP_VERSION="" OSVERSION="10.0.18362.0" OS="Microsoft Windows 10 Home" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="4105" X64_ONLY="FALSE" VALIDATION_TYPE="UI" ReportGenerationTime="2019-11-04 6:10:18 PM" ID="1d3f999c70ada2b1b963036c7ca79ed6">
+<REPORT xml:lang="en-CA" OVERALL_RESULT="PASS" VERSION="10.0.18362.1" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="UapApp" PUBLISHER_DISPLAY_NAME="CN=D92AF099-E09A-4694-8D11-2789A736572A" APP_NAME="" APP_VERSION="" OSVERSION="10.0.18362.0" OS="Microsoft Windows 10 Home" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="4105" X64_ONLY="FALSE" VALIDATION_TYPE="UI" ReportGenerationTime="2020-01-26 3:11:38 PM" ID="2945aabf69c3b9febc5913020cf3d20c">
   <REQUIREMENTS>
     <REQUIREMENT NUMBER="10" TITLE="Deployment and launch tests" RATIONALE="Application failures such as crashes and hangs are a major disruption to users and cause frustration. Eliminating such failures improves application stability and reliability, and overall, provides users with a better application experience.">
-      <TEST INDEX="50" NAME="Bytecode generation" DESCRIPTION="Byte code generation should be able to complete successfully for packages containing an HTML5 Windows Store app." EXECUTIONTIME="00h:00m:00s.97ms" OPTIONAL="FALSE">
+      <TEST INDEX="50" NAME="Bytecode generation" DESCRIPTION="Byte code generation should be able to complete successfully for packages containing an HTML5 Windows Store app." EXECUTIONTIME="00h:00m:00s.96ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="79" NAME="Background tasks cancelation handler" DESCRIPTION="App should implement event handler to handle background task cancelation request." EXECUTIONTIME="00h:00m:32s.80ms" OPTIONAL="FALSE">
+      <TEST INDEX="79" NAME="Background tasks cancelation handler" DESCRIPTION="App should implement event handler to handle background task cancelation request." EXECUTIONTIME="00h:00m:32s.24ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="81" NAME="Platform version launch" DESCRIPTION="App should not mis-use OSVersionInfo API to provide users functionality that is specific to the OS." EXECUTIONTIME="00h:00m:19s.86ms" OPTIONAL="FALSE">
+      <TEST INDEX="81" NAME="Platform version launch" DESCRIPTION="App should not mis-use OSVersionInfo API to provide users functionality that is specific to the OS." EXECUTIONTIME="00h:00m:20s.00ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="47" NAME="App launch" DESCRIPTION="App launch tests." EXECUTIONTIME="00h:00m:19s.48ms" OPTIONAL="FALSE">
+      <TEST INDEX="47" NAME="App launch" DESCRIPTION="App launch tests." EXECUTIONTIME="00h:00m:19s.45ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="21" NAME="Crashes and hangs" DESCRIPTION="Do not crash or hang during the testing process." EXECUTIONTIME="00h:00m:02s.49ms" OPTIONAL="FALSE">
+      <TEST INDEX="21" NAME="Crashes and hangs" DESCRIPTION="Do not crash or hang during the testing process." EXECUTIONTIME="00h:00m:02s.57ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="12" TITLE="Package compliance test" RATIONALE="The package manifest was missing one or more required attributes.">
-      <TEST INDEX="77" NAME="Application count" DESCRIPTION="One package should not define more than one app in the manifest." EXECUTIONTIME="00h:00m:00s.94ms" OPTIONAL="FALSE">
+      <TEST INDEX="77" NAME="Application count" DESCRIPTION="One package should not define more than one app in the manifest." EXECUTIONTIME="00h:00m:01s.11ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:01s.93ms" OPTIONAL="FALSE">
+      <TEST INDEX="31" NAME="App manifest" DESCRIPTION="App manifest must include valid entries for all required fields." EXECUTIONTIME="00h:00m:01s.87ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="75" NAME="Package size" DESCRIPTION="Package file size should not be greater than 4 gigabytes." EXECUTIONTIME="00h:00m:01s.41ms" OPTIONAL="FALSE">
+      <TEST INDEX="75" NAME="Package size" DESCRIPTION="Package file size should not be greater than 4 gigabytes." EXECUTIONTIME="00h:00m:01s.95ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="90" NAME="Resource Packages" DESCRIPTION="Check if any resource packages contain PE files." EXECUTIONTIME="00h:00m:00s.91ms" OPTIONAL="FALSE">
+      <TEST INDEX="90" NAME="Resource Packages" DESCRIPTION="Check if any resource packages contain PE files." EXECUTIONTIME="00h:00m:01s.46ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="83" NAME="Restricted namespace" DESCRIPTION="Check if any restricted namespace is referenced in the app package manifest." EXECUTIONTIME="00h:00m:00s.89ms" OPTIONAL="FALSE">
+      <TEST INDEX="83" NAME="Restricted namespace" DESCRIPTION="Check if any restricted namespace is referenced in the app package manifest." EXECUTIONTIME="00h:00m:00s.90ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="14" TITLE="Windows security features test" RATIONALE="Applications must opt-into Windows security features.">
-      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:02s.24ms" OPTIONAL="FALSE">
+      <TEST INDEX="33" NAME="Binary analyzer" DESCRIPTION="Analysis of security features enabled on binaries" EXECUTIONTIME="00h:00m:02s.16ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:01s.11ms" OPTIONAL="FALSE">
+      <TEST INDEX="70" NAME="Banned file analyzer" DESCRIPTION="Analysis of application to detect known insecure files" EXECUTIONTIME="00h:00m:01s.23ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:01s.15ms" OPTIONAL="FALSE">
+      <TEST INDEX="62" NAME="Private code signing" DESCRIPTION="App should not package private code signing key files." EXECUTIONTIME="00h:00m:01s.17ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="15" TITLE="Supported API test" RATIONALE="The application should only refer to the APIs allowed by the Windows SDK for Windows Store Apps.">
-      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Windows Store App must only use supported platform APIs." EXECUTIONTIME="00h:00m:02s.01ms" OPTIONAL="FALSE">
+      <TEST INDEX="38" NAME="Supported APIs" DESCRIPTION="Windows Store App must only use supported platform APIs." EXECUTIONTIME="00h:00m:01s.93ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="19" TITLE="App manifest resources tests" RATIONALE="The App Package Manifest should have valid resources defined in the resources.pri file, as per the App Packaging Specification and App Manifest Schema.">
-      <TEST INDEX="45" NAME="App resources" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.67ms" OPTIONAL="FALSE">
+      <TEST INDEX="45" NAME="App resources" DESCRIPTION="The package should have valid resources defined in the resources.pri file." EXECUTIONTIME="00h:00m:00s.73ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="61" NAME="Branding" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:01s.70ms" OPTIONAL="FALSE">
+      <TEST INDEX="61" NAME="Branding" DESCRIPTION="App should not use the default images packed by windows SDK samples or Visual Studio." EXECUTIONTIME="00h:00m:01s.76ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="20" TITLE="Debug configuration test" RATIONALE="The App should not install any debug binaries.">
-      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:01s.24ms" OPTIONAL="FALSE">
+      <TEST INDEX="46" NAME="Debug configuration" DESCRIPTION="The App should not install any debug binaries." EXECUTIONTIME="00h:00m:01s.30ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="21" TITLE="File encoding test" RATIONALE="Packages containing an HTML5 Windows Store app must have correct file encoding.">
-      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:00s.95ms" OPTIONAL="FALSE">
+      <TEST INDEX="49" NAME="UTF-8 file encoding" DESCRIPTION="Packages containing an HTML5 Windows Store app must have correct file encoding." EXECUTIONTIME="00h:00m:00s.98ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="23" TITLE="App Capabilities test" RATIONALE="Packages declaring special-use capabilities will have to provide justifications during the onboarding process.">
-      <TEST INDEX="91" NAME="Enterprise Features" DESCRIPTION="Check if any enterprise-only features are in the package (e.g. Modification Packages)." EXECUTIONTIME="00h:00m:00s.92ms" OPTIONAL="FALSE">
+      <TEST INDEX="91" NAME="Enterprise Features" DESCRIPTION="Check if any enterprise-only features are in the package (e.g. Modification Packages)." EXECUTIONTIME="00h:00m:01s.10ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:01s.13ms" OPTIONAL="FALSE">
+      <TEST INDEX="52" NAME="Special use capabilities" DESCRIPTION="Packages declaring special-use capabilities will have to provide justifications during the onboarding process." EXECUTIONTIME="00h:00m:00s.94ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="24" TITLE="Windows Runtime metadata validation" RATIONALE="Metadata needs to be conformant and consistent across all generation sources.">
-      <TEST INDEX="56" NAME="ExclusiveTo attribute" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:08s.81ms" OPTIONAL="FALSE">
+      <TEST INDEX="56" NAME="ExclusiveTo attribute" DESCRIPTION="A class must not implement an interface that is marked ExclusiveTo another class." EXECUTIONTIME="00h:00m:09s.22ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="57" NAME="Type location" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:00s.71ms" OPTIONAL="FALSE">
+      <TEST INDEX="57" NAME="Type location" DESCRIPTION="Types must be defined in the metadata file with the longest matching namespace." EXECUTIONTIME="00h:00m:00s.80ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="55" NAME="Type name case-sensitivity" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:00s.68ms" OPTIONAL="FALSE">
+      <TEST INDEX="55" NAME="Type name case-sensitivity" DESCRIPTION="Namespace and type names must not vary only by casing." EXECUTIONTIME="00h:00m:00s.69ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="54" NAME="Type name correctness" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:00s.68ms" OPTIONAL="FALSE">
+      <TEST INDEX="54" NAME="Type name correctness" DESCRIPTION="Only system types can be in the Windows namespace and no types can be in the global namespace." EXECUTIONTIME="00h:00m:00s.69ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="58" NAME="General metadata correctness" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:08s.05ms" OPTIONAL="FALSE">
+      <TEST INDEX="58" NAME="General metadata correctness" DESCRIPTION="Metadata files must meet various requirements in order to be valid and correct." EXECUTIONTIME="00h:00m:08s.66ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="53" NAME="Properties" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:00s.69ms" OPTIONAL="FALSE">
+      <TEST INDEX="53" NAME="Properties" DESCRIPTION="Write-only and indexer properties may not be used. Corresponding getter and setter methods must match in type." EXECUTIONTIME="00h:00m:00s.77ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="25" TITLE="Package sanity test" RATIONALE="Validation of the app package contents to ensure correctness.">
-      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:01s.25ms" OPTIONAL="FALSE">
+      <TEST INDEX="63" NAME="Platform appropriate files" DESCRIPTION="App should not install files that do not match the target processor architecture." EXECUTIONTIME="00h:00m:01s.27ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="66" NAME="Supported directory structure check" DESCRIPTION="Validate each file in the package for that the file name length should be less than MAX_PATH." EXECUTIONTIME="00h:00m:00s.95ms" OPTIONAL="FALSE">
+      <TEST INDEX="66" NAME="Supported directory structure check" DESCRIPTION="Validate each file in the package for that the file name length should be less than MAX_PATH." EXECUTIONTIME="00h:00m:00s.86ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="27" TITLE="Resource Usage Test" RATIONALE="WinJS background tasks need to call close() to free resource.">
-      <TEST INDEX="68" NAME="WinJS background task" DESCRIPTION="WinJS background tasks need to call close() to free resource." EXECUTIONTIME="00h:00m:01s.56ms" OPTIONAL="FALSE">
+      <TEST INDEX="68" NAME="WinJS background task" DESCRIPTION="WinJS background tasks need to call close() to free resource." EXECUTIONTIME="00h:00m:01s.67ms" OPTIONAL="FALSE">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
@@ -143,12 +143,12 @@
   </REQUIREMENTS>
   <APPLICATIONS>
     <Installed_Programs>
-      <Program Name="30781TrashboatInc.ControllerDoctor" Type="Application" Source="AppxPackage" Publisher="CN=D92AF099-E09A-4694-8D11-2789A736572A" Version="1.0.7.0" Language="4105" InstallDate="" OSVersionAtInstallTime="10.0.0.18362" RootDirPath="C:\Program Files\WindowsApps\30781TrashboatInc.ControllerDoctor_1.0.7.0_x64__6m1ssdm9pvhx8" Id="00002e8a1c6571487770f61bb1ce1990481300000910" HiddenArp="false">
+      <Program Name="30781TrashboatInc.ControllerDoctor" Type="Application" Source="AppxPackage" Publisher="CN=D92AF099-E09A-4694-8D11-2789A736572A" Version="1.5.31.0" Language="4105" InstallDate="" OSVersionAtInstallTime="10.0.0.18362" RootDirPath="C:\Program Files\WindowsApps\30781TrashboatInc.ControllerDoctor_1.5.31.0_x64__6m1ssdm9pvhx8" Id="0000c2c1955259f3cef8178edf460322f10200000910" HiddenArp="false">
         <Indicators>
           <WindowsStoreAppManifestIndicators>
-            <PackageManifest PackageFullName="30781TrashboatInc.ControllerDoctor_1.0.7.0_x64__6m1ssdm9pvhx8">
+            <PackageManifest PackageFullName="30781TrashboatInc.ControllerDoctor_1.5.31.0_x64__6m1ssdm9pvhx8">
               <Package>
-                <Identity Name="30781TrashboatInc.ControllerDoctor" Publisher="CN=D92AF099-E09A-4694-8D11-2789A736572A" Version="1.0.7.0" ProcessorArchitecture="x64"></Identity>
+                <Identity Name="30781TrashboatInc.ControllerDoctor" Publisher="CN=D92AF099-E09A-4694-8D11-2789A736572A" Version="1.5.31.0" ProcessorArchitecture="x64"></Identity>
                 <PhoneIdentity PhoneProductId="2cd339de-6561-4628-bad2-f21763ce40b4" PhonePublisherId="00000000-0000-0000-0000-000000000000"></PhoneIdentity>
                 <Properties>
                   <DisplayName>Controller Doctor</DisplayName>
@@ -157,9 +157,10 @@
                 </Properties>
                 <Dependencies>
                   <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
-                  <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.22929.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"></PackageDependency>
                   <PackageDependency Name="Microsoft.NET.Native.Framework.2.2" MinVersion="2.2.27912.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"></PackageDependency>
                   <PackageDependency Name="Microsoft.NET.Native.Runtime.2.2" MinVersion="2.2.27328.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"></PackageDependency>
+                  <PackageDependency Name="Microsoft.Advertising.Xaml" MinVersion="10.1811.1.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"></PackageDependency>
+                  <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.27323.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"></PackageDependency>
                 </Dependencies>
                 <Resources>
                   <Resource Language="EN-US"></Resource>
@@ -168,8 +169,14 @@
                 <Applications>
                   <Application Id="App" Executable="ControllerDoctorUWP.exe" EntryPoint="ControllerDoctorUWP.App">
                     <VisualElements DisplayName="Controller Doctor" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="ControllerDoctor is an application designed for testing gaming input devices like controllers, and keyboard/mouse." BackgroundColor="#2F2F4F" ForegroundText="light">
-                      <DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\LargeTile.png" Square71x71Logo="Assets\SmallTile.png"></DefaultTile>
-                      <SplashScreen Image="Assets\SplashScreen.png"></SplashScreen>
+                      <DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\LargeTile.png" Square71x71Logo="Assets\SmallTile.png">
+                        <ShowNameOnTiles>
+                          <ShowOn Tile="square310x310Logo"></ShowOn>
+                          <ShowOn Tile="square150x150Logo"></ShowOn>
+                          <ShowOn Tile="wide310x150Logo"></ShowOn>
+                        </ShowNameOnTiles>
+                      </DefaultTile>
+                      <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#2F2F4F"></SplashScreen>
                     </VisualElements>
                   </Application>
                 </Applications>
@@ -180,9 +187,9 @@
             </PackageManifest>
             <BundleManifest PackageFamilyName="30781TrashboatInc.ControllerDoctor_6m1ssdm9pvhx8">
               <Bundle SchemaVersion="4.0">
-                <Identity Name="30781TrashboatInc.ControllerDoctor" Publisher="CN=D92AF099-E09A-4694-8D11-2789A736572A" Version="1.0.7.0"></Identity>
+                <Identity Name="30781TrashboatInc.ControllerDoctor" Publisher="CN=D92AF099-E09A-4694-8D11-2789A736572A" Version="1.5.31.0"></Identity>
                 <Packages>
-                  <Package Type="application" Version="1.0.7.0" Architecture="x86" FileName="ControllerDoctorUWP_1.0.7.0_x86.appx" Offset="1263658" Size="806847">
+                  <Package Type="application" Version="1.5.31.0" Architecture="x86" FileName="ControllerDoctorUWP_1.5.31.0_x86.appx" Offset="3203523" Size="908498">
                     <Resources>
                       <Resource Language="EN-US"></Resource>
                       <Resource Scale="200"></Resource>
@@ -191,7 +198,7 @@
                       <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="application" Version="1.0.7.0" Architecture="x64" FileName="ControllerDoctorUWP_1.0.7.0_x64.appx" Offset="406976" Size="856592">
+                  <Package Type="application" Version="1.5.31.0" Architecture="x64" FileName="ControllerDoctorUWP_1.5.31.0_x64.appx" Offset="2242792" Size="960640">
                     <Resources>
                       <Resource Language="EN-US"></Resource>
                       <Resource Scale="200"></Resource>
@@ -200,7 +207,25 @@
                       <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="resource" Version="1.0.7.0" ResourceId="split.scale-100" FileName="ControllerDoctorUWP_1.0.7.0_scale-100.appx" Offset="72" Size="46935" Architecture="neutral">
+                  <Package Type="application" Version="1.5.31.0" Architecture="arm" FileName="ControllerDoctorUWP_1.5.31.0_ARM.appx" Offset="67" Size="922343">
+                    <Resources>
+                      <Resource Language="EN-US"></Resource>
+                      <Resource Scale="200"></Resource>
+                    </Resources>
+                    <Dependencies>
+                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
+                    </Dependencies>
+                  </Package>
+                  <Package Type="application" Version="1.5.31.0" Architecture="arm64" FileName="ControllerDoctorUWP_1.5.31.0_ARM64.appx" Offset="922503" Size="913288">
+                    <Resources>
+                      <Resource Language="EN-US"></Resource>
+                      <Resource Scale="200"></Resource>
+                    </Resources>
+                    <Dependencies>
+                      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
+                    </Dependencies>
+                  </Package>
+                  <Package Type="resource" Version="1.5.31.0" ResourceId="split.scale-100" FileName="ControllerDoctorUWP_1.5.31.0_scale-100.appx" Offset="1835888" Size="46933" Architecture="neutral">
                     <Resources>
                       <Resource Scale="100"></Resource>
                     </Resources>
@@ -208,7 +233,7 @@
                       <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="resource" Version="1.0.7.0" ResourceId="split.scale-125" FileName="ControllerDoctorUWP_1.0.7.0_scale-125.appx" Offset="47103" Size="59471" Architecture="neutral">
+                  <Package Type="resource" Version="1.5.31.0" ResourceId="split.scale-125" FileName="ControllerDoctorUWP_1.5.31.0_scale-125.appx" Offset="1882918" Size="59468" Architecture="neutral">
                     <Resources>
                       <Resource Scale="125"></Resource>
                     </Resources>
@@ -216,7 +241,7 @@
                       <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="resource" Version="1.0.7.0" ResourceId="split.scale-150" FileName="ControllerDoctorUWP_1.0.7.0_scale-150.appx" Offset="106670" Size="73444" Architecture="neutral">
+                  <Package Type="resource" Version="1.5.31.0" ResourceId="split.scale-150" FileName="ControllerDoctorUWP_1.5.31.0_scale-150.appx" Offset="1942483" Size="73446" Architecture="neutral">
                     <Resources>
                       <Resource Scale="150"></Resource>
                     </Resources>
@@ -224,7 +249,7 @@
                       <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.17134.0" MaxVersionTested="10.0.18362.0"></TargetDeviceFamily>
                     </Dependencies>
                   </Package>
-                  <Package Type="resource" Version="1.0.7.0" ResourceId="split.scale-400" FileName="ControllerDoctorUWP_1.0.7.0_scale-400.appx" Offset="180210" Size="226676" Architecture="neutral">
+                  <Package Type="resource" Version="1.5.31.0" ResourceId="split.scale-400" FileName="ControllerDoctorUWP_1.5.31.0_scale-400.appx" Offset="2016026" Size="226675" Architecture="neutral">
                     <Resources>
                       <Resource Scale="400"></Resource>
                     </Resources>
@@ -239,22 +264,40 @@
         </Indicators>
         <StaticProperties>
           <Files Id="0000da39a3ee5e6b4b0d3255bfef95601890afd80709">
-            <File Id="0000c1abe1d44dc05cc9451ba80ac3a68fd2fe5adc3b" Name="clrcompression.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.27909.01 @builtby: dlab14-ddvsowinage080 @branch: release/uwp6.2 @srccode: https://github.com/dotnet/corefx/tree/4a69581fcb63bae0f7c3c45d876f6443e160a174" VerLanguage="1033" SwitchBackContext="0" FileVersion="4.6.27909.01 @builtby: dlab14-ddvsowinage080 @branch: release/uwp6.2 @srccode: https://github.com/dotnet/corefx/tree/4a69581fcb63bae0f7c3c45d876f6443e160a174" Size="73728" SizeOfImage="73728" PeHeaderHash="0101c4a1535b4c35e89b01650e0efc626ea72eb0cd58" PeChecksum="88309" CrcChecksum="-966660921" BinProductVersion="4.6.27909.01 @builtby: dlab14-ddvsowinage080 @branch: release/uwp6.2 @srccode: https://github.com/dotnet/corefx/tree/4a69581fcb63bae0f7c3c45d876f6443e160a174" BinFileVersion="4.6.27909.1" FileDescription="Ŝ@@fileversion" LegalCopyright="© microsoft corporation. all rights reserved." LinkDate="07/08/2019 23:43:15" BinaryType="pe64_amd64" LowerCaseLongPath="c:\program files\windowsapps\30781trashboatinc.controllerdoctor_1.0.7.0_x64__6m1ssdm9pvhx8\clrcompression.dll" />
-            <File Id="0000074816af8818506c07aad6eb5038962bacd2c7a9" Name="ControllerDoctorUWP.dll" ProductName="controllerdoctoruwp" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="1536000" SizeOfImage="1536000" PeHeaderHash="0101d5d45f731e3ccfb3674f1b10b4bd0eb9ac0c00fd" PeChecksum="0" CrcChecksum="879548518" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="controllerdoctoruwp" LegalCopyright="copyright ©  2019" LinkDate="11/04/2019 23:07:15" BinaryType="pe64_amd64" LowerCaseLongPath="c:\program files\windowsapps\30781trashboatinc.controllerdoctor_1.0.7.0_x64__6m1ssdm9pvhx8\controllerdoctoruwp.dll" />
-            <File Id="00003fe3bce4d6f15dacb0787c087291fbb3fd086515" Name="ControllerDoctorUWP.exe" ProductName="controllerdoctoruwp" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="32768" SizeOfImage="32768" PeHeaderHash="0101ebf0ca47955033539ff895fc2dafcbf4fa852226" PeChecksum="0" CrcChecksum="1110195154" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="controllerdoctoruwp" LegalCopyright="copyright ©  2019" LinkDate="11/04/2019 23:07:15" BinaryType="pe64_amd64" LowerCaseLongPath="c:\program files\windowsapps\30781trashboatinc.controllerdoctor_1.0.7.0_x64__6m1ssdm9pvhx8\controllerdoctoruwp.exe" />
-            <File Id="0000fea63eaad2c584d7ae92bf79ad403c3212ea8800" Name="resources.730176a4.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="-686684631" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\program files\windowsapps\30781trashboatinc.controllerdoctor_1.0.7.0_x64__6m1ssdm9pvhx8\microsoft.system.package.metadata\resources.730176a4.pri" />
-            <File Id="00004b3b42ef81faae486e4fb61d26bf67ae8c47e709" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="636174707" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\program files\windowsapps\30781trashboatinc.controllerdoctor_1.0.7.0_x64__6m1ssdm9pvhx8\resources.pri" />
-            <File Id="0000fea63eaad2c584d7ae92bf79ad403c3212ea8800" Name="S-1-5-21-1875171878-1188753004-4055737505-1001-MergedResources-0.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="-686684631" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\program files\windowsapps\30781trashboatinc.controllerdoctor_1.0.7.0_x64__6m1ssdm9pvhx8\microsoft.system.package.metadata\s-1-5-21-1875171878-1188753004-4055737505-1001-mergedresources-0.pri" />
+            <File Id="0000c1abe1d44dc05cc9451ba80ac3a68fd2fe5adc3b" Name="clrcompression.dll" ProductName="microsoft® .net framework" CompanyName="microsoft corporation" ProductVersion="4.6.27909.01 @builtby: dlab14-ddvsowinage080 @branch: release/uwp6.2 @srccode: https://github.com/dotnet/corefx/tree/4a69581fcb63bae0f7c3c45d876f6443e160a174" VerLanguage="1033" SwitchBackContext="0" FileVersion="4.6.27909.01 @builtby: dlab14-ddvsowinage080 @branch: release/uwp6.2 @srccode: https://github.com/dotnet/corefx/tree/4a69581fcb63bae0f7c3c45d876f6443e160a174" Size="73728" SizeOfImage="73728" PeHeaderHash="0101c4a1535b4c35e89b01650e0efc626ea72eb0cd58" PeChecksum="88309" CrcChecksum="-966660921" BinProductVersion="4.6.27909.01 @builtby: dlab14-ddvsowinage080 @branch: release/uwp6.2 @srccode: https://github.com/dotnet/corefx/tree/4a69581fcb63bae0f7c3c45d876f6443e160a174" BinFileVersion="4.6.27909.1" FileDescription="Ŝ@@fileversion" LegalCopyright="© microsoft corporation. all rights reserved." LinkDate="07/08/2019 23:43:15" BinaryType="pe64_amd64" LowerCaseLongPath="c:\program files\windowsapps\30781trashboatinc.controllerdoctor_1.5.31.0_x64__6m1ssdm9pvhx8\clrcompression.dll" />
+            <File Id="000034c33ada2dd23be3d0dda5d8b79672c741cafd95" Name="ControllerDoctorUWP.exe" ProductName="controllerdoctoruwp" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="32768" SizeOfImage="32768" PeHeaderHash="01010b741a9f2b8c32ef91fa0c48f3b923e5e327a69f" PeChecksum="0" CrcChecksum="-585018483" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="controllerdoctoruwp" LegalCopyright="copyright ©  2019" LinkDate="01/26/2020 20:07:28" BinaryType="pe64_amd64" LowerCaseLongPath="c:\program files\windowsapps\30781trashboatinc.controllerdoctor_1.5.31.0_x64__6m1ssdm9pvhx8\controllerdoctoruwp.exe" />
+            <File Id="0000cd53e94cf88da5f208fb0156fd618989c7acf97b" Name="ControllerDoctorUWP.dll" ProductName="controllerdoctoruwp" CompanyName="" ProductVersion="1.0.0.0" VerLanguage="0" SwitchBackContext="0" FileVersion="1.0.0.0" Size="1667072" SizeOfImage="1667072" PeHeaderHash="0101ef76b08e8e22bfd345cd9e2273835005d0837281" PeChecksum="0" CrcChecksum="634847824" BinProductVersion="1.0.0.0" BinFileVersion="1.0.0.0" FileDescription="controllerdoctoruwp" LegalCopyright="copyright ©  2019" LinkDate="01/26/2020 20:07:28" BinaryType="pe64_amd64" LowerCaseLongPath="c:\program files\windowsapps\30781trashboatinc.controllerdoctor_1.5.31.0_x64__6m1ssdm9pvhx8\controllerdoctoruwp.dll" />
+            <File Id="00002d8ce1014092d1bdc616d51965f9538f487fd39e" Name="resources.73008544.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="-1642900272" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\program files\windowsapps\30781trashboatinc.controllerdoctor_1.5.31.0_x64__6m1ssdm9pvhx8\microsoft.system.package.metadata\resources.73008544.pri" />
+            <File Id="00001fa0887b3b0a00ec2ae7797cfd3e6f8cab25be40" Name="resources.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="-1485322356" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\program files\windowsapps\30781trashboatinc.controllerdoctor_1.5.31.0_x64__6m1ssdm9pvhx8\resources.pri" />
+            <File Id="00002d8ce1014092d1bdc616d51965f9538f487fd39e" Name="S-1-5-21-1875171878-1188753004-4055737505-1001-MergedResources-0.pri" ProductName="" CompanyName="" ProductVersion="" VerLanguage="0" SwitchBackContext="0" FileVersion="" Size="0" SizeOfImage="0" PeHeaderHash="" PeChecksum="0" CrcChecksum="-1642900272" BinProductVersion="" BinFileVersion="" FileDescription="" LegalCopyright="" LinkDate="" BinaryType="data_only" LowerCaseLongPath="c:\program files\windowsapps\30781trashboatinc.controllerdoctor_1.5.31.0_x64__6m1ssdm9pvhx8\microsoft.system.package.metadata\s-1-5-21-1875171878-1188753004-4055737505-1001-mergedresources-0.pri" />
           </Files>
         </StaticProperties>
       </Program>
     </Installed_Programs>
   </APPLICATIONS>
   <DEPENDENCY_INFORMATION>
-    <AitStaticAnalysis ProgramId="00002e8a1c6571487770f61bb1ce1990481300000904" AnalysisVersion="1.60" DictionaryVersion="3.4" Type="Package" Id="30781TrashboatInc.ControllerDoctor_1.0.7.0_x64__6m1ssdm9pvhx8">
-      <AitFile ErrorCode="0" Name="ControllerDoctorUWP.dll" Id="0000074816af8818506c07aad6eb5038962bacd2c7a9">
+    <AitStaticAnalysis ProgramId="0000c2c1955259f3cef8178edf460322f10200000904" AnalysisVersion="1.60" DictionaryVersion="3.4" Type="Package" Id="30781TrashboatInc.ControllerDoctor_1.5.31.0_x64__6m1ssdm9pvhx8">
+      <AitFile ErrorCode="0" Name="ControllerDoctorUWP.exe" Id="000034c33ada2dd23be3d0dda5d8b79672c741cafd95" />
+      <AitFile ErrorCode="0" Name="clrcompression.dll" Id="0000c1abe1d44dc05cc9451ba80ac3a68fd2fe5adc3b">
         <AitCategory Id="Com">
-          <AitFeature Name="{00000000-0000-0000-0000-000000000018}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000001}" />
+        </AitCategory>
+        <AitCategory Id="ApiStatic">
+          <AitFeature Name="ole32.dll!CoTaskMemAlloc" />
+          <AitFeature Name="ole32.dll!CoTaskMemFree" />
+          <AitFeature Name="kernel32.dll!DisableThreadLibraryCalls" />
+          <AitFeature Name="kernel32.dll!GetCurrentThreadId" />
+          <AitFeature Name="kernel32.dll!GetSystemTimeAsFileTime" />
+          <AitFeature Name="kernel32.dll!GetTickCount64" />
+          <AitFeature Name="kernel32.dll!QueryPerformanceCounter" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="ControllerDoctorUWP.dll" Id="0000cd53e94cf88da5f208fb0156fd618989c7acf97b">
+        <AitCategory Id="Com">
+          <AitFeature Name="{00000000-0000-0000-0000-000000000001}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000007}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000008}" />
+          <AitFeature Name="{00000000-0000-0000-0000-000000000020}" />
           <AitFeature Name="{00000001-0000-0000-c000-000000000046}" />
           <AitFeature Name="{00000003-0000-0000-c000-000000000046}" />
           <AitFeature Name="{00020401-0000-0000-c000-000000000046}" />
@@ -272,6 +315,8 @@
           <AitFeature Name="{05b487c2-3830-5d3c-98da-25fa11542dbd}" />
           <AitFeature Name="{06386a7a-e009-5b0b-ab68-a8e48b516647}" />
           <AitFeature Name="{06499997-f7b4-45fe-b763-7577d1d3cb4a}" />
+          <AitFeature Name="{07b2f2b7-8825-5c4e-a052-fcfedf3aeea1}" />
+          <AitFeature Name="{086459dc-18c6-48db-bc99-724fb9203ccc}" />
           <AitFeature Name="{09223e5a-75be-4499-8180-1ddc005421c0}" />
           <AitFeature Name="{0b7b4c9d-182f-582a-bddb-42b1aac30cad}" />
           <AitFeature Name="{0c079e55-13fe-4d03-a61d-e12f06567286}" />
@@ -300,8 +345,11 @@
           <AitFeature Name="{18026348-8619-4c7b-b534-ced45d9de219}" />
           <AitFeature Name="{18d636b7-53a4-4c15-a498-f3a9ca212a42}" />
           <AitFeature Name="{1905e02c-de78-5136-b761-7b7a33402583}" />
+          <AitFeature Name="{1abaee23-74ee-4cc7-99ba-b171e3cda61e}" />
           <AitFeature Name="{1adb665e-37c7-4790-9980-dd7ae74e8bb2}" />
+          <AitFeature Name="{1b0d3570-0877-5ec2-8a2c-3b9539506aca}" />
           <AitFeature Name="{1b328bd1-b400-4a8e-943b-5ad2c45be0df}" />
+          <AitFeature Name="{1b5d1336-e61b-4d51-be41-fd8ddc55c58c}" />
           <AitFeature Name="{1baf6522-5f64-42c5-8267-b9fe2215bfbd}" />
           <AitFeature Name="{1c98c219-0b13-4240-89a5-d495dc189a00}" />
           <AitFeature Name="{1cc0fdfc-69ee-4e43-9901-47f12687baf7}" />
@@ -315,9 +363,12 @@
           <AitFeature Name="{230b9cb8-3419-4306-aabe-4a8e680d3627}" />
           <AitFeature Name="{2340a4e3-5a86-4fc6-9a50-cbb93b828766}" />
           <AitFeature Name="{23429465-e36a-40e2-b139-a4704602a6e1}" />
+          <AitFeature Name="{236aac9d-fb12-5c4d-a41c-9e445fb4d7ec}" />
+          <AitFeature Name="{23d86411-202f-41b2-8c5b-a8a3b333800b}" />
           <AitFeature Name="{24330117-55d4-5789-8aa2-6cab1d0662a0}" />
           <AitFeature Name="{246737e8-12bc-5c64-af52-06db4b13fa2f}" />
           <AitFeature Name="{246a91a9-ca43-4c0b-acef-81e8b8147520}" />
+          <AitFeature Name="{24f981e5-ddca-538d-aada-a59906084cf1}" />
           <AitFeature Name="{2532a062-f447-4950-9c46-f1e34a2c2238}" />
           <AitFeature Name="{25f99ff7-9347-459a-9fac-b2d0e11c1a0f}" />
           <AitFeature Name="{2603682a-9da6-4023-b496-496e5ef228d2}" />
@@ -342,7 +393,9 @@
           <AitFeature Name="{3124d025-04a7-4d45-825e-8204a624dbf4}" />
           <AitFeature Name="{314d2318-74ee-535c-b361-2144dbc573a0}" />
           <AitFeature Name="{31816cd9-0404-410f-91ec-33b0a0bb92b2}" />
+          <AitFeature Name="{31af3271-e3b4-442d-a341-4c0226b2725b}" />
           <AitFeature Name="{31b71470-feff-4654-af48-9b398ab5772b}" />
+          <AitFeature Name="{325c44e0-9a03-4bf3-abd6-6fbb46c9a486}" />
           <AitFeature Name="{3276167d-c9f6-462d-9de2-ae4c1fd8c2e5}" />
           <AitFeature Name="{33ee3134-1dd6-4e3a-8067-d1c162e8642b}" />
           <AitFeature Name="{33f59b01-5325-43ab-9ab3-bdae440e4121}" />
@@ -361,6 +414,7 @@
           <AitFeature Name="{3c1689bd-5915-4245-b0c0-c89fae0308ff}" />
           <AitFeature Name="{3dedcae6-d048-5eaa-afa2-fb4a7970ef68}" />
           <AitFeature Name="{3f367f87-9f5a-4b04-b818-b554c069597a}" />
+          <AitFeature Name="{3fd156ef-6925-3fa8-9181-029c5223ae3b}" />
           <AitFeature Name="{400d5794-4c6f-491d-82d6-3517109399c6}" />
           <AitFeature Name="{40ce5c46-2962-446f-aafb-4cdc486939c9}" />
           <AitFeature Name="{410b7711-ff3b-477f-9c9a-d2efda302dc3}" />
@@ -403,6 +457,7 @@
           <AitFeature Name="{53f926d2-083c-4283-b45b-81c007237e44}" />
           <AitFeature Name="{541c8d6c-0283-4581-b945-2a64c28a0646}" />
           <AitFeature Name="{55225a61-8677-4c8c-8e46-ee3dc355114b}" />
+          <AitFeature Name="{5612147b-e843-45e3-94d8-06169e3c8e17}" />
           <AitFeature Name="{5871821a-2491-5cec-a457-21996ca4efaf}" />
           <AitFeature Name="{589877fb-0fc7-4036-9d8b-127dfa75c16d}" />
           <AitFeature Name="{59140509-8bc9-4eb4-b636-dabdc4f46f66}" />
@@ -414,6 +469,7 @@
           <AitFeature Name="{5c6a1fe6-9a55-4d7f-9498-cfe429e92da8}" />
           <AitFeature Name="{5c985ac6-d802-4b38-a223-bf070c43fedf}" />
           <AitFeature Name="{5db1aa05-9f80-48b6-ae6c-4f119de8ff13}" />
+          <AitFeature Name="{5db5fa32-707c-5849-a06b-91c8eb9d10e8}" />
           <AitFeature Name="{5e14280f-953e-4cf8-b9ea-c530a1ce02ad}" />
           <AitFeature Name="{5e52f8ce-aced-5a42-95b4-f674dd84885e}" />
           <AitFeature Name="{5f4c0b10-e38e-4b5d-be1a-5ed04246a635}" />
@@ -423,6 +479,7 @@
           <AitFeature Name="{608d2f1d-7858-4aeb-89e4-b54e2c7ed3d3}" />
           <AitFeature Name="{60db2fa8-b705-4fde-a7d6-ebbb1891d39e}" />
           <AitFeature Name="{62225981-7a0d-5d38-8088-7c6bb6d959be}" />
+          <AitFeature Name="{63d8248a-8b34-445a-808f-b6ecd62a27d9}" />
           <AitFeature Name="{64fe2e9f-f951-42b6-a9ce-bb179af11595}" />
           <AitFeature Name="{657f28aa-8c76-501f-b032-d8dc93595e76}" />
           <AitFeature Name="{6588d2a6-3972-5247-a870-e217b76de89c}" />
@@ -449,6 +506,7 @@
           <AitFeature Name="{7230269c-054e-4cf3-86c5-be90eb6863d5}" />
           <AitFeature Name="{72827082-5525-4bf2-bc09-1f5095d4964d}" />
           <AitFeature Name="{72d1cb78-b3ef-4f75-a80b-6fd9dae2944b}" />
+          <AitFeature Name="{7311e0d4-fe94-4e70-9b90-cdd47ac23afb}" />
           <AitFeature Name="{737ef309-ea41-4d96-a71c-98e98efcab07}" />
           <AitFeature Name="{73e42360-10fc-513c-9c38-d7fb007abbc4}" />
           <AitFeature Name="{74b861a1-7487-46a9-9a6e-c78b512726c5}" />
@@ -488,6 +546,7 @@
           <AitFeature Name="{8726dcbf-961d-527a-a7cb-2db47e1c9092}" />
           <AitFeature Name="{8806a321-1e06-422c-a1cc-01696559e021}" />
           <AitFeature Name="{89572027-4c48-4700-8076-497ba73d9c18}" />
+          <AitFeature Name="{8a43ed9f-f4e6-4421-acf9-1dab2986820c}" />
           <AitFeature Name="{8a610dc6-d72d-4ca8-9f66-556f35b513da}" />
           <AitFeature Name="{8a7639ee-624a-501a-bb53-562d1ec11b52}" />
           <AitFeature Name="{8bbce529-d49c-39e9-9560-e47dde96b7c8}" />
@@ -579,8 +638,10 @@
           <AitFeature Name="{b7c1ad35-5544-40c1-9b33-acfe1d6c8094}" />
           <AitFeature Name="{b8770535-6a4b-52b1-b578-f3cdc5007a1f}" />
           <AitFeature Name="{b89ca96c-ded1-53bd-8744-caa84e87ba87}" />
+          <AitFeature Name="{b8ae8fe2-d641-4fd7-80b4-7439207d2798}" />
           <AitFeature Name="{b97f7f68-c29b-4c99-a1c3-952619d6e720}" />
           <AitFeature Name="{bb2afc33-93b1-42ed-8b26-236dd9c78496}" />
+          <AitFeature Name="{bb78502a-f79d-54fa-92c9-90c5039fdf7e}" />
           <AitFeature Name="{bb8b8418-65d1-544b-b083-6d172f568c73}" />
           <AitFeature Name="{bc2b28f1-26f2-4aab-b256-3b5350881e37}" />
           <AitFeature Name="{bc7bb43c-0a69-3903-9e9d-a50f86a45de5}" />
@@ -596,13 +657,18 @@
           <AitFeature Name="{c134d249-476a-5146-b5d4-6c98f4e81461}" />
           <AitFeature Name="{c192280d-3a09-5423-9dc5-67b83ebde41d}" />
           <AitFeature Name="{c1d3d1a2-ae17-5a5f-b5a2-bdcc8844889a}" />
+          <AitFeature Name="{c1ea4f24-d6de-4191-8e3a-f48601f7489c}" />
           <AitFeature Name="{c211026e-9e63-5452-ba54-3a07d6a96874}" />
           <AitFeature Name="{c229f252-dede-5d42-a01a-8479d56a7d2f}" />
           <AitFeature Name="{c246ff23-d80d-44de-8db9-0d815e269ac0}" />
+          <AitFeature Name="{c3da6fb7-b744-4b45-b0b8-223a0938d0dc}" />
           <AitFeature Name="{c4b27075-e641-453e-824d-012fc7cf95cf}" />
           <AitFeature Name="{c541f58c-43a9-4216-b718-e0b11b14e93e}" />
+          <AitFeature Name="{c5aefd1e-f467-40ba-8566-ab640a441e1d}" />
           <AitFeature Name="{c602b59e-0a8e-5e99-b478-2b564585278d}" />
           <AitFeature Name="{c81c2720-5c52-4bbe-a199-2b1e34f00f70}" />
+          <AitFeature Name="{c9132978-4810-4e5e-8087-03671ee60d85}" />
+          <AitFeature Name="{c9858c3a-4e13-420a-a8d0-24f18f395401}" />
           <AitFeature Name="{ca30221d-86d9-40fb-a26b-d44eb7cf08ea}" />
           <AitFeature Name="{ca40b21b-aeb1-5a61-9e08-3bd5d9594023}" />
           <AitFeature Name="{caf8608f-13ff-42fb-866d-22206434cc6b}" />
@@ -610,6 +676,7 @@
           <AitFeature Name="{cb4206c5-0988-5104-afa9-253c298f86fd}" />
           <AitFeature Name="{cb43ccc9-446b-4a4f-be97-757771be5203}" />
           <AitFeature Name="{cb5cd2b9-e3b4-458c-b64e-1434fd1bd88a}" />
+          <AitFeature Name="{cb753f2c-2f36-5a8f-adad-057beae73aa4}" />
           <AitFeature Name="{ccebaca3-3b5c-4f4c-9bfd-86887bc79772}" />
           <AitFeature Name="{cdb5efb3-5788-509d-9be1-71ccb8a3362a}" />
           <AitFeature Name="{cf651713-cd08-4fd8-b697-a281b6544e2e}" />
@@ -627,7 +694,6 @@
           <AitFeature Name="{d4349ade-93b1-5325-ba5c-05f35eeffc55}" />
           <AitFeature Name="{d4cd3dfe-4079-42e9-a39a-3095d3f049c6}" />
           <AitFeature Name="{d5312e60-5cc1-42a1-920c-1af46be2f986}" />
-          <AitFeature Name="{d56aa2fc-fc7f-449c-9855-7a1055d668a8}" />
           <AitFeature Name="{d5de4415-b53c-5312-9e1b-ac2a19f04e71}" />
           <AitFeature Name="{d8eba449-e161-5108-b4fb-70c2424ea198}" />
           <AitFeature Name="{d935ce0c-86f5-4da6-8a27-b1619ef7f92b}" />
@@ -643,6 +709,7 @@
           <AitFeature Name="{dd9ff16a-4b62-4a6c-a49d-0671ef6136be}" />
           <AitFeature Name="{de62c951-bb9b-471e-83e3-af4791e7096a}" />
           <AitFeature Name="{df945151-745c-4446-b2fc-216d765847a0}" />
+          <AitFeature Name="{df9a26c6-e746-4bcd-b5d4-120103c4209b}" />
           <AitFeature Name="{dfa149ac-1849-445e-937c-40a9590cc076}" />
           <AitFeature Name="{dfa2dc9c-1a2d-4917-98f2-939af1d6e0c8}" />
           <AitFeature Name="{e194c96a-d8cc-4339-a0e1-2e9c420879ec}" />
@@ -672,9 +739,11 @@
           <AitFeature Name="{eccb574a-c684-5572-a679-6b0842cfb57f}" />
           <AitFeature Name="{ed2d1d9b-26ec-5be7-a8a3-56458933d25f}" />
           <AitFeature Name="{edf04eb1-37d1-471f-8570-3829ee5b2bc6}" />
+          <AitFeature Name="{eee68111-c7cc-433f-95cd-d630c34302dd}" />
           <AitFeature Name="{ef8814a6-9388-4aca-8572-405194069080}" />
           <AitFeature Name="{f0117ddb-12fa-4d8d-8b26-b383d09c2b3c}" />
           <AitFeature Name="{f19104be-422a-4904-a52f-ee72010429e5}" />
+          <AitFeature Name="{f1d04933-34e1-4a5c-b2ae-ca3b1c0b20de}" />
           <AitFeature Name="{f209ce15-391a-42ca-9fc6-f79da65aca32}" />
           <AitFeature Name="{f3105988-7768-45d3-8bb0-6ded9e43a98b}" />
           <AitFeature Name="{f3864c10-14a4-5516-b1d9-63b6579429b1}" />
@@ -699,6 +768,7 @@
           <AitFeature Name="{fbc93e26-a14a-4b4f-82b0-33bed920af52}" />
           <AitFeature Name="{fd104460-2e15-4ba3-8b8f-fa693a4161e9}" />
           <AitFeature Name="{fd1d67ae-eafb-4079-be80-6dc92a03aedf}" />
+          <AitFeature Name="{fe2f3d47-5d47-5499-8374-430c7cda0204}" />
           <AitFeature Name="{fe750d77-1307-5df2-a021-1c7a8d6b80ad}" />
           <AitFeature Name="{ffd72e78-ec1f-5bcc-9d13-ff5fbb040562}" />
         </AitCategory>
@@ -709,6 +779,7 @@
           <AitFeature Name="{03a67b37-c7bf-437c-848f-8cb5b753eab4}" />
           <AitFeature Name="{05252c58-ba9d-4809-9ec3-fa0d16710ba1}" />
           <AitFeature Name="{06499997-f7b4-45fe-b763-7577d1d3cb4a}" />
+          <AitFeature Name="{086459dc-18c6-48db-bc99-724fb9203ccc}" />
           <AitFeature Name="{09223e5a-75be-4499-8180-1ddc005421c0}" />
           <AitFeature Name="{0c079e55-13fe-4d03-a61d-e12f06567286}" />
           <AitFeature Name="{0c44717b-19f7-48d6-b046-cf22826eaa74}" />
@@ -727,8 +798,10 @@
           <AitFeature Name="{179d65e7-4658-4cb6-aa13-41d094ea255e}" />
           <AitFeature Name="{18026348-8619-4c7b-b534-ced45d9de219}" />
           <AitFeature Name="{18d636b7-53a4-4c15-a498-f3a9ca212a42}" />
+          <AitFeature Name="{1abaee23-74ee-4cc7-99ba-b171e3cda61e}" />
           <AitFeature Name="{1adb665e-37c7-4790-9980-dd7ae74e8bb2}" />
           <AitFeature Name="{1b328bd1-b400-4a8e-943b-5ad2c45be0df}" />
+          <AitFeature Name="{1b5d1336-e61b-4d51-be41-fd8ddc55c58c}" />
           <AitFeature Name="{1baf6522-5f64-42c5-8267-b9fe2215bfbd}" />
           <AitFeature Name="{1c98c219-0b13-4240-89a5-d495dc189a00}" />
           <AitFeature Name="{1cc0fdfc-69ee-4e43-9901-47f12687baf7}" />
@@ -736,6 +809,7 @@
           <AitFeature Name="{230b9cb8-3419-4306-aabe-4a8e680d3627}" />
           <AitFeature Name="{2340a4e3-5a86-4fc6-9a50-cbb93b828766}" />
           <AitFeature Name="{23429465-e36a-40e2-b139-a4704602a6e1}" />
+          <AitFeature Name="{23d86411-202f-41b2-8c5b-a8a3b333800b}" />
           <AitFeature Name="{246a91a9-ca43-4c0b-acef-81e8b8147520}" />
           <AitFeature Name="{2532a062-f447-4950-9c46-f1e34a2c2238}" />
           <AitFeature Name="{25f99ff7-9347-459a-9fac-b2d0e11c1a0f}" />
@@ -753,7 +827,9 @@
           <AitFeature Name="{30edd4a2-8fc5-40af-a7a2-c27fe7aa1363}" />
           <AitFeature Name="{3124d025-04a7-4d45-825e-8204a624dbf4}" />
           <AitFeature Name="{31816cd9-0404-410f-91ec-33b0a0bb92b2}" />
+          <AitFeature Name="{31af3271-e3b4-442d-a341-4c0226b2725b}" />
           <AitFeature Name="{31b71470-feff-4654-af48-9b398ab5772b}" />
+          <AitFeature Name="{325c44e0-9a03-4bf3-abd6-6fbb46c9a486}" />
           <AitFeature Name="{3276167d-c9f6-462d-9de2-ae4c1fd8c2e5}" />
           <AitFeature Name="{33ee3134-1dd6-4e3a-8067-d1c162e8642b}" />
           <AitFeature Name="{33f59b01-5325-43ab-9ab3-bdae440e4121}" />
@@ -765,6 +841,7 @@
           <AitFeature Name="{3ab70e85-d508-4477-b6f8-0e435701c836}" />
           <AitFeature Name="{3c1689bd-5915-4245-b0c0-c89fae0308ff}" />
           <AitFeature Name="{3f367f87-9f5a-4b04-b818-b554c069597a}" />
+          <AitFeature Name="{3fd156ef-6925-3fa8-9181-029c5223ae3b}" />
           <AitFeature Name="{400d5794-4c6f-491d-82d6-3517109399c6}" />
           <AitFeature Name="{40ce5c46-2962-446f-aafb-4cdc486939c9}" />
           <AitFeature Name="{410b7711-ff3b-477f-9c9a-d2efda302dc3}" />
@@ -792,6 +869,7 @@
           <AitFeature Name="{53f926d2-083c-4283-b45b-81c007237e44}" />
           <AitFeature Name="{541c8d6c-0283-4581-b945-2a64c28a0646}" />
           <AitFeature Name="{55225a61-8677-4c8c-8e46-ee3dc355114b}" />
+          <AitFeature Name="{5612147b-e843-45e3-94d8-06169e3c8e17}" />
           <AitFeature Name="{589877fb-0fc7-4036-9d8b-127dfa75c16d}" />
           <AitFeature Name="{59140509-8bc9-4eb4-b636-dabdc4f46f66}" />
           <AitFeature Name="{5a200ec7-0426-47dc-b86c-6f475915e451}" />
@@ -806,6 +884,7 @@
           <AitFeature Name="{603e88e4-a338-4ffe-a457-a5cfb9ceb899}" />
           <AitFeature Name="{608d2f1d-7858-4aeb-89e4-b54e2c7ed3d3}" />
           <AitFeature Name="{60db2fa8-b705-4fde-a7d6-ebbb1891d39e}" />
+          <AitFeature Name="{63d8248a-8b34-445a-808f-b6ecd62a27d9}" />
           <AitFeature Name="{64fe2e9f-f951-42b6-a9ce-bb179af11595}" />
           <AitFeature Name="{676d0be9-b65c-41c6-ba40-58cf87f201c1}" />
           <AitFeature Name="{676d0bf9-b66c-41d6-ba50-58cf87f201d1}" />
@@ -824,6 +903,7 @@
           <AitFeature Name="{7230269c-054e-4cf3-86c5-be90eb6863d5}" />
           <AitFeature Name="{72827082-5525-4bf2-bc09-1f5095d4964d}" />
           <AitFeature Name="{72d1cb78-b3ef-4f75-a80b-6fd9dae2944b}" />
+          <AitFeature Name="{7311e0d4-fe94-4e70-9b90-cdd47ac23afb}" />
           <AitFeature Name="{737ef309-ea41-4d96-a71c-98e98efcab07}" />
           <AitFeature Name="{74b861a1-7487-46a9-9a6e-c78b512726c5}" />
           <AitFeature Name="{751b792e-5772-4488-8b87-f547faa64474}" />
@@ -853,6 +933,7 @@
           <AitFeature Name="{86664478-8029-46fe-a789-1c2f3e2ffb5c}" />
           <AitFeature Name="{8806a321-1e06-422c-a1cc-01696559e021}" />
           <AitFeature Name="{89572027-4c48-4700-8076-497ba73d9c18}" />
+          <AitFeature Name="{8a43ed9f-f4e6-4421-acf9-1dab2986820c}" />
           <AitFeature Name="{8a610dc6-d72d-4ca8-9f66-556f35b513da}" />
           <AitFeature Name="{8bbce529-d49c-39e9-9560-e47dde96b7c8}" />
           <AitFeature Name="{8cb36951-58c8-43e3-94bc-41d33f8b630e}" />
@@ -901,6 +982,7 @@
           <AitFeature Name="{ab14bee0-e760-440e-a91c-44796de3a92d}" />
           <AitFeature Name="{ae2d9271-3b4a-45fc-8468-f7949548f4d5}" />
           <AitFeature Name="{ae814041-c531-43b4-bf99-12f506f7b01c}" />
+          <AitFeature Name="{aeb98816-7aac-35c8-8f0d-f84fe6dc870d}" />
           <AitFeature Name="{af404424-26df-44f4-8714-9359249b62d3}" />
           <AitFeature Name="{af5207d9-c433-4764-b3fd-8fa6bfbcbadc}" />
           <AitFeature Name="{afcbbe9b-582b-4133-9648-e44ca46ee491}" />
@@ -915,6 +997,7 @@
           <AitFeature Name="{b6f0c4ad-4d39-49e6-bb91-d924eefd8538}" />
           <AitFeature Name="{b7bb4305-3dd9-43de-a8c0-c472f085bc11}" />
           <AitFeature Name="{b7c1ad35-5544-40c1-9b33-acfe1d6c8094}" />
+          <AitFeature Name="{b8ae8fe2-d641-4fd7-80b4-7439207d2798}" />
           <AitFeature Name="{b97f7f68-c29b-4c99-a1c3-952619d6e720}" />
           <AitFeature Name="{bb2afc33-93b1-42ed-8b26-236dd9c78496}" />
           <AitFeature Name="{bc2b28f1-26f2-4aab-b256-3b5350881e37}" />
@@ -924,10 +1007,16 @@
           <AitFeature Name="{bf2195a9-f4ea-4336-977c-f8fcf78b0d9e}" />
           <AitFeature Name="{bf9918ea-d801-4564-a495-b1e84f8ad085}" />
           <AitFeature Name="{c00b03f2-04e7-4415-b17d-d76b9490de2b}" />
+          <AitFeature Name="{c1ea4f24-d6de-4191-8e3a-f48601f7489c}" />
           <AitFeature Name="{c246ff23-d80d-44de-8db9-0d815e269ac0}" />
+          <AitFeature Name="{c3da6fb7-b744-4b45-b0b8-223a0938d0dc}" />
           <AitFeature Name="{c4b27075-e641-453e-824d-012fc7cf95cf}" />
           <AitFeature Name="{c541f58c-43a9-4216-b718-e0b11b14e93e}" />
+          <AitFeature Name="{c5aefd1e-f467-40ba-8566-ab640a441e1d}" />
+          <AitFeature Name="{c6f7f439-8cdd-30e8-9d2b-9b8030530d31}" />
           <AitFeature Name="{c81c2720-5c52-4bbe-a199-2b1e34f00f70}" />
+          <AitFeature Name="{c9132978-4810-4e5e-8087-03671ee60d85}" />
+          <AitFeature Name="{c9858c3a-4e13-420a-a8d0-24f18f395401}" />
           <AitFeature Name="{ca30221d-86d9-40fb-a26b-d44eb7cf08ea}" />
           <AitFeature Name="{caf8608f-13ff-42fb-866d-22206434cc6b}" />
           <AitFeature Name="{cafc4968-6369-4249-80f9-3d656319e811}" />
@@ -944,7 +1033,6 @@
           <AitFeature Name="{d3cfb977-0084-41d7-a221-28158d3bc32c}" />
           <AitFeature Name="{d4cd3dfe-4079-42e9-a39a-3095d3f049c6}" />
           <AitFeature Name="{d5312e60-5cc1-42a1-920c-1af46be2f986}" />
-          <AitFeature Name="{d56aa2fc-fc7f-449c-9855-7a1055d668a8}" />
           <AitFeature Name="{d935ce0c-86f5-4da6-8a27-b1619ef7f92b}" />
           <AitFeature Name="{da007e54-b3c2-4b9a-aa8e-d3f071262b97}" />
           <AitFeature Name="{da628f0a-9752-49e2-bde2-49eccab9194d}" />
@@ -954,6 +1042,7 @@
           <AitFeature Name="{dd9ff16a-4b62-4a6c-a49d-0671ef6136be}" />
           <AitFeature Name="{de62c951-bb9b-471e-83e3-af4791e7096a}" />
           <AitFeature Name="{df945151-745c-4446-b2fc-216d765847a0}" />
+          <AitFeature Name="{df9a26c6-e746-4bcd-b5d4-120103c4209b}" />
           <AitFeature Name="{dfa149ac-1849-445e-937c-40a9590cc076}" />
           <AitFeature Name="{dfa2dc9c-1a2d-4917-98f2-939af1d6e0c8}" />
           <AitFeature Name="{e194c96a-d8cc-4339-a0e1-2e9c420879ec}" />
@@ -971,9 +1060,11 @@
           <AitFeature Name="{ec752224-9b77-4720-bb21-4ac89fdb1afd}" />
           <AitFeature Name="{ecae8ccd-8e5e-4fbe-9846-30a6370afcdf}" />
           <AitFeature Name="{edf04eb1-37d1-471f-8570-3829ee5b2bc6}" />
+          <AitFeature Name="{eee68111-c7cc-433f-95cd-d630c34302dd}" />
           <AitFeature Name="{ef8814a6-9388-4aca-8572-405194069080}" />
           <AitFeature Name="{f0117ddb-12fa-4d8d-8b26-b383d09c2b3c}" />
           <AitFeature Name="{f19104be-422a-4904-a52f-ee72010429e5}" />
+          <AitFeature Name="{f1d04933-34e1-4a5c-b2ae-ca3b1c0b20de}" />
           <AitFeature Name="{f209ce15-391a-42ca-9fc6-f79da65aca32}" />
           <AitFeature Name="{f3105988-7768-45d3-8bb0-6ded9e43a98b}" />
           <AitFeature Name="{f4b40e52-642f-4629-a54a-ea5d2349c448}" />
@@ -1035,9 +1126,12 @@
           <AitFeature Name="sharedlibrary.dll!CreateCommandLine" />
         </AitCategory>
         <AitCategory Id="WRTClassFromSearch">
+          <AitFeature Name="Windows.Foundation.IReference`1" />
+          <AitFeature Name="Windows.Storage.ApplicationData" />
           <AitFeature Name="Windows.Gaming.Input.Gamepad" />
           <AitFeature Name="Windows.UI.Xaml.Controls.Page" />
           <AitFeature Name="Windows.ApplicationModel.Package" />
+          <AitFeature Name="Windows.UI.Xaml.Media.Imaging.BitmapImage" />
           <AitFeature Name="Windows.Globalization.Language" />
           <AitFeature Name="Windows.UI.Xaml.Media.BitmapCache" />
           <AitFeature Name="Windows.UI.Xaml.Controls.Frame" />
@@ -1049,12 +1143,15 @@
           <AitFeature Name="Windows.UI.Xaml.Media.SolidColorBrush" />
           <AitFeature Name="Windows.UI.Xaml.Shapes.Path" />
           <AitFeature Name="Windows.Foundation.Uri" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.Panel" />
+          <AitFeature Name="Windows.UI.Xaml.Controls.StackPanel" />
           <AitFeature Name="Windows.UI.Xaml.Controls.UserControl" />
           <AitFeature Name="Windows.Globalization.GeographicRegion" />
           <AitFeature Name="Windows.UI.Xaml.Application" />
           <AitFeature Name="Windows.UI.Xaml.Media.GeometryGroup" />
           <AitFeature Name="Windows.Globalization.Calendar" />
           <AitFeature Name="Windows.Foundation.Diagnostics.AsyncCausalityTracer" />
+          <AitFeature Name="Microsoft.Advertising.MicrosoftAdvertising_XamlTypeInfo.XamlMetaDataProvider" />
           <AitFeature Name="Windows.ApplicationModel.Resources.Core.ResourceManager" />
           <AitFeature Name="Windows.Gaming.Input.RawGameController" />
           <AitFeature Name="Windows.UI.Xaml.Controls.Canvas" />
@@ -1063,21 +1160,6 @@
           <AitFeature Name="Windows.ApplicationModel.Resources.Core.ResourceContext" />
           <AitFeature Name="Windows.UI.Xaml.Window" />
           <AitFeature Name="Windows.UI.Xaml.Media.LineGeometry" />
-        </AitCategory>
-      </AitFile>
-      <AitFile ErrorCode="0" Name="ControllerDoctorUWP.exe" Id="00003fe3bce4d6f15dacb0787c087291fbb3fd086515" />
-      <AitFile ErrorCode="0" Name="clrcompression.dll" Id="0000c1abe1d44dc05cc9451ba80ac3a68fd2fe5adc3b">
-        <AitCategory Id="Com">
-          <AitFeature Name="{00000000-0000-0000-0000-000000000001}" />
-        </AitCategory>
-        <AitCategory Id="ApiStatic">
-          <AitFeature Name="ole32.dll!CoTaskMemAlloc" />
-          <AitFeature Name="ole32.dll!CoTaskMemFree" />
-          <AitFeature Name="kernel32.dll!DisableThreadLibraryCalls" />
-          <AitFeature Name="kernel32.dll!GetCurrentThreadId" />
-          <AitFeature Name="kernel32.dll!GetSystemTimeAsFileTime" />
-          <AitFeature Name="kernel32.dll!GetTickCount64" />
-          <AitFeature Name="kernel32.dll!QueryPerformanceCounter" />
         </AitCategory>
       </AitFile>
     </AitStaticAnalysis>

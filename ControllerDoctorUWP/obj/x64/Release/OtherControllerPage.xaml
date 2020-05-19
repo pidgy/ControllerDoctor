@@ -16,67 +16,67 @@
 
         <TextBlock Grid.Row="1" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Start" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="1" Grid.Column="1">
-            <Canvas x:ConnectionId='32' Name="Start_Button" Width="900" Height="40"/>
+            <Canvas x:ConnectionId='36' Name="Start_Button" Width="900" Height="40"/>
         </Viewbox>
 
         <TextBlock Grid.Row="2" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Left Joystick" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="2" Grid.Column="1">
-            <Canvas x:ConnectionId='31' Name="Left_Stick" Width="900" Height="40"/>
+            <Canvas x:ConnectionId='35' Name="Left_Stick" Width="900" Height="40"/>
         </Viewbox>
 
         <TextBlock Grid.Row="3" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Right Joystick" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="3" Grid.Column="1">
-            <Canvas x:ConnectionId='30' Name="Right_Stick" Width="900" Height="40"/>
+            <Canvas x:ConnectionId='34' Name="Right_Stick" Width="900" Height="40"/>
         </Viewbox>
 
         <TextBlock Grid.Row="4" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Left Trigger" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="4" Grid.Column="1">
-            <Canvas x:ConnectionId='29' Name="Left_Trigger" Width="900" Height="40"/>
+            <Canvas x:ConnectionId='33' Name="Left_Trigger" Width="900" Height="40"/>
         </Viewbox>
 
         <TextBlock Grid.Row="5" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Left Shoulder" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="5" Grid.Column="1">
-            <Canvas x:ConnectionId='28' Name="Left_Bumper" Width="900" Height="40"/>
+            <Canvas x:ConnectionId='32' Name="Left_Bumper" Width="900" Height="40"/>
         </Viewbox>
 
         <TextBlock Grid.Row="6" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Right Trigger" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="6" Grid.Column="1">
-            <Canvas x:ConnectionId='27' Name="Right_Trigger" Width="900" Height="40"/>
+            <Canvas x:ConnectionId='31' Name="Right_Trigger" Width="900" Height="40"/>
         </Viewbox>
 
         <TextBlock Grid.Row="7" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Right Shoulder" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="7" Grid.Column="1">
-            <Canvas x:ConnectionId='26' Name="Right_Bumper" Width="900" Height="40"/>
+            <Canvas x:ConnectionId='30' Name="Right_Bumper" Width="900" Height="40"/>
         </Viewbox>
 
-        <TextBlock  Grid.Row="8" FontFamily="Arial"  FontSize="30" Foreground="LawnGreen"  Text="●" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='4' x:Name="X_Button_TextBlock" Grid.Row="8" FontFamily="Arial"  FontSize="30" Foreground="LawnGreen"  Text="●" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="8" Grid.Column="1">
-            <Canvas x:ConnectionId='25' Name="X_Button" Width="900" Height="40"/>
+            <Canvas x:ConnectionId='29' Name="X_Button" Width="900" Height="40"/>
         </Viewbox>
 
-        <TextBlock Grid.Row="9" FontFamily="Arial"  FontSize="30" Foreground="Yellow" Text="●" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='5' x:Name="A_Button_TextBlock" Grid.Row="9" FontFamily="Arial"  FontSize="30" Foreground="Yellow" Text="●" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="9" Grid.Column="1">
-            <Canvas x:ConnectionId='24' Name="A_Button" Width="900" Height="40"/>
+            <Canvas x:ConnectionId='28' Name="A_Button" Width="900" Height="40"/>
         </Viewbox>
 
-        <TextBlock Grid.Row="10" FontFamily="Arial"  FontSize="30" Foreground="Blue" Text="●" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='6' x:Name="Y_Button_TextBlock" Grid.Row="10" FontFamily="Arial"  FontSize="30" Foreground="Blue" Text="●" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="10" Grid.Column="1">
-            <Canvas x:ConnectionId='23' Name="Y_Button" Width="900" Height="40"/>
+            <Canvas x:ConnectionId='27' Name="Y_Button" Width="900" Height="40"/>
         </Viewbox>
 
-        <TextBlock Grid.Row="11" FontFamily="Arial"  FontSize="30" Foreground="Red" Text="●" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='7' x:Name="B_Button_TextBlock" Grid.Row="11" FontFamily="Arial"  FontSize="30" Foreground="Red" Text="●" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="11" Grid.Column="1">
-            <Canvas x:ConnectionId='22' Name="B_Button" Width="900" Height="40"/>
+            <Canvas x:ConnectionId='26' Name="B_Button" Width="900" Height="40"/>
         </Viewbox>
 
         <TextBlock Grid.Row="12" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Direction Pad" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="12" Grid.Column="1">
-            <Canvas x:ConnectionId='21' Name="Direction_Pad" Width="900" Height="40"/>
+            <Canvas x:ConnectionId='25' Name="Direction_Pad" Width="900" Height="40"/>
         </Viewbox>
 
         <TextBlock Grid.Row="13" FontFamily="Arial"  FontSize="15" Foreground="White" Text="Menu" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="13" Grid.Column="1">
-            <Canvas x:ConnectionId='20' Name="Menu_Button" Width="900" Height="40"/>
+            <Canvas x:ConnectionId='24' Name="Menu_Button" Width="900" Height="40"/>
         </Viewbox>
 
         <Border BorderBrush="White" BorderThickness="1"/>
@@ -139,27 +139,27 @@
         <Border Grid.Row="14" Grid.Column="1"  BorderBrush="White" BorderThickness="1"/>
         <Border Grid.Row="14" Grid.Column="2"  BorderBrush="White" BorderThickness="1"/>
 
-        <TextBlock x:ConnectionId='4' Grid.Row="1" Name="Start_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
-        <TextBlock x:ConnectionId='5' Grid.Row="2" Name="Left_Joystick_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
-        <TextBlock x:ConnectionId='6' Grid.Row="3" Name="Right_Joystick_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
-        <TextBlock x:ConnectionId='7' Grid.Row="4" Name="Left_Trigger_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
-        <TextBlock x:ConnectionId='8' Grid.Row="5" Name="Left_Bumper_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
-        <TextBlock x:ConnectionId='9' Grid.Row="6" Name="Right_Trigger_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
-        <TextBlock x:ConnectionId='10' Grid.Row="7" Name="Right_Bumper_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
-        <TextBlock x:ConnectionId='11' Grid.Row="8" Name="X_Button_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
-        <TextBlock x:ConnectionId='12' Grid.Row="9" Name="A_Button_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
-        <TextBlock x:ConnectionId='13' Grid.Row="10" Name="Y_Button_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
-        <TextBlock x:ConnectionId='14' Grid.Row="11" Name="B_Button_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
-        <TextBlock x:ConnectionId='15' Grid.Row="12" Name="Direction_Pad_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
-        <TextBlock x:ConnectionId='16' Grid.Row="13" Name="Menu_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='8' Grid.Row="1" Name="Start_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='9' Grid.Row="2" Name="Left_Joystick_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='10' Grid.Row="3" Name="Right_Joystick_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='11' Grid.Row="4" Name="Left_Trigger_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='12' Grid.Row="5" Name="Left_Bumper_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='13' Grid.Row="6" Name="Right_Trigger_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='14' Grid.Row="7" Name="Right_Bumper_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='15' Grid.Row="8" Name="X_Button_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='16' Grid.Row="9" Name="A_Button_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='17' Grid.Row="10" Name="Y_Button_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='18' Grid.Row="11" Name="B_Button_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='19' Grid.Row="12" Name="Direction_Pad_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='20' Grid.Row="13" Name="Menu_Status" Text="Waiting..." Grid.Column="2"  HorizontalAlignment="Center" FontFamily="Arial"  FontSize="15" Foreground="White" VerticalAlignment="Center"/>
 
-        <Button x:ConnectionId='17' IsTabStop="False" Name="Clear_Button" Grid.Row="14" Content="Clear" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" Background="#2e2e2e" FontSize="20" BorderThickness="1" BorderBrush="White"                           >
-
-        </Button>
-        <Button x:ConnectionId='18' IsTabStop="False" Name="Delay_Button" Grid.Row="14" Content="Add Input Delay Markers" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" Background="#2e2e2e" FontSize="20" BorderBrush="White" BorderThickness="1"                           >
+        <Button x:ConnectionId='21' IsTabStop="False" Name="Clear_Button" Grid.Row="14" Content="Clear" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" Background="#2e2e2e" FontSize="20" BorderThickness="1" BorderBrush="White"                           >
 
         </Button>
-        <Button x:ConnectionId='19'  IsTabStop="False" Name="Pause_Button" Grid.Row="14" Content="Pause"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" Background="#2e2e2e" FontSize="20" BorderThickness="1" BorderBrush="White"                           >
+        <Button x:ConnectionId='22' IsTabStop="False" Name="Delay_Button" Grid.Row="14" Content="Add Input Delay Markers" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" Background="#2e2e2e" FontSize="20" BorderBrush="White" BorderThickness="1"                           >
+
+        </Button>
+        <Button x:ConnectionId='23'  IsTabStop="False" Name="Pause_Button" Grid.Row="14" Content="Pause"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Foreground="White" Background="#2e2e2e" FontSize="20" BorderThickness="1" BorderBrush="White"                           >
 
         </Button>
 

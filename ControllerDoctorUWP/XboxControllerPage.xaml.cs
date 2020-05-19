@@ -36,10 +36,17 @@ namespace ControllerDoctorUWP
         {
             this.InitializeComponent();
 
+            GlobalSettings.ApplyThemeTo(this);
+
             CancellationToken = new CancellationTokenSource();
 
             this.Loaded += (s1, e1) =>
             {
+                X_Button_TextBlock.Foreground = new SolidColorBrush(Colors.DodgerBlue);
+                Y_Button_TextBlock.Foreground = new SolidColorBrush(Colors.Yellow);
+                B_Button_TextBlock.Foreground = new SolidColorBrush(Colors.Red);
+                A_Button_TextBlock.Foreground = new SolidColorBrush(Colors.LawnGreen);
+                
                 Initialize();
 
                 controller = new XboxController();
@@ -68,6 +75,11 @@ namespace ControllerDoctorUWP
                 KillAllThreads();
                 Run();
             });
+
+            if (controller.Vendor() != (ushort)VENDOR_ID.XBOX)
+            {
+                await AlertAndWaitAsync("The detected controller does not appear to be a Playstation controller.", "Warning");
+            }
         }
 
         public async void SetDisonnectedAsync()

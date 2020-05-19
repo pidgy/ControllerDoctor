@@ -8,8 +8,9 @@
     mc:Ignorable="d"
     Background="#2F2F4F">
 
-    <Grid Background="#2F2F4F">
-        <NavigationView IsPaneToggleButtonVisible="False" IsTabStop="False" Name="NavView" IsBackEnabled="False" IsBackButtonVisible="Collapsed">
+    <Grid>
+      
+        <NavigationView OpenPaneLength="225" IsPaneToggleButtonVisible="False" IsTabStop="False" Name="NavView" IsBackEnabled="False" IsBackButtonVisible="Collapsed">
             <NavigationView.MenuItems>
                 <NavigationViewItemHeader FontSize="20" Content="Controller Doctor"/>
                 <NavigationViewItemSeparator/>
@@ -41,14 +42,41 @@
                     <Image Source="focus.png"></Image>
                 </NavigationViewItem>
 
+                <NavigationViewItemSeparator/>
+
+                <NavigationViewItemHeader Content="Vibration"/>
+
+                <NavigationViewItem IsTabStop="False" Name="All_Controller_Vibration">
+                    <Image Source="wave.png"></Image>
+                </NavigationViewItem>
 
                 <NavigationViewItemSeparator/>
 
-       
+                <NavigationViewItemHeader Content="Triggers"/>
+                <NavigationViewItem IsTabStop="False" Name="All_Controller_Triggers">
+                    <Image Source="trigger.png"></Image>
+                </NavigationViewItem>
 
-                <NavigationViewItem Content="Version: 1.0" IsEnabled="False"/>
                 <NavigationViewItemSeparator/>
 
+                <NavigationViewItemHeader Content="Battery"/>
+                <NavigationViewItem IsTabStop="False" Name="All_Controller_Battery">
+                    <Image Source="battery.png"></Image>
+                </NavigationViewItem>
+
+                <NavigationViewItemSeparator/>
+                <NavigationViewItem Visibility="Collapsed" IsTabStop="False" Name="Xbox_Controller_History">
+                </NavigationViewItem>
+                <NavigationViewItem Visibility="Collapsed" IsTabStop="False" Name="Playstation_Controller_History">
+                </NavigationViewItem>
+                <NavigationViewItem Visibility="Collapsed" IsTabStop="False" Name="Other_Controller_History">
+                </NavigationViewItem>
+                <NavigationViewItem Visibility="Collapsed" IsTabStop="False" Name="Keyboard_and_Mouse_Controller_History">
+                </NavigationViewItem>
+                <NavigationViewItem Content="Version: 1.2.3" IsEnabled="False"/>
+                <NavigationViewItemSeparator/>
+
+                
             </NavigationView.MenuItems>
             
             <Frame x:Name="ContentFrame"></Frame>

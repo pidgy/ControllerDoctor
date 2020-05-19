@@ -2,6 +2,12 @@
   "version": 3,
   "targets": {
     "UAP,Version=v10.0.17134": {
+      "Microsoft.Advertising.XAML/10.1811.22001": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Advertising.XAML.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -218,6 +224,15 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "NolanHodge.GamingController/1.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/net40/NolanHodge.GamingController.dll": {}
+        },
+        "runtime": {
+          "lib/net40/NolanHodge.GamingController.dll": {}
+        }
+      },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -309,6 +324,12 @@
       }
     },
     "UAP,Version=v10.0.17134/win10-arm": {
+      "Microsoft.Advertising.XAML/10.1811.22001": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Advertising.XAML.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -524,6 +545,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "NolanHodge.GamingController/1.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/net40/NolanHodge.GamingController.dll": {}
+        },
+        "runtime": {
+          "lib/net40/NolanHodge.GamingController.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -795,6 +825,12 @@
       }
     },
     "UAP,Version=v10.0.17134/win10-arm-aot": {
+      "Microsoft.Advertising.XAML/10.1811.22001": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Advertising.XAML.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -1010,6 +1046,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "NolanHodge.GamingController/1.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/net40/NolanHodge.GamingController.dll": {}
+        },
+        "runtime": {
+          "lib/net40/NolanHodge.GamingController.dll": {}
         }
       },
       "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.2.9": {
@@ -1282,6 +1327,12 @@
       }
     },
     "UAP,Version=v10.0.17134/win10-arm64-aot": {
+      "Microsoft.Advertising.XAML/10.1811.22001": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Advertising.XAML.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -1497,6 +1548,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "NolanHodge.GamingController/1.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/net40/NolanHodge.GamingController.dll": {}
+        },
+        "runtime": {
+          "lib/net40/NolanHodge.GamingController.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -1769,6 +1829,12 @@
       }
     },
     "UAP,Version=v10.0.17134/win10-x64": {
+      "Microsoft.Advertising.XAML/10.1811.22001": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Advertising.XAML.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -1984,6 +2050,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "NolanHodge.GamingController/1.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/net40/NolanHodge.GamingController.dll": {}
+        },
+        "runtime": {
+          "lib/net40/NolanHodge.GamingController.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -2255,6 +2330,12 @@
       }
     },
     "UAP,Version=v10.0.17134/win10-x64-aot": {
+      "Microsoft.Advertising.XAML/10.1811.22001": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Advertising.XAML.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -2470,6 +2551,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "NolanHodge.GamingController/1.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/net40/NolanHodge.GamingController.dll": {}
+        },
+        "runtime": {
+          "lib/net40/NolanHodge.GamingController.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -2742,6 +2832,12 @@
       }
     },
     "UAP,Version=v10.0.17134/win10-x86": {
+      "Microsoft.Advertising.XAML/10.1811.22001": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Advertising.XAML.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -2957,6 +3053,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "NolanHodge.GamingController/1.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/net40/NolanHodge.GamingController.dll": {}
+        },
+        "runtime": {
+          "lib/net40/NolanHodge.GamingController.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -3228,6 +3333,12 @@
       }
     },
     "UAP,Version=v10.0.17134/win10-x86-aot": {
+      "Microsoft.Advertising.XAML/10.1811.22001": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.Advertising.XAML.targets": {}
+        }
+      },
       "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
         "type": "package",
         "dependencies": {
@@ -3443,6 +3554,15 @@
         },
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
+        }
+      },
+      "NolanHodge.GamingController/1.0.10": {
+        "type": "package",
+        "compile": {
+          "lib/net40/NolanHodge.GamingController.dll": {}
+        },
+        "runtime": {
+          "lib/net40/NolanHodge.GamingController.dll": {}
         }
       },
       "runtime.win10-arm.Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
@@ -3716,6 +3836,51 @@
     }
   },
   "libraries": {
+    "Microsoft.Advertising.XAML/10.1811.22001": {
+      "sha512": "eQD1mNzsQnCzdWHYQzbQDKzZJ8oWX7C2eK1RutCJe6xs6aDBQtCLFGRVPGoQZ5G2RrJJwbeieiuWqCzacN9PbA==",
+      "type": "package",
+      "path": "microsoft.advertising.xaml/10.1811.22001",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/Appx/ARM/Microsoft.Advertising.Xaml.ARM.10.0.appx",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/Appx/ARM64/Microsoft.Advertising.Xaml.ARM64.10.0.appx",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/Appx/x64/Microsoft.Advertising.Xaml.x64.10.0.appx",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/Appx/x86/Microsoft.Advertising.Xaml.x86.10.0.appx",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/Extension.vsixmanifest",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/License.rtf",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/Redist.txt",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/Redist/CommonConfiguration/x86/Microsoft.Advertising.dll",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/Microsoft.Advertising.winmd",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/ar/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/cs/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/da/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/de/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/el/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/en/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/es/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/et/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/fi/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/fr/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/he/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/hu/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/it/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/ja/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/ko/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/nb/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/nl/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/pl/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/pt-BR/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/pt-PT/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/ru/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/zh-CN/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/References/CommonConfiguration/neutral/zh-TW/Microsoft.Advertising.xml",
+        "SDK/Windows Kits/10/ExtensionSDKs/Microsoft.Advertising.Xaml/10.0/SDKManifest.xml",
+        "build/Microsoft.Advertising.XAML.targets",
+        "microsoft.advertising.xaml.10.1811.22001.nupkg.sha512",
+        "microsoft.advertising.xaml.nuspec"
+      ]
+    },
     "Microsoft.Net.Native.Compiler/2.2.7-rel-27913-00": {
       "sha512": "o+Op8dwxI29v3F2RwgPI5z9r1LAOn8HxAbgmgRi2mppC7KEDgkhv9GvsWM3E7bdYTam0GT7IPM4Nww/wVBiS8A==",
       "type": "package",
@@ -3807,7 +3972,7 @@
       ]
     },
     "Microsoft.NETCore.UniversalWindowsPlatform/6.2.9": {
-      "sha512": "DearhwHAYkloUbBZ8X9pi7iGJo0gWi2id17QqHISwMHiDdqObx6OOa57qRFmi6YPEU0TXunDDPHA3Z3ng5N21g==",
+      "sha512": "QcNHcEvhO0bMhF1LW7Ebn1f6wrzvbkloRsZSrAZsGbAAqdhmfuZcD3VVeVCL8VWsBXRlhdb3+0Y7HLxvnMTpZA==",
       "type": "package",
       "path": "microsoft.netcore.universalwindowsplatform/6.2.9",
       "files": [
@@ -4224,6 +4389,19 @@
         "lib/netstandard1.0/_._",
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
+      ]
+    },
+    "NolanHodge.GamingController/1.0.10": {
+      "sha512": "SZe3j046EwvAcMYAzjMwvaH2n3cVgL848QRy07i+e16sB44BV66UKLKdSR7R70QQTyw63u07a+1T9vC8kF/8tQ==",
+      "type": "package",
+      "path": "nolanhodge.gamingcontroller/1.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/NolanHodge.GamingController.XML",
+        "lib/net40/NolanHodge.GamingController.dll",
+        "nolanhodge.gamingcontroller.1.0.10.nupkg.sha512",
+        "nolanhodge.gamingcontroller.nuspec"
       ]
     },
     "runtime.win10-arm-aot.Microsoft.NETCore.UniversalWindowsPlatform/6.2.9": {
@@ -8147,7 +8325,9 @@
   },
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.17134": [
-      "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.9"
+      "Microsoft.Advertising.XAML >= 10.1811.22001",
+      "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.9",
+      "NolanHodge.GamingController >= 1.0.10"
     ]
   },
   "packageFolders": {
@@ -8187,9 +8367,17 @@
     "frameworks": {
       "uap10.0.17134": {
         "dependencies": {
+          "Microsoft.Advertising.XAML": {
+            "target": "Package",
+            "version": "[10.1811.22001, )"
+          },
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
             "version": "[6.2.9, )"
+          },
+          "NolanHodge.GamingController": {
+            "target": "Package",
+            "version": "[1.0.10, )"
           }
         },
         "imports": [
@@ -8222,5 +8410,17 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'NolanHodge.GamingController 1.0.10' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework 'UAP,Version=v10.0.17134'. This package may not be fully compatible with your project.",
+      "libraryId": "NolanHodge.GamingController",
+      "targetGraphs": [
+        "UAP,Version=v10.0.17134"
+      ]
+    }
+  ]
 }

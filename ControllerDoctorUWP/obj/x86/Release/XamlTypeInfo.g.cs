@@ -127,6 +127,18 @@ namespace ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo
                 {
                     xamlType = CreateXamlType(typeIndex);
                 }
+                var userXamlType = xamlType as global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType;
+                if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
+                {
+                    global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForType(type);
+                    if (libXamlType != null)
+                    {
+                        if(libXamlType.IsConstructible || xamlType == null)
+                        {
+                            xamlType = libXamlType;
+                        }
+                    }
+                }
                 if (xamlType != null)
                 {
                     _xamlTypeCacheByName.Add(xamlType.FullName, xamlType);
@@ -153,6 +165,18 @@ namespace ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo
                 if(typeIndex != -1)
                 {
                     xamlType = CreateXamlType(typeIndex);
+                }
+                var userXamlType = xamlType as global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType;
+                if(xamlType == null || (userXamlType != null && userXamlType.IsReturnTypeStub && !userXamlType.IsLocalType))
+                {
+                    global::Windows.UI.Xaml.Markup.IXamlType libXamlType = CheckOtherMetadataProvidersForName(typeName);
+                    if (libXamlType != null)
+                    {
+                        if(libXamlType.IsConstructible || xamlType == null)
+                        {
+                            xamlType = libXamlType;
+                        }
+                    }
                 }
                 if (xamlType != null)
                 {
@@ -199,31 +223,49 @@ namespace ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[11];
+            _typeNameTable = new string[20];
             _typeNameTable[0] = "ControllerDoctorUWP.AboutPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "ControllerDoctorUWP.ControllerDeadzonePage";
-            _typeNameTable[4] = "ControllerDoctorUWP.HistoryPage";
-            _typeNameTable[5] = "ControllerDoctorUWP.HomePage";
-            _typeNameTable[6] = "ControllerDoctorUWP.MainPage";
-            _typeNameTable[7] = "ControllerDoctorUWP.OtherControllerPage";
-            _typeNameTable[8] = "ControllerDoctorUWP.PlaystationControllerPage";
-            _typeNameTable[9] = "ControllerDoctorUWP.SettingsPage";
-            _typeNameTable[10] = "ControllerDoctorUWP.XboxControllerPage";
+            _typeNameTable[3] = "ControllerDoctorUWP.ControllerBatteryPage";
+            _typeNameTable[4] = "ControllerDoctorUWP.ControllerDeadzonePage";
+            _typeNameTable[5] = "ControllerDoctorUWP.ControllerTriggerPage";
+            _typeNameTable[6] = "ControllerDoctorUWP.ControllerVibrationPage";
+            _typeNameTable[7] = "ControllerDoctorUWP.HistoryPage";
+            _typeNameTable[8] = "Microsoft.Advertising.WinRT.UI.AdControl";
+            _typeNameTable[9] = "Windows.UI.Xaml.Controls.StackPanel";
+            _typeNameTable[10] = "Windows.UI.Xaml.Controls.Panel";
+            _typeNameTable[11] = "String";
+            _typeNameTable[12] = "Boolean";
+            _typeNameTable[13] = "Int32";
+            _typeNameTable[14] = "ControllerDoctorUWP.HomePage";
+            _typeNameTable[15] = "ControllerDoctorUWP.MainPage";
+            _typeNameTable[16] = "ControllerDoctorUWP.OtherControllerPage";
+            _typeNameTable[17] = "ControllerDoctorUWP.PlaystationControllerPage";
+            _typeNameTable[18] = "ControllerDoctorUWP.SettingsPage";
+            _typeNameTable[19] = "ControllerDoctorUWP.XboxControllerPage";
 
-            _typeTable = new global::System.Type[11];
+            _typeTable = new global::System.Type[20];
             _typeTable[0] = typeof(global::ControllerDoctorUWP.AboutPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::ControllerDoctorUWP.ControllerDeadzonePage);
-            _typeTable[4] = typeof(global::ControllerDoctorUWP.HistoryPage);
-            _typeTable[5] = typeof(global::ControllerDoctorUWP.HomePage);
-            _typeTable[6] = typeof(global::ControllerDoctorUWP.MainPage);
-            _typeTable[7] = typeof(global::ControllerDoctorUWP.OtherControllerPage);
-            _typeTable[8] = typeof(global::ControllerDoctorUWP.PlaystationControllerPage);
-            _typeTable[9] = typeof(global::ControllerDoctorUWP.SettingsPage);
-            _typeTable[10] = typeof(global::ControllerDoctorUWP.XboxControllerPage);
+            _typeTable[3] = typeof(global::ControllerDoctorUWP.ControllerBatteryPage);
+            _typeTable[4] = typeof(global::ControllerDoctorUWP.ControllerDeadzonePage);
+            _typeTable[5] = typeof(global::ControllerDoctorUWP.ControllerTriggerPage);
+            _typeTable[6] = typeof(global::ControllerDoctorUWP.ControllerVibrationPage);
+            _typeTable[7] = typeof(global::ControllerDoctorUWP.HistoryPage);
+            _typeTable[8] = typeof(global::Microsoft.Advertising.WinRT.UI.AdControl);
+            _typeTable[9] = typeof(global::Windows.UI.Xaml.Controls.StackPanel);
+            _typeTable[10] = typeof(global::Windows.UI.Xaml.Controls.Panel);
+            _typeTable[11] = typeof(global::System.String);
+            _typeTable[12] = typeof(global::System.Boolean);
+            _typeTable[13] = typeof(global::System.Int32);
+            _typeTable[14] = typeof(global::ControllerDoctorUWP.HomePage);
+            _typeTable[15] = typeof(global::ControllerDoctorUWP.MainPage);
+            _typeTable[16] = typeof(global::ControllerDoctorUWP.OtherControllerPage);
+            _typeTable[17] = typeof(global::ControllerDoctorUWP.PlaystationControllerPage);
+            _typeTable[18] = typeof(global::ControllerDoctorUWP.SettingsPage);
+            _typeTable[19] = typeof(global::ControllerDoctorUWP.XboxControllerPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -259,14 +301,18 @@ namespace ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo
         }
 
         private object Activate_0_AboutPage() { return new global::ControllerDoctorUWP.AboutPage(); }
-        private object Activate_3_ControllerDeadzonePage() { return new global::ControllerDoctorUWP.ControllerDeadzonePage(); }
-        private object Activate_4_HistoryPage() { return new global::ControllerDoctorUWP.HistoryPage(); }
-        private object Activate_5_HomePage() { return new global::ControllerDoctorUWP.HomePage(); }
-        private object Activate_6_MainPage() { return new global::ControllerDoctorUWP.MainPage(); }
-        private object Activate_7_OtherControllerPage() { return new global::ControllerDoctorUWP.OtherControllerPage(); }
-        private object Activate_8_PlaystationControllerPage() { return new global::ControllerDoctorUWP.PlaystationControllerPage(); }
-        private object Activate_9_SettingsPage() { return new global::ControllerDoctorUWP.SettingsPage(); }
-        private object Activate_10_XboxControllerPage() { return new global::ControllerDoctorUWP.XboxControllerPage(); }
+        private object Activate_3_ControllerBatteryPage() { return new global::ControllerDoctorUWP.ControllerBatteryPage(); }
+        private object Activate_4_ControllerDeadzonePage() { return new global::ControllerDoctorUWP.ControllerDeadzonePage(); }
+        private object Activate_5_ControllerTriggerPage() { return new global::ControllerDoctorUWP.ControllerTriggerPage(); }
+        private object Activate_6_ControllerVibrationPage() { return new global::ControllerDoctorUWP.ControllerVibrationPage(); }
+        private object Activate_7_HistoryPage() { return new global::ControllerDoctorUWP.HistoryPage(); }
+        private object Activate_8_AdControl() { return new global::Microsoft.Advertising.WinRT.UI.AdControl(); }
+        private object Activate_14_HomePage() { return new global::ControllerDoctorUWP.HomePage(); }
+        private object Activate_15_MainPage() { return new global::ControllerDoctorUWP.MainPage(); }
+        private object Activate_16_OtherControllerPage() { return new global::ControllerDoctorUWP.OtherControllerPage(); }
+        private object Activate_17_PlaystationControllerPage() { return new global::ControllerDoctorUWP.PlaystationControllerPage(); }
+        private object Activate_18_SettingsPage() { return new global::ControllerDoctorUWP.SettingsPage(); }
+        private object Activate_19_XboxControllerPage() { return new global::ControllerDoctorUWP.XboxControllerPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -293,58 +339,115 @@ namespace ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo
                 xamlType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  ControllerDoctorUWP.ControllerDeadzonePage
+            case 3:   //  ControllerDoctorUWP.ControllerBatteryPage
                 userType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_ControllerDeadzonePage;
+                userType.Activator = Activate_3_ControllerBatteryPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 4:   //  ControllerDoctorUWP.HistoryPage
+            case 4:   //  ControllerDoctorUWP.ControllerDeadzonePage
                 userType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_HistoryPage;
+                userType.Activator = Activate_4_ControllerDeadzonePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  ControllerDoctorUWP.HomePage
+            case 5:   //  ControllerDoctorUWP.ControllerTriggerPage
                 userType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_HomePage;
+                userType.Activator = Activate_5_ControllerTriggerPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 6:   //  ControllerDoctorUWP.MainPage
+            case 6:   //  ControllerDoctorUWP.ControllerVibrationPage
                 userType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_6_MainPage;
+                userType.Activator = Activate_6_ControllerVibrationPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 7:   //  ControllerDoctorUWP.OtherControllerPage
+            case 7:   //  ControllerDoctorUWP.HistoryPage
                 userType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_7_OtherControllerPage;
+                userType.Activator = Activate_7_HistoryPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 8:   //  ControllerDoctorUWP.PlaystationControllerPage
+            case 8:   //  Microsoft.Advertising.WinRT.UI.AdControl
+                userType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.StackPanel"));
+                userType.Activator = Activate_8_AdControl;
+                userType.AddMemberName("ApplicationId");
+                userType.AddMemberName("AdUnitId");
+                userType.AddMemberName("HasAd");
+                userType.AddMemberName("IsSuspended");
+                userType.AddMemberName("PostalCode");
+                userType.AddMemberName("CountryOrRegion");
+                userType.AddMemberName("Keywords");
+                userType.AddMemberName("AutoRefreshIntervalInSeconds");
+                userType.AddMemberName("IsAutoRefreshEnabled");
+                userType.AddMemberName("IsEngaged");
+                xamlType = userType;
+                break;
+
+            case 9:   //  Windows.UI.Xaml.Controls.StackPanel
+                xamlType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 10:   //  Windows.UI.Xaml.Controls.Panel
+                xamlType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 11:   //  String
+                xamlType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 12:   //  Boolean
+                xamlType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 13:   //  Int32
+                xamlType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 14:   //  ControllerDoctorUWP.HomePage
                 userType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_PlaystationControllerPage;
+                userType.Activator = Activate_14_HomePage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 9:   //  ControllerDoctorUWP.SettingsPage
+            case 15:   //  ControllerDoctorUWP.MainPage
                 userType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_9_SettingsPage;
+                userType.Activator = Activate_15_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 10:   //  ControllerDoctorUWP.XboxControllerPage
+            case 16:   //  ControllerDoctorUWP.OtherControllerPage
                 userType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_10_XboxControllerPage;
+                userType.Activator = Activate_16_OtherControllerPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 17:   //  ControllerDoctorUWP.PlaystationControllerPage
+                userType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_17_PlaystationControllerPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 18:   //  ControllerDoctorUWP.SettingsPage
+                userType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_18_SettingsPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 19:   //  ControllerDoctorUWP.XboxControllerPage
+                userType = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_19_XboxControllerPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -352,12 +455,215 @@ namespace ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo
             return xamlType;
         }
 
+        private global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider> _otherProviders;
+        private global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider> OtherProviders
+        {
+            get
+            {
+                if(_otherProviders == null)
+                {
+                    var otherProviders = new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>();
+                    global::Windows.UI.Xaml.Markup.IXamlMetadataProvider provider;
+                    provider = new global::Microsoft.Advertising.MicrosoftAdvertising_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
+                    otherProviders.Add(provider); 
+                    _otherProviders = otherProviders;
+                }
+                return _otherProviders;
+            }
+        }
 
+        private global::Windows.UI.Xaml.Markup.IXamlType CheckOtherMetadataProvidersForName(string typeName)
+        {
+            global::Windows.UI.Xaml.Markup.IXamlType xamlType = null;
+            global::Windows.UI.Xaml.Markup.IXamlType foundXamlType = null;
+            foreach(global::Windows.UI.Xaml.Markup.IXamlMetadataProvider xmp in OtherProviders)
+            {
+                xamlType = xmp.GetXamlType(typeName);
+                if(xamlType != null)
+                {
+                    if(xamlType.IsConstructible)    // not Constructible means it might be a Return Type Stub
+                    {
+                        return xamlType;
+                    }
+                    foundXamlType = xamlType;
+                }
+            }
+            return foundXamlType;
+        }
+
+        private global::Windows.UI.Xaml.Markup.IXamlType CheckOtherMetadataProvidersForType(global::System.Type type)
+        {
+            global::Windows.UI.Xaml.Markup.IXamlType xamlType = null;
+            global::Windows.UI.Xaml.Markup.IXamlType foundXamlType = null;
+            foreach(global::Windows.UI.Xaml.Markup.IXamlMetadataProvider xmp in OtherProviders)
+            {
+                xamlType = xmp.GetXamlType(type);
+                if(xamlType != null)
+                {
+                    if(xamlType.IsConstructible)    // not Constructible means it might be a Return Type Stub
+                    {
+                        return xamlType;
+                    }
+                    foundXamlType = xamlType;
+                }
+            }
+            return foundXamlType;
+        }
+
+        private object get_0_AdControl_ApplicationId(object instance)
+        {
+            var that = (global::Microsoft.Advertising.WinRT.UI.AdControl)instance;
+            return that.ApplicationId;
+        }
+        private void set_0_AdControl_ApplicationId(object instance, object Value)
+        {
+            var that = (global::Microsoft.Advertising.WinRT.UI.AdControl)instance;
+            that.ApplicationId = (global::System.String)Value;
+        }
+        private object get_1_AdControl_AdUnitId(object instance)
+        {
+            var that = (global::Microsoft.Advertising.WinRT.UI.AdControl)instance;
+            return that.AdUnitId;
+        }
+        private void set_1_AdControl_AdUnitId(object instance, object Value)
+        {
+            var that = (global::Microsoft.Advertising.WinRT.UI.AdControl)instance;
+            that.AdUnitId = (global::System.String)Value;
+        }
+        private object get_2_AdControl_HasAd(object instance)
+        {
+            var that = (global::Microsoft.Advertising.WinRT.UI.AdControl)instance;
+            return that.HasAd;
+        }
+        private object get_3_AdControl_IsSuspended(object instance)
+        {
+            var that = (global::Microsoft.Advertising.WinRT.UI.AdControl)instance;
+            return that.IsSuspended;
+        }
+        private object get_4_AdControl_PostalCode(object instance)
+        {
+            var that = (global::Microsoft.Advertising.WinRT.UI.AdControl)instance;
+            return that.PostalCode;
+        }
+        private void set_4_AdControl_PostalCode(object instance, object Value)
+        {
+            var that = (global::Microsoft.Advertising.WinRT.UI.AdControl)instance;
+            that.PostalCode = (global::System.String)Value;
+        }
+        private object get_5_AdControl_CountryOrRegion(object instance)
+        {
+            var that = (global::Microsoft.Advertising.WinRT.UI.AdControl)instance;
+            return that.CountryOrRegion;
+        }
+        private void set_5_AdControl_CountryOrRegion(object instance, object Value)
+        {
+            var that = (global::Microsoft.Advertising.WinRT.UI.AdControl)instance;
+            that.CountryOrRegion = (global::System.String)Value;
+        }
+        private object get_6_AdControl_Keywords(object instance)
+        {
+            var that = (global::Microsoft.Advertising.WinRT.UI.AdControl)instance;
+            return that.Keywords;
+        }
+        private void set_6_AdControl_Keywords(object instance, object Value)
+        {
+            var that = (global::Microsoft.Advertising.WinRT.UI.AdControl)instance;
+            that.Keywords = (global::System.String)Value;
+        }
+        private object get_7_AdControl_AutoRefreshIntervalInSeconds(object instance)
+        {
+            var that = (global::Microsoft.Advertising.WinRT.UI.AdControl)instance;
+            return that.AutoRefreshIntervalInSeconds;
+        }
+        private void set_7_AdControl_AutoRefreshIntervalInSeconds(object instance, object Value)
+        {
+            var that = (global::Microsoft.Advertising.WinRT.UI.AdControl)instance;
+            that.AutoRefreshIntervalInSeconds = (global::System.Int32)Value;
+        }
+        private object get_8_AdControl_IsAutoRefreshEnabled(object instance)
+        {
+            var that = (global::Microsoft.Advertising.WinRT.UI.AdControl)instance;
+            return that.IsAutoRefreshEnabled;
+        }
+        private void set_8_AdControl_IsAutoRefreshEnabled(object instance, object Value)
+        {
+            var that = (global::Microsoft.Advertising.WinRT.UI.AdControl)instance;
+            that.IsAutoRefreshEnabled = (global::System.Boolean)Value;
+        }
+        private object get_9_AdControl_IsEngaged(object instance)
+        {
+            var that = (global::Microsoft.Advertising.WinRT.UI.AdControl)instance;
+            return that.IsEngaged;
+        }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
         {
             global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlMember xamlMember = null;
-            // No Local Properties
+            global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType userType;
+
+            switch (longMemberName)
+            {
+            case "Microsoft.Advertising.WinRT.UI.AdControl.ApplicationId":
+                userType = (global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Advertising.WinRT.UI.AdControl");
+                xamlMember = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlMember(this, "ApplicationId", "String");
+                xamlMember.Getter = get_0_AdControl_ApplicationId;
+                xamlMember.Setter = set_0_AdControl_ApplicationId;
+                break;
+            case "Microsoft.Advertising.WinRT.UI.AdControl.AdUnitId":
+                userType = (global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Advertising.WinRT.UI.AdControl");
+                xamlMember = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlMember(this, "AdUnitId", "String");
+                xamlMember.Getter = get_1_AdControl_AdUnitId;
+                xamlMember.Setter = set_1_AdControl_AdUnitId;
+                break;
+            case "Microsoft.Advertising.WinRT.UI.AdControl.HasAd":
+                userType = (global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Advertising.WinRT.UI.AdControl");
+                xamlMember = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlMember(this, "HasAd", "Boolean");
+                xamlMember.Getter = get_2_AdControl_HasAd;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.Advertising.WinRT.UI.AdControl.IsSuspended":
+                userType = (global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Advertising.WinRT.UI.AdControl");
+                xamlMember = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlMember(this, "IsSuspended", "Boolean");
+                xamlMember.Getter = get_3_AdControl_IsSuspended;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.Advertising.WinRT.UI.AdControl.PostalCode":
+                userType = (global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Advertising.WinRT.UI.AdControl");
+                xamlMember = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlMember(this, "PostalCode", "String");
+                xamlMember.Getter = get_4_AdControl_PostalCode;
+                xamlMember.Setter = set_4_AdControl_PostalCode;
+                break;
+            case "Microsoft.Advertising.WinRT.UI.AdControl.CountryOrRegion":
+                userType = (global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Advertising.WinRT.UI.AdControl");
+                xamlMember = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlMember(this, "CountryOrRegion", "String");
+                xamlMember.Getter = get_5_AdControl_CountryOrRegion;
+                xamlMember.Setter = set_5_AdControl_CountryOrRegion;
+                break;
+            case "Microsoft.Advertising.WinRT.UI.AdControl.Keywords":
+                userType = (global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Advertising.WinRT.UI.AdControl");
+                xamlMember = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlMember(this, "Keywords", "String");
+                xamlMember.Getter = get_6_AdControl_Keywords;
+                xamlMember.Setter = set_6_AdControl_Keywords;
+                break;
+            case "Microsoft.Advertising.WinRT.UI.AdControl.AutoRefreshIntervalInSeconds":
+                userType = (global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Advertising.WinRT.UI.AdControl");
+                xamlMember = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlMember(this, "AutoRefreshIntervalInSeconds", "Int32");
+                xamlMember.Getter = get_7_AdControl_AutoRefreshIntervalInSeconds;
+                xamlMember.Setter = set_7_AdControl_AutoRefreshIntervalInSeconds;
+                break;
+            case "Microsoft.Advertising.WinRT.UI.AdControl.IsAutoRefreshEnabled":
+                userType = (global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Advertising.WinRT.UI.AdControl");
+                xamlMember = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlMember(this, "IsAutoRefreshEnabled", "Boolean");
+                xamlMember.Getter = get_8_AdControl_IsAutoRefreshEnabled;
+                xamlMember.Setter = set_8_AdControl_IsAutoRefreshEnabled;
+                break;
+            case "Microsoft.Advertising.WinRT.UI.AdControl.IsEngaged":
+                userType = (global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Advertising.WinRT.UI.AdControl");
+                xamlMember = new global::ControllerDoctorUWP.ControllerDoctorUWP_XamlTypeInfo.XamlMember(this, "IsEngaged", "Boolean");
+                xamlMember.Getter = get_9_AdControl_IsEngaged;
+                xamlMember.SetIsReadOnly();
+                break;
+            }
             return xamlMember;
         }
     }

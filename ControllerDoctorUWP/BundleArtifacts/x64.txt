@@ -1,6 +1,2 @@
-MainPackage=C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x64\Release\ControllerDoctorUWP_1.0.7.0_x64.appx
-SymbolPackage=C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x64\Release\Symbols\ControllerDoctorUWP_1.0.7.0_x64.appxsym
-ResourcePack=C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x64\Release\ControllerDoctorUWP_1.0.7.0_scale-100.appx
-ResourcePack=C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x64\Release\ControllerDoctorUWP_1.0.7.0_scale-125.appx
-ResourcePack=C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x64\Release\ControllerDoctorUWP_1.0.7.0_scale-150.appx
-ResourcePack=C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x64\Release\ControllerDoctorUWP_1.0.7.0_scale-400.appx
+MainPackage=C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x64\Release\ControllerDoctorUWP_1.5.31.0_x64.appx
+SymbolPackage=C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x64\Release\Symbols\ControllerDoctorUWP_1.5.31.0_x64.appxsym

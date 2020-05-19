@@ -1,6 +1,9 @@
 AboutPage.xbf
 App.xbf
+ControllerBatteryPage.xbf
 ControllerDeadzonePage.xbf
+ControllerTriggerPage.xbf
+ControllerVibrationPage.xbf
 HistoryPage.xbf
 HomePage.xbf
 MainPage.xbf

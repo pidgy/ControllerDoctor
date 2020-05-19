@@ -7,9 +7,17 @@ namespace ControllerDoctorUWP
 {
     public class Controller
     {
-        public static IController Determine()
+        public static string TypeString(ushort VendorID)
         {
-            return null;
+            switch (VendorID)
+            {
+                case (ushort)VENDOR_ID.XBOX:
+                    return "Xbox";
+                case (ushort)VENDOR_ID.PLAYSTATION:
+                    return "Playstation";
+                default:
+                    return "Generic";
+            }
         }
     }
 }

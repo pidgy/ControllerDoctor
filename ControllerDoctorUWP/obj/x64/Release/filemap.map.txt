@@ -4,6 +4,8 @@
 
 [Files]
 "C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x64\Release\filemap.pri"			"resources.pri"
+"C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x64\Release\PackageLayout\wave.png"			"wave.png"
+"C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x64\Release\PackageLayout\trigger.png"			"trigger.png"
 "C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x64\Release\PackageLayout\logo-w.png"			"logo-w.png"
 "C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x64\Release\PackageLayout\joystick.png"			"joystick.png"
 "C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x64\Release\PackageLayout\focus.png"			"focus.png"
@@ -15,6 +17,7 @@
 "C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x64\Release\PackageLayout\controller-kb.png"			"controller-kb.png"
 "C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x64\Release\PackageLayout\clrcompression.dll"			"clrcompression.dll"
 "C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x64\Release\PackageLayout\bg.png"			"bg.png"
+"C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x64\Release\PackageLayout\battery.png"			"battery.png"
 "C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x64\Release\PackageLayout\Assets\Wide310x150Logo.scale-200.png"			"Assets\Wide310x150Logo.scale-200.png"
 "C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x64\Release\PackageLayout\Assets\StoreLogo.scale-200.png"			"Assets\StoreLogo.scale-200.png"
 "C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\obj\x64\Release\PackageLayout\Assets\Square44x44Logo.targetsize-48.png"			"Assets\Square44x44Logo.targetsize-48.png"

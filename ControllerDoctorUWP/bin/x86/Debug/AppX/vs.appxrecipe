@@ -19,24 +19,24 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>9F219B8B8E7B3D0F617503C1B7045A621F21C180CA8445B127EB6F902384842C</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>30781TrashboatInc.ControllerDoctor_1.0.6.0_x86__6m1ssdm9pvhx8</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>9E54ED50B6BC8E87547B430E9A3134956E124BB0805E26DB38C8CEF292D37BEC</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>30781TrashboatInc.ControllerDoctor_1.5.23.0_x86__6m1ssdm9pvhx8</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>30781TrashboatInc.ControllerDoctor_6m1ssdm9pvhx8!App</RegisteredUserModeAppID>
     <RegisteredPackageID>30781TrashboatInc.ControllerDoctor</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=D92AF099-E09A-4694-8D11-2789A736572A</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.6.0</RegisteredVersion>
+    <RegisteredVersion>1.5.23.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-11-04T23:05:17.167</Modified>
+      <Modified>2019-11-11T20:30:52.159</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\ControllerDoctorUWP.exe">
       <PackagePath>entrypoint\ControllerDoctorUWP.exe</PackagePath>
-      <Modified>2019-11-04T23:05:16.817</Modified>
+      <Modified>2019-11-11T20:30:51.824</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\runtime.win10-x86.microsoft.netcore.universalwindowsplatform\6.2.9\runtimes\win10-x86\lib\uap10.0.15138\System.Runtime.dll">
       <PackagePath>System.Runtime.dll</PackagePath>
@@ -246,17 +246,21 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2019-10-20T18:58:20.113</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\battery.png">
+      <PackagePath>battery.png</PackagePath>
+      <Modified>2019-11-08T22:43:51.227</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\controller-kb.png">
       <PackagePath>controller-kb.png</PackagePath>
       <Modified>2019-10-20T14:24:08.541</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\controller-other.png">
       <PackagePath>controller-other.png</PackagePath>
-      <Modified>2019-10-20T14:24:04.101</Modified>
+      <Modified>2019-11-07T23:52:47.880</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\controller-ps.png">
       <PackagePath>controller-ps.png</PackagePath>
-      <Modified>2019-10-20T14:23:59.969</Modified>
+      <Modified>2019-11-07T23:25:01.409</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\controller-xbox.png">
       <PackagePath>controller-xbox.png</PackagePath>
@@ -273,6 +277,14 @@
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\logo-w.png">
       <PackagePath>logo-w.png</PackagePath>
       <Modified>2019-10-25T21:44:37.890</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\trigger.png">
+      <PackagePath>trigger.png</PackagePath>
+      <Modified>2019-11-08T22:08:10.097</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\wave.png">
+      <PackagePath>wave.png</PackagePath>
+      <Modified>2019-11-06T14:19:59.472</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -313,47 +325,59 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\ControllerDoctorUWP.xr.xml">
       <PackagePath>ControllerDoctorUWP.xr.xml</PackagePath>
-      <Modified>2019-11-04T22:55:35.405</Modified>
+      <Modified>2019-11-11T20:15:32.423</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-11-04T23:04:31.170</Modified>
+      <Modified>2019-11-11T20:29:31.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\AboutPage.xbf">
       <PackagePath>AboutPage.xbf</PackagePath>
-      <Modified>2019-11-04T23:05:16.632</Modified>
+      <Modified>2019-11-11T20:29:31.594</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\ControllerBatteryPage.xbf">
+      <PackagePath>ControllerBatteryPage.xbf</PackagePath>
+      <Modified>2019-11-11T20:29:31.594</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\ControllerDeadzonePage.xbf">
       <PackagePath>ControllerDeadzonePage.xbf</PackagePath>
-      <Modified>2019-11-04T23:04:31.171</Modified>
+      <Modified>2019-11-11T20:29:31.549</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\ControllerTriggerPage.xbf">
+      <PackagePath>ControllerTriggerPage.xbf</PackagePath>
+      <Modified>2019-11-11T20:29:31.594</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\ControllerVibrationPage.xbf">
+      <PackagePath>ControllerVibrationPage.xbf</PackagePath>
+      <Modified>2019-11-11T20:29:31.595</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\HistoryPage.xbf">
       <PackagePath>HistoryPage.xbf</PackagePath>
-      <Modified>2019-11-04T23:04:31.171</Modified>
+      <Modified>2019-11-11T20:29:31.595</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\HomePage.xbf">
       <PackagePath>HomePage.xbf</PackagePath>
-      <Modified>2019-11-04T23:04:31.171</Modified>
+      <Modified>2019-11-11T20:29:31.595</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-11-04T23:04:31.171</Modified>
+      <Modified>2019-11-11T20:29:31.595</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\OtherControllerPage.xbf">
       <PackagePath>OtherControllerPage.xbf</PackagePath>
-      <Modified>2019-11-04T23:04:31.151</Modified>
+      <Modified>2019-11-11T20:29:31.572</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\PlaystationControllerPage.xbf">
       <PackagePath>PlaystationControllerPage.xbf</PackagePath>
-      <Modified>2019-11-04T23:04:31.160</Modified>
+      <Modified>2019-11-11T20:29:31.581</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\SettingsPage.xbf">
       <PackagePath>SettingsPage.xbf</PackagePath>
-      <Modified>2019-11-04T23:04:31.171</Modified>
+      <Modified>2019-11-11T20:29:31.585</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\XboxControllerPage.xbf">
       <PackagePath>XboxControllerPage.xbf</PackagePath>
-      <Modified>2019-11-04T23:04:31.170</Modified>
+      <Modified>2019-11-11T20:29:31.593</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.18362.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -361,11 +385,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-11-04T21:51:44.660</Modified>
+      <Modified>2019-11-11T20:15:32.767</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\trash\Documents\dev\ControllerDoctorUWP\ControllerDoctorUWP\bin\x86\Debug\Core\ControllerDoctorUWP.exe">
       <PackagePath>ControllerDoctorUWP.exe</PackagePath>
-      <Modified>2019-11-04T23:05:17.164</Modified>
+      <Modified>2019-11-11T20:30:52.155</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

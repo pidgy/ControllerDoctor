@@ -50,22 +50,22 @@
             <Canvas Name="Right_Bumper" Width="900" Height="40"/>
         </Viewbox>
 
-        <TextBlock  Grid.Row="8" FontFamily="Arial"  FontSize="15" Foreground="CadetBlue"  Text="X" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock  x:Name="X_Button_TextBlock" Grid.Row="8" FontFamily="Arial"  FontSize="15" Foreground="DodgerBlue" Text="X" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="8" Grid.Column="1">
             <Canvas Name="X_Button" Width="900" Height="40"/>
         </Viewbox>
 
-        <TextBlock Grid.Row="9" FontFamily="Arial"  FontSize="15" Foreground="LawnGreen" Text="A" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="A_Button_TextBlock" Grid.Row="9" FontFamily="Arial"  FontSize="15" Foreground="LawnGreen" Text="A" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="9" Grid.Column="1">
             <Canvas Name="A_Button" Width="900" Height="40"/>
         </Viewbox>
 
-        <TextBlock Grid.Row="10" FontFamily="Arial"  FontSize="15" Foreground="Yellow" Text="Y" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="Y_Button_TextBlock" Grid.Row="10" FontFamily="Arial"  FontSize="15" Foreground="Yellow" Text="Y" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="10" Grid.Column="1">
             <Canvas Name="Y_Button" Width="900" Height="40"/>
         </Viewbox>
 
-        <TextBlock Grid.Row="11" FontFamily="Arial"  FontSize="15" Foreground="Red" Text="B" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock x:Name="B_Button_TextBlock" Grid.Row="11" FontFamily="Arial"  FontSize="15" Foreground="Red" Text="B" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         <Viewbox  Grid.Row="11" Grid.Column="1">
             <Canvas Name="B_Button" Width="900" Height="40"/>
         </Viewbox>

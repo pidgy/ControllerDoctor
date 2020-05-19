@@ -12,16 +12,18 @@
       <RootProperty Name="Visibility" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="Name" />
       <RootProperty Name="Width" />
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
       <RootProperty Name="Height" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootMethod Name="GetRow" />
-      <RootMethod Name="SetRow" />
+      <RootProperty Name="Margin" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="MaxWidth" />
@@ -30,6 +32,8 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Source" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.HyperlinkButton">
       <RootProperty Name="FontSize" />
@@ -47,9 +51,18 @@
       <RootProperty Name="Text" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="TextWrapping" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="FontStyle" />
     </RootType>
     <RootType FullName="ControllerDoctorUWP.AboutPage" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="ControllerDoctorUWP.ControllerBatteryPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.Viewbox">
       <RootProperty Name="Child" />
       <RootProperty Name="Height" />
@@ -67,6 +80,7 @@
       <RootMethod Name="SetTop" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
+      <RootProperty Name="Stroke" />
       <RootProperty Name="Fill" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
@@ -88,21 +102,44 @@
       <RootProperty Name="Foreground" />
       <RootProperty Name="FocusVisualSecondaryBrush" />
       <RootProperty Name="FocusVisualPrimaryBrush" />
+      <RootProperty Name="Resources" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="BorderBrush" />
       <RootEvent Name="ValueChanged" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
-      <RootProperty Name="Width" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
-      <RootProperty Name="Height" />
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
     </RootType>
     <RootType FullName="ControllerDoctorUWP.ControllerDeadzonePage" />
+    <RootType FullName="ControllerDoctorUWP.ControllerTriggerPage" />
+    <RootType FullName="ControllerDoctorUWP.ControllerVibrationPage" />
     <RootType FullName="ControllerDoctorUWP.HistoryPage" />
+    <RootType FullName="Microsoft.Advertising.WinRT.UI.AdControl">
+      <RootProperty Name="ApplicationId" />
+      <RootProperty Name="AdUnitId" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="BorderBrush" />
+      <RootEvent Name="Click" />
+    </RootType>
     <RootType FullName="ControllerDoctorUWP.HomePage" />
     <RootType FullName="Windows.UI.Xaml.Controls.NavigationView">
       <RootProperty Name="Name" />
+      <RootProperty Name="OpenPaneLength" />
       <RootProperty Name="IsPaneToggleButtonVisible" />
       <RootProperty Name="IsTabStop" />
       <RootProperty Name="IsBackEnabled" />
@@ -122,6 +159,7 @@
       <RootProperty Name="FontSize" />
       <RootProperty Name="Icon" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Visibility" />
       <RootProperty Name="IsEnabled" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame" />
@@ -130,25 +168,14 @@
       <RootProperty Name="BorderBrush" />
       <RootProperty Name="BorderThickness" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Name" />
-      <RootProperty Name="IsTabStop" />
-      <RootProperty Name="Content" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Foreground" />
-      <RootProperty Name="Background" />
-      <RootProperty Name="FontSize" />
-      <RootProperty Name="BorderThickness" />
-      <RootProperty Name="BorderBrush" />
-      <RootEvent Name="Click" />
-    </RootType>
     <RootType FullName="ControllerDoctorUWP.OtherControllerPage" />
     <RootType FullName="ControllerDoctorUWP.PlaystationControllerPage" />
-    <RootType FullName="Windows.UI.Xaml.Controls.Primitives.ToggleButton">
-      <RootProperty Name="Content" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RadioButton">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="MinWidth" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="IsChecked" />
       <RootEvent Name="Checked" />
     </RootType>
     <RootType FullName="ControllerDoctorUWP.SettingsPage" />

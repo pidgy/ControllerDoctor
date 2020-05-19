@@ -17,6 +17,11 @@
 					<Base64Value>[Embedded Binary Data]</Base64Value>
 				</Candidate>
 			</NamedResource>
+			<NamedResource name="battery.png" uri="ms-resource://30781TrashboatInc.ControllerDoctor/Files/battery.png">
+				<Candidate type="Path">
+					<Value>battery.png</Value>
+				</Candidate>
+			</NamedResource>
 			<NamedResource name="bg.png" uri="ms-resource://30781TrashboatInc.ControllerDoctor/Files/bg.png">
 				<Candidate type="Path">
 					<Value>bg.png</Value>
@@ -42,6 +47,11 @@
 					<Value>controller-xbox.png</Value>
 				</Candidate>
 			</NamedResource>
+			<NamedResource name="ControllerBatteryPage.xbf" uri="ms-resource://30781TrashboatInc.ControllerDoctor/Files/ControllerBatteryPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
 			<NamedResource name="ControllerDeadzonePage.xbf" uri="ms-resource://30781TrashboatInc.ControllerDoctor/Files/ControllerDeadzonePage.xbf">
 				<Candidate type="EmbeddedData">
 					<Base64Value>[Embedded Binary Data]</Base64Value>
@@ -50,6 +60,16 @@
 			<NamedResource name="ControllerDoctorUWP.xr.xml" uri="ms-resource://30781TrashboatInc.ControllerDoctor/Files/ControllerDoctorUWP.xr.xml">
 				<Candidate type="Path">
 					<Value>ControllerDoctorUWP.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ControllerTriggerPage.xbf" uri="ms-resource://30781TrashboatInc.ControllerDoctor/Files/ControllerTriggerPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="ControllerVibrationPage.xbf" uri="ms-resource://30781TrashboatInc.ControllerDoctor/Files/ControllerVibrationPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
 				</Candidate>
 			</NamedResource>
 			<NamedResource name="focus.png" uri="ms-resource://30781TrashboatInc.ControllerDoctor/Files/focus.png">
@@ -95,6 +115,16 @@
 			<NamedResource name="SettingsPage.xbf" uri="ms-resource://30781TrashboatInc.ControllerDoctor/Files/SettingsPage.xbf">
 				<Candidate type="EmbeddedData">
 					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="trigger.png" uri="ms-resource://30781TrashboatInc.ControllerDoctor/Files/trigger.png">
+				<Candidate type="Path">
+					<Value>trigger.png</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="wave.png" uri="ms-resource://30781TrashboatInc.ControllerDoctor/Files/wave.png">
+				<Candidate type="Path">
+					<Value>wave.png</Value>
 				</Candidate>
 			</NamedResource>
 			<NamedResource name="XboxControllerPage.xbf" uri="ms-resource://30781TrashboatInc.ControllerDoctor/Files/XboxControllerPage.xbf">
@@ -182,6 +212,11 @@
 				</NamedResource>
 			</ResourceMapSubtree>
 			<ResourceMapSubtree name="WinMetadata">
+				<NamedResource name="Microsoft.Advertising.winmd" uri="ms-resource://30781TrashboatInc.ControllerDoctor/Files/WinMetadata/Microsoft.Advertising.winmd">
+					<Candidate type="Path">
+						<Value>WinMetadata\Microsoft.Advertising.winmd</Value>
+					</Candidate>
+				</NamedResource>
 				<NamedResource name="Windows.winmd" uri="ms-resource://30781TrashboatInc.ControllerDoctor/Files/WinMetadata/Windows.winmd">
 					<Candidate type="Path">
 						<Value>WinMetadata\Windows.winmd</Value>

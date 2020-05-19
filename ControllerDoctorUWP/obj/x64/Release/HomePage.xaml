@@ -4,10 +4,54 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:UI="using:Microsoft.Advertising.WinRT.UI"
     mc:Ignorable="d"
     Background="#2F2F4F">
 
-    <Grid Background="#2F2F4F">
+    <Grid x:ConnectionId='2' x:Name="HomePageGrid">
+        <UI:AdControl ApplicationId="9ndb97q30ngk"
+        AdUnitId="1100060521"
+        HorizontalAlignment="Left"
+        Height="250"
+        VerticalAlignment="Bottom"
+        Width="300"/>
+
+        <Grid HorizontalAlignment="Right" Margin="0,0,10,0">
+            <TextBlock FontSize="25" Text="Default Controller:"  Margin="0,0,10,0" HorizontalAlignment="Left"></TextBlock>
+            <TextBlock x:ConnectionId='3' x:Name="Default_Controller_TextBlock" Grid.Column="1" FontSize="25" Text="n/a" FontStyle="Italic" HorizontalAlignment="Center"></TextBlock>
+
+            <TextBlock Grid.Row="1" FontSize="25" Text="Vendor ID:"  Margin="0,0,10,0" HorizontalAlignment="Left"></TextBlock>
+            <TextBlock x:ConnectionId='4' Grid.Row="1"  x:Name="Controller_Vendor_TextBlock" Grid.Column="1" FontSize="25" Text="n/a" FontStyle="Italic" HorizontalAlignment="Center" ></TextBlock>
+
+            <TextBlock Grid.Row="2" FontSize="25" Text="Product ID:"  Margin="0,0,10,0" HorizontalAlignment="Left"></TextBlock>
+            <TextBlock x:ConnectionId='5' Grid.Row="2"  x:Name="Controller_Product_TextBlock" Grid.Column="1" FontSize="25" Text="n/a" FontStyle="Italic" HorizontalAlignment="Center" ></TextBlock>
+
+            <TextBlock Grid.Row="3" FontSize="25" Text="Battery:"  Margin="0,0,10,0" HorizontalAlignment="Left"></TextBlock>
+            <TextBlock x:ConnectionId='6' Grid.Row="3"  x:Name="Controller_Battery_TextBlock" Grid.Column="1" FontSize="25" Text="n/a" FontStyle="Italic" HorizontalAlignment="Center"></TextBlock>
+
+            <TextBlock Grid.Row="4" FontSize="25" Text="Connected:"  Margin="0,0,10,0" HorizontalAlignment="Left"></TextBlock>
+            <TextBlock x:ConnectionId='7' Grid.Row="4"  x:Name="Controller_Connected_TextBlock" Grid.Column="1" FontSize="25" Text="No" FontStyle="Italic" HorizontalAlignment="Center"></TextBlock>
+
+            <Button x:ConnectionId='8' x:Name="Refresh_Button" Grid.Row="5" Grid.Column="1" FontSize="25" Content="Refresh" Margin="0,0,10,0" HorizontalAlignment="Center" VerticalAlignment="Center"                             ></Button>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="10*"/>
+
+            </Grid.RowDefinitions>
+        </Grid>
+
+
         <Image MaxWidth="100" MaxHeight="100" HorizontalAlignment="Right" VerticalAlignment="Bottom"  Source="bg.png" Margin="0,0,14,63"/>
         <TextBlock FontFamily="Arial"  FontSize="50" Foreground="White" Text="Select a Controller." HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
 

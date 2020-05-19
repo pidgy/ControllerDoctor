@@ -8,6 +8,7 @@
     Background="#2F2F4F">
 
     <Grid Background="#2F2F4F">
+      
         <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
             <TextBlock FontFamily="Arial"  FontSize="20" Foreground="White" Text="History." HorizontalAlignment="Center" VerticalAlignment="Center" Name="About_Text"/>
         </Grid>

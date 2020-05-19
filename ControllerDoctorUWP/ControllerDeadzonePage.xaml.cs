@@ -8,6 +8,7 @@ using Windows.UI.Popups;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Xaml.Shapes;
 
@@ -36,7 +37,7 @@ namespace ControllerDoctorUWP
         Painter LeftPainter;
         Painter RightPainter;
 
-        IController controller;
+        IController Controller;
         
         Task LeftTask;
         Task RightTask;
@@ -45,15 +46,24 @@ namespace ControllerDoctorUWP
         public ControllerDeadzonePage()
         {
             this.InitializeComponent();
-            
+           
+            GlobalSettings.ApplyThemeTo(this);
+
+            RightDeadzoneCoordinatesGrid.BorderThickness = new Windows.UI.Xaml.Thickness(0);
+            LeftDeadzoneCoordinatesGrid.BorderThickness = new Windows.UI.Xaml.Thickness(0);
+            RightDeadzoneSliderGrid.BorderThickness = new Windows.UI.Xaml.Thickness(0);
+            LeftDeadzoneSliderGrid.BorderThickness = new Windows.UI.Xaml.Thickness(0);
+
+            CancellationToken = new CancellationTokenSource();
+
             LeftPainter = new Painter(CreateAnEllipse(5, 5), LeftCanvas, LEFT);
             RightPainter = new Painter(CreateAnEllipse(5, 5), RightCanvas, RIGHT);
 
             this.Loaded += (s1, e1) =>
             {
-                switch (GlobalSettings.DeadzoneController)
+                switch (GlobalSettings.ControllerType)
                 {
-                    case GlobalSettings.XBOX:
+                    case CONTROLLER_TYPE.XBOX:
                         XboxController xboxController = new XboxController();
 
                         xboxController.Connected += (s2, e2) =>
@@ -68,10 +78,10 @@ namespace ControllerDoctorUWP
 
                         xboxController.Refresh();
 
-                        controller = xboxController;
+                        Controller = xboxController;
 
                         break;
-                    case GlobalSettings.GENERIC:
+                    case CONTROLLER_TYPE.GENERIC:
                         GenericController genericController = new GenericController();
 
                         genericController.Connected += (s2, e2) =>
@@ -86,7 +96,25 @@ namespace ControllerDoctorUWP
 
                         genericController.Refresh();
 
-                        controller = genericController;
+                        Controller = genericController;
+
+                        break;
+                    case CONTROLLER_TYPE.PLAYSTATION:
+                        PlaystationController playstationController = new PlaystationController();
+
+                        playstationController.Connected += (s2, e2) =>
+                        {
+                            SetConnectedAsync();
+                        };
+
+                        playstationController.Disconnected += (s2, e2) =>
+                        {
+                            SetDisconnectedAsync();
+                        };
+
+                        playstationController.Refresh();
+
+                        Controller = playstationController;
 
                         break;
                 }
@@ -95,6 +123,7 @@ namespace ControllerDoctorUWP
 
         public async void SetConnectedAsync()
         {
+            CancellationToken.Cancel();
             CancellationToken = new CancellationTokenSource();
 
             await Dispatcher.RunAsync(CoreDispatcherPriority.High, () => {
@@ -106,9 +135,11 @@ namespace ControllerDoctorUWP
                 
                 LeftTask.Start();
                 RightTask.Start();
+
+                Controller_Image.Source = GlobalSettings.ControllerImageSource(Controller);
             });
         }
-
+     
         public async void SetDisconnectedAsync()
         {
             await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => {
@@ -127,7 +158,7 @@ namespace ControllerDoctorUWP
                 {
                     CancellationToken.Token.ThrowIfCancellationRequested();
 
-                    if (controller.IsConnected())
+                    if (Controller.IsConnected())
                     {
                         DrawAsync((Painter)obj);
                     }
@@ -156,16 +187,16 @@ namespace ControllerDoctorUWP
 
             if (p.LeftOrRight == LEFT)
             {
-                X = controller.LeftStickXPosition() / 100;
-                Y = controller.LeftStickYPosition() / 100;
+                X = Controller.LeftStickXPosition() / 100;
+                Y = Controller.LeftStickYPosition() / 100;
               
                 X_Left_Text.Text = String.Format("X: {0:0.00}", X);
                 Y_Left_Text.Text = String.Format("Y: {0:0.00}", Y);
             }
             else
             {
-                X = controller.RightStickXPosition() / 100;
-                Y = controller.RightStickYPosition() / 100;
+                X = Controller.RightStickXPosition() / 100;
+                Y = Controller.RightStickYPosition() / 100;
 
                 X_Right_Text.Text = String.Format("X: {0:0.00}", X);
                 Y_Right_Text.Text = String.Format("Y: {0:0.00}", Y);
@@ -183,8 +214,8 @@ namespace ControllerDoctorUWP
             c.B = 0x4F;
             c.A = 0xFF;
 
-            SolidColorBrush fillBrush = new SolidColorBrush() { Color = c };
-            SolidColorBrush borderBrush = new SolidColorBrush() { Color = c};
+            SolidColorBrush fillBrush = new SolidColorBrush() { Color = Colors.White };
+            SolidColorBrush borderBrush = new SolidColorBrush() { Color = Colors.White };
 
             return new Ellipse()
             {
@@ -205,6 +236,7 @@ namespace ControllerDoctorUWP
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             CancellationToken.Cancel();
+
             base.OnNavigatedFrom(e);
         }
 
@@ -214,7 +246,6 @@ namespace ControllerDoctorUWP
             {
                 return;
             }
-
             
             Left_Rectangle_1.Width = e.NewValue;
 
